@@ -58,7 +58,7 @@ class MusicPlugin extends Plugin
         $name = explode("#", $message);
         $name = trim($name[1]);
         if (count($NetEase) >= 2) {
-            $json = file_get_contents("http://www.kilingzhang.com/ApiURL/Music/search.php?name=$name&source=163");
+            $json = file_get_contents("http://www.kilingzhang.com/Api/Music/search.php?name=$name&source=163");
             $type = "163";
             $json = json_decode($json, true);
             if ($json['code'] != 200) {
@@ -68,7 +68,7 @@ class MusicPlugin extends Plugin
                 $msg = "[CQ:music,type=$type,id=$id]";
             }
         } elseif (count($QQ) >= 2) {
-            $json = file_get_contents("http://www.kilingzhang.com/ApiURL/Music/search.php?name=$name&source=163");
+            $json = file_get_contents("http://www.kilingzhang.com/Api/Music/search.php?name=$name&source=163");
             $type = "163";
             $json = json_decode($json, true);
             if ($json['code'] != 200) {
@@ -78,7 +78,7 @@ class MusicPlugin extends Plugin
                 $msg = "[CQ:music,type=$type,id=$id]";
             }
         } elseif (count($XiaMi) >= 2) {
-            $json = file_get_contents("http://www.kilingzhang.com/ApiURL/Music/search.php?name=$name&source=xiami");
+            $json = file_get_contents("http://www.kilingzhang.com/Api/Music/search.php?name=$name&source=xiami");
             $type = "xiami";
             $json = json_decode($json, true);
             if ($json['code'] != 0) {

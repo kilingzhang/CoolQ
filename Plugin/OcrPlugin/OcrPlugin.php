@@ -6,7 +6,7 @@
  * Date: 2017/5/7 0007
  * Time: 18:08
  */
-class VipVideoPlugin extends Plugin
+class OcrPlugin extends Plugin
 {
 
     public function Start()
@@ -19,10 +19,10 @@ class VipVideoPlugin extends Plugin
         switch ($post_type) {
             case "message":
                 $message = trim($message);
-                preg_match_all("/(http|https):\/\/.+(le|youku|qq|mgtv|iqiyi)\.com\//", $message, $is);
+                preg_match_all("/.*?\[CQ:image,file=.*?,url=(.*?)\]/", $message, $is);
                 if (count($is) >= 2 && !empty($is[1])) {
                     $this->setIntercept(true);
-                    $msg = $this->getVipVideo($message);
+                    $msg = $this->getOcrMessage($is[1][0]);
                     switch ($message_type) {
                         case "private":
                             $sub_type = $this->getGetData()['sub_type'];
@@ -52,15 +52,19 @@ class VipVideoPlugin extends Plugin
         }
     }
 
-    private function getVipVideo($message)
+    private function getOcrMessage($message)
     {
-        $url = "http://www.kilingzhang.com/Api/Video/url.php?url=" . $message;
+        $url = "http://www.kilingzhang.com/Api/Ocr/api.php?url=" . $message;
         $json = file_get_contents($url);
         $data = json_decode($json, true);
-        if ($data['msg'] != 200) {
-            $msg = "亲 再试下呗 如果多次失败 请联系管理员~";
+        if ($data['success'] != 1) {
+
         } else {
-            $msg = $data['url'];
+            $data = $data['result'];
+            $msg = "---------嘿--------  ~\n";
+            foreach ($data as $item){
+                $msg .= $item['content'];
+            }
         }
         return $msg;
     }
