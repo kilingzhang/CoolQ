@@ -1,11 +1,14 @@
 <?php
-
 /**
  * Created by PhpStorm.
- * User: Slight
- * Date: 2017/5/6 0006
- * Time: 00:13
+ * User: Kilingzhang
+ * Date: 2017/6/28
+ * Time: 13:52
  */
+
+namespace CoolQ;
+
+
 class CQ
 {
     public static function enAtCode($QQ)
@@ -48,7 +51,7 @@ class CQ
         return "[CQ:rps,type=$type] ";
     }
 
-    public static function eDiceCode($type)
+    public static function enDiceCode($type)
     {
         return "[CQ:dice,type=$type] ";
     }
@@ -69,7 +72,7 @@ class CQ
 
     public static function enMusicCode($type, $id)
     {
-        return "[CQ:music,type=$type,id=$id] ";
+        return "[CQ:music,type=$type,id=$id]";
     }
 
     public static function enDiyMusicCode($type = custom, $url, $audio, $title, $content, $image)
@@ -81,6 +84,5 @@ class CQ
     {
         return "[CQ:share,url=$url,title=$title,content=$content,image=$image] ";
     }
-
 
 }

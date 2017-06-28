@@ -19,22 +19,22 @@ header('Content-type:text/html;charset=utf-8');
  *  Hash
  */
 define("Role","YiBao");
-define("Hash","");
+define("Hash","30e9719f4fd15c3f01eb87a6770ff60d");
 
 
 /**
  *  Tuling Api Verification
  */
-define("APIkey","");
-define("secret","");
+define("APIkey","d400e0967d44447eb11afd8ea5ea2b11");
+define("secret","8a08a86c4ae39f34");
 
 
 //CoolQ HTTP API
 define("PATH","http://127.0.0.1");
 define("PORT",5700);
 define("TOKEN","");
-define("QQ",);
-define("MANAGERQQ",);
+define("QQ",1246002938);
+define("MANAGERQQ",1353693508);
 
 
 /**
@@ -48,7 +48,7 @@ define("MANAGERQQ",);
  */
 define('dbHost', '127.0.0.1');
 define("dbUser","root");
-define("dbPassword","");
+define("dbPassword","wxhxa.666Z");
 define("dbTable","CoolQ");
 define('dbport', 3306);
 
@@ -62,4 +62,4 @@ define('dbport', 3306);
 //Encode
 define('ENCODE_CIPHER', MCRYPT_RIJNDAEL_128);
 define('ENCODE_MODE', MCRYPT_MODE_ECB);
-define('ENCODE_KEY', '');
+define('ENCODE_KEY', '93c5680f1d6f3c34036092204ef58b9d');
