@@ -1,5 +1,5 @@
 {
     "require": {
-		"slight-sky/coolq-sdk-php": "^0.1.0"
+		"slight-sky/coolq-sdk-php": "^0.2.0"
     }
 }

@@ -1,20 +1,20 @@
 [
     {
         "name": "slight-sky/coolq-sdk-php",
-        "version": "0.1",
-        "version_normalized": "0.1.0.0",
+        "version": "0.2",
+        "version_normalized": "0.2.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/slight-sky/coolq-sdk-php.git",
-            "reference": "51b1da43778e10a45d0edfac8428ebdb49fbddd8"
+            "reference": "e31c8bd7f2f305b9aba8894cce6fba819160d9a0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/slight-sky/coolq-sdk-php/zipball/51b1da43778e10a45d0edfac8428ebdb49fbddd8",
-            "reference": "51b1da43778e10a45d0edfac8428ebdb49fbddd8",
+            "url": "https://api.github.com/repos/slight-sky/coolq-sdk-php/zipball/e31c8bd7f2f305b9aba8894cce6fba819160d9a0",
+            "reference": "e31c8bd7f2f305b9aba8894cce6fba819160d9a0",
             "shasum": ""
         },
-        "time": "2017-06-28 10:28:43",
+        "time": "2017-07-01 01:06:14",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -39,51 +39,6 @@
             "coolq",
             "library",
             "sdk"
-        ]
-    },
-    {
-        "name": "monolog/monolog",
-        "version": "1.0.2",
-        "version_normalized": "1.0.2.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Seldaek/monolog.git",
-            "reference": "b704c49a3051536f67f2d39f13568f74615b9922"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/b704c49a3051536f67f2d39f13568f74615b9922",
-            "reference": "b704c49a3051536f67f2d39f13568f74615b9922",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "time": "2011-10-24 09:39:02",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Monolog": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Jordi Boggiano",
-                "email": "j.boggiano@seld.be",
-                "homepage": "http://seld.be",
-                "role": "Developer"
-            }
-        ],
-        "description": "Logging for PHP 5.3",
-        "homepage": "http://github.com/Seldaek/monolog",
-        "keywords": [
-            "log",
-            "logging"
         ]
     }
 ]
