@@ -6,7 +6,7 @@
  * Date: 2017/5/5 0005
  * Time: 13:56
  */
-class DB{
+class Sql{
 
     private $dbHost;
     private $dbUser;

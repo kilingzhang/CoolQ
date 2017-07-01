@@ -29,7 +29,7 @@ define("APIkey","d400e0967d44447eb11afd8ea5ea2b11");
 define("secret","8a08a86c4ae39f34");
 
 
-//CoolQ HTTP API
+//CoolQPHP HTTP API
 define("PATH","http://127.0.0.1");
 define("PORT",5700);
 define("TOKEN","");
@@ -49,7 +49,7 @@ define("MANAGERQQ",1353693508);
 define('dbHost', '127.0.0.1');
 define("dbUser","root");
 define("dbPassword","wxhxa.666Z");
-define("dbTable","CoolQ");
+define("dbTable","CoolQPHP");
 define('dbport', 3306);
 
 

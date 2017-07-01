@@ -1,13 +1,11 @@
 <?php
-// +----------------------------------------------------------------------
-// | ThinkPHP [ WE CAN DO IT JUST THINK ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2006~2017 http://thinkphp.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
-// +----------------------------------------------------------------------
-// | Author: liu21st <liu21st@gmail.com>
-// +----------------------------------------------------------------------
+
+/**
+ * Created by PhpStorm.
+ * User: Kilingzhang
+ * Date: 2017/7/1
+ * Time: 8:57
+ */
 
 namespace   CoolQ;
 
@@ -19,6 +17,8 @@ class Debug
     protected static $info = [];
     // 区间内存信息
     protected static $mem = [];
+
+    public static $on = true;
 
     /**
      * 记录时间（微秒）和内存使用情况
@@ -172,11 +172,40 @@ class Debug
             }
             $output = '<pre>' . $label . $output . '</pre>';
         }
-        if ($echo) {
+        if ($echo && self::$on) {
             echo($output);
             return;
         } else {
             return $output;
+        }
+    }
+
+    public static function inject(Response $response, &$content)
+    {
+        $config  = Config::get('trace');
+        $type    = isset($config['type']) ? $config['type'] : 'Html';
+        $request = Request::instance();
+        $class   = false !== strpos($type, '\\') ? $type : '\\think\\debug\\' . ucwords($type);
+        unset($config['type']);
+        if (class_exists($class)) {
+            $trace = new $class($config);
+        } else {
+            throw new ClassNotFoundException('class not exists:' . $class, $class);
+        }
+
+        if ($response instanceof Redirect) {
+            //TODO 记录
+        } else {
+            $output = $trace->output($response, Log::getLog());
+            if (is_string($output)) {
+                // trace调试信息注入
+                $pos = strripos($content, '</body>');
+                if (false !== $pos) {
+                    $content = substr($content, 0, $pos) . $output . substr($content, $pos);
+                } else {
+                    $content = $content . $output;
+                }
+            }
         }
     }
 
