@@ -7,19 +7,20 @@
  */
 
 date_default_timezone_set("Asia/Shanghai");
-define('COOLQ_VERSION', '0.2.0');
+define('COOLQ_VERSION', '0.1.0');
 define('COOLQ_START_TIME', microtime(true));
 define('COOLQ_START_MEM', memory_get_usage());
 define('EXT', '.php');
 define('DS', DIRECTORY_SEPARATOR);
 defined('COOLQ_PATH') or define('COOLQ_PATH', __DIR__ . DS);
 define('LIB_PATH', COOLQ_PATH . 'Library' . DS);
-define('CORE_PATH', LIB_PATH . 'COOLQ' . DS);
+define('CORE_PATH', LIB_PATH . 'CoolQ' . DS);
 define('TRAIT_PATH', LIB_PATH . 'traits' . DS);
 defined('APP_PATH') or define('APP_PATH', dirname($_SERVER['SCRIPT_FILENAME']) . DS);
-defined('ROOT_PATH') or define('ROOT_PATH', dirname(realpath(APP_PATH)) . DS);
-defined('EXTEND_PATH') or define('EXTEND_PATH', ROOT_PATH . 'extend' . DS);
+defined('ROOT_PATH') or define('ROOT_PATH', dirname(realpath(dirname($_SERVER['SCRIPT_FILENAME']))) . DS);
 defined('VENDOR_PATH') or define('VENDOR_PATH', ROOT_PATH . 'vendor' . DS);
+defined('PLUGIN_PATH') or define('PLUGIN_PATH', ROOT_PATH . 'Plugin' . DS);
+defined('EXTEND_PATH') or define('EXTEND_PATH', ROOT_PATH . 'extend' . DS);
 defined('RUNTIME_PATH') or define('RUNTIME_PATH', ROOT_PATH . 'Runtime' . DS);
 defined('LOG_PATH') or define('LOG_PATH', RUNTIME_PATH . 'Log' . DS);
 defined('CACHE_PATH') or define('CACHE_PATH', RUNTIME_PATH . 'Cache' . DS);

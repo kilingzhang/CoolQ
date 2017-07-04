@@ -49,26 +49,11 @@ class Request
     }
 
 
-    static public function put($param = null,$default = '' ,$filter = true){
+    static public function put($param = null,$json = true ,$filter = true){
         $get = null;
         $content = file_get_contents('php://input');
-        if (false !== strpos(self::contentType(), 'application/json')) {
-            $put = (array) json_decode($content, true);
-        } else {
-            parse_str($content, $put);
-        }
-        if(is_array($param) && count($param) > 0){
-            foreach ($param as $item){
-                $get[$item] = isset($put[$item]) ? $put[$item] : $default;
-            }
-        }else if($param != null){
-            $get[$param] = isset($put[$param]) ? $put[$param] : $default;
-        }
-        if($filter  == true && is_array($get) && !is_null($get)){
-
-            foreach ($get as $key => $value){
-                $get[$key] = htmlspecialchars($value);
-            }
+        if($json == true){
+            $get = json_decode($content,true);
         }
         return $get;
     }

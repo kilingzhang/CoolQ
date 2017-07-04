@@ -161,6 +161,7 @@ class Debug
     {
         $label = (null === $label) ? '' : rtrim($label) . ':';
         ob_start();
+        echo  "<pre>";
         var_dump($var);
         $output = ob_get_clean();
         $output = preg_replace('/\]\=\>\n(\s+)/m', '] => ', $output);

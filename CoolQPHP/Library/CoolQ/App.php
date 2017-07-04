@@ -15,6 +15,7 @@ use CoolQ\exception\HttpResponseException;
 use CoolQ\exception\RouteNotFoundException;
 use CoolQ\Request;
 use CoolQ\Debug;
+use CoolQSDK\CoolQSDK;
 
 class App
 {
@@ -61,10 +62,11 @@ class App
 
     }
 
-    public static function run(){
+    public static function run()
+    {
 
         //初始化配置
-       Config::init();
+        Config::init();
 
         //初始化日志
         Log::init();
@@ -78,7 +80,7 @@ class App
         App::start();
         // 应用结束标签
         Hook::do_action('app_end');
-        return ;
+        return;
 
 
     }
@@ -89,8 +91,33 @@ class App
 
     private static function start()
     {
-        echo "<pre>";
-        print_r(\CoolQ\Request::get());
+        // 当前访问
+        defined('PATH_INFO') or define('PATH_INFO', trim(\CoolQ\Request::server('PATH_INFO', null)['PATH_INFO'], '/'));
+        $Route = explode('/', PATH_INFO);
+        //http://server/module/controller/action/param/value/…
+        global $_Param;
+        global $_Module;
+        global $_Controller;
+        global $_Action;
+        $_Param = null;
+        if (count($Route) > 0 && $Route[0] != ''){
+            $_Module = isset($Route[0]) ? $Route[0] : "";
+            $_Controller = isset($Route[1]) ? $Route[1] : "";
+            $_Action = isset($Route[2]) ? $Route[2] : "";
+            if(count($Route) > 3){
+                for($i=3 ; $i<count($Route) ; $i+=2){
+                    $_Param[$Route[$i]] = isset($Route[$i+1]) ? htmlspecialchars($Route[$i+1]) : "";
+                }
+            }
+        }else{
+            //上报事件
+            require ROOT_PATH . 'App\Api\index.php';
+        }
+
+
+
     }
+
+
 
 }

@@ -23,7 +23,17 @@ class Config
         );
     }
 
+    static public function getQQ(){
+        return QQ;
+    }
+
+    static public function getManager(){
+        return MANAGERQQ;
+    }
+
     static public function getDbConfig(){
         return self::$db;
     }
+
+
 }

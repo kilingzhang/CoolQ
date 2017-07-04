@@ -2,65 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32519d69-6a98-4b5f-8c30-6ce03c762999" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CoolQPHP/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Common/Function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Request.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CoolQPHP/Tpl/dispatch_jump.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Examples/index.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/log/driver/File.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/log/driver/Socket.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/log/driver/Test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/.idea/coolQ-sdk-php.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/.idea/workspace.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Api/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/RobotSql.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Plugin/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/.htaccess" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Examples/index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Api/.htaccess" afterPath="$PROJECT_DIR$/Api/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Api/index.php" afterPath="$PROJECT_DIR$/Api/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/.htaccess" afterPath="$PROJECT_DIR$/CoolQPHP/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Config.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/MySql.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/MySql.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Debug.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Debug.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Loader.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Loader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Request.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Request.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/base.php" afterPath="$PROJECT_DIR$/CoolQPHP/base.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/start.php" afterPath="$PROJECT_DIR$/CoolQPHP/start.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/lang/zh-cn.php" afterPath="$PROJECT_DIR$/CoolQPHP/Lang/zh-cn.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/App.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Controller.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Controller.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Debug.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Debug.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Exception.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/File.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/File.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Hook.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Hook.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Loader.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Loader.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Log.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Log.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/LosingMsg.class.php" afterPath="$PROJECT_DIR$/Plugin/LosingPlugin/lib/LosingMsg.class.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Model.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Model.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Plugin.class.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Robot.class.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/View.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/View.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/cache/Driver.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Cache/Driver.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/cache/driver/File.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Cache/driver/File.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/cache/driver/Lite.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Cache/driver/Lite.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/cache/driver/Memcache.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Cache/driver/Memcache.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/cache/driver/Memcached.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Cache/driver/Memcached.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/cache/driver/Redis.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Cache/driver/Redis.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/cache/driver/Sqlite.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Cache/driver/Sqlite.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/cache/driver/Wincache.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Cache/driver/Wincache.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/cache/driver/Xcache.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Cache/driver/Xcache.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/config.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/db/Sql.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/MySql.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/exception/ClassNotFoundException.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/ClassNotFoundException.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/exception/DbException.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/DbException.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/exception/ErrorException.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/ErrorException.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/exception/Handle.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/Handle.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/exception/HttpException.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/HttpException.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/exception/HttpResponseException.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/HttpResponseException.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/exception/PDOException.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/PDOException.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/exception/RouteNotFoundException.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/RouteNotFoundException.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/exception/TemplateNotFoundException.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/TemplateNotFoundException.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/exception/ThrowableError.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/ThrowableError.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/library/CoolQ/exception/ValidateException.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/ValidateException.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin/Plugin.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/Tpl/dispatch_jump.tpl" afterPath="$PROJECT_DIR$/CoolQPHP/Tpl/dispatch_jump.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,47 +49,110 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="base.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CoolQPHP/base.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Api/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+            <state relative-caret-position="351">
+              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
               <folding>
-                <element signature="e#6#90#0#PHP" expanded="true" />
+                <element signature="e#6#117#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Api/.htaccess">
+      <file leaf-file-name="Robot.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            <state relative-caret-position="276">
+              <caret line="48" column="65" lean-forward="false" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
               <folding>
-                <marker date="1499168015994" expanded="true" signature="0:215" ph="&lt;IfModule mod_rewrite.c&gt;" />
+                <element signature="e#7#92#0#PHP" expanded="true" />
+                <element signature="e#118#140#0#PHP" expanded="true" />
+                <element signature="e#1182#1220#0#PHP" expanded="false" />
+                <element signature="e#1226#1265#0#PHP" expanded="false" />
+                <marker date="1499191632732" expanded="true" signature="2070:2390" ph="SELECT coolq... coolq_plugin_orders" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php">
+      <file leaf-file-name="Log.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Log.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="471">
+              <caret line="66" column="79" lean-forward="false" selection-start-line="66" selection-start-column="72" selection-end-line="66" selection-end-column="79" />
+              <folding>
+                <marker date="1499170157925" expanded="true" signature="977:1148" ph="insert into coolq_log... " />
+                <marker date="1499170157925" expanded="true" signature="1398:1569" ph="insert into coolq_log... " />
+                <marker date="1499170157925" expanded="true" signature="2239:2411" ph="insert into coolq_log... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RobotSql.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/RobotSql.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="518">
+              <caret line="198" column="15" lean-forward="false" selection-start-line="198" selection-start-column="15" selection-end-line="198" selection-end-column="15" />
+              <folding>
+                <element signature="e#140#157#0#PHP" expanded="true" />
+                <element signature="e#413#784#0#PHP" expanded="false" />
+                <element signature="e#790#830#0#PHP" expanded="false" />
+                <element signature="e#836#877#0#PHP" expanded="false" />
+                <element signature="e#1441#2305#0#PHP" expanded="false" />
+                <element signature="e#1883#2038#0#PHP" expanded="false" />
+                <element signature="e#1963#2038#0#PHP" expanded="false" />
+                <element signature="e#2213#2305#0#PHP" expanded="false" />
+                <marker date="1499192035429" expanded="true" signature="1342:1378" ph="SELECT * FRO... coolq_robot" />
+                <marker date="1499192035429" expanded="true" signature="1342:1384" ph="SELECT * FRO... coolq_robot" />
+                <marker date="1499192035429" expanded="true" signature="1342:1386" ph="SELECT * FRO... coolq_robot" />
+                <marker date="1499192035429" expanded="true" signature="1342:12980" ph="SELECT * FRO... coolq_robot" />
+                <marker date="1499192035429" expanded="true" signature="1594:1717" ph="insert into coolq_robot... " />
+                <marker date="1499192035429" expanded="true" signature="1594:1818" ph="insert into coolq_robot... " />
+                <marker date="1499192035429" expanded="true" signature="2059:2101" ph="SELECT * FRO... coolq_robot" />
+                <marker date="1499192035429" expanded="true" signature="2446:2493" ph="SELECT statu... coolq_robot" />
+                <marker date="1499192035429" expanded="true" signature="3017:3075" ph="UPDATE coolq... " />
+                <marker date="1499192035429" expanded="true" signature="3388:3436" ph="SELECT manag... coolq_robot" />
+                <marker date="1499192035429" expanded="true" signature="4185:4245" ph="UPDATE coolq... " />
+                <marker date="1499192035429" expanded="true" signature="4654:4711" ph="SELECT group... coolq_robot" />
+                <marker date="1499192035429" expanded="true" signature="5612:5696" ph="UPDATE coolq... " />
+                <marker date="1499192035429" expanded="true" signature="6257:6341" ph="UPDATE coolq... " />
+                <marker date="1499192035429" expanded="true" signature="6618:6696" ph="UPDATE coolq... " />
+                <marker date="1499192035429" expanded="true" signature="6973:7051" ph="UPDATE coolq... " />
+                <marker date="1499192035429" expanded="true" signature="7394:7478" ph="UPDATE coolq... " />
+                <marker date="1499192035429" expanded="true" signature="7821:7905" ph="UPDATE coolq... " />
+                <marker date="1499192035429" expanded="true" signature="8272:8362" ph="UPDATE coolq... " />
+                <marker date="1499192035429" expanded="true" signature="8729:8819" ph="UPDATE coolq... " />
+                <marker date="1499192035429" expanded="true" signature="9076:9138" ph="UPDATE coolq... " />
+                <marker date="1499192035429" expanded="true" signature="9435:9507" ph="UPDATE coolq... " />
+                <marker date="1499192035429" expanded="true" signature="9819:9895" ph="UPDATE coolq... " />
+                <marker date="1499192035429" expanded="true" signature="10198:10271" ph="UPDATE coolq... " />
+                <marker date="1499192035429" expanded="true" signature="10590:10668" ph="UPDATE coolq... " />
+                <marker date="1499192035429" expanded="true" signature="10905:10971" ph="UPDATE coolq... " />
+                <marker date="1499192035429" expanded="true" signature="11307:11389" ph="UPDATE coolq... " />
+                <marker date="1499192035429" expanded="true" signature="11717:11797" ph="UPDATE coolq... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="596">
-              <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
-              <folding>
-                <element signature="e#113#147#0#PHP" expanded="true" />
-              </folding>
+              <caret line="64" column="22" lean-forward="false" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Request.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Request.php">
+      <file leaf-file-name="MySql.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/MySql.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1376">
-              <caret line="71" column="9" lean-forward="true" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+            <state relative-caret-position="596">
+              <caret line="57" column="5" lean-forward="true" selection-start-line="50" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -165,6 +190,10 @@
       <find>views</find>
       <find>ThinkPHP</find>
       <find>filler</find>
+      <find>E</find>
+      <find>private</find>
+      <find>staty</find>
+      <find>$this-&gt;DB-&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>InsertMsgLog</replace>
@@ -178,6 +207,8 @@
       <replace>Views</replace>
       <replace>CoolQPHP</replace>
       <replace>filter</replace>
+      <replace>protected</replace>
+      <replace>self::$instance-&gt;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -186,17 +217,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Loader.php" />
-        <option value="$PROJECT_DIR$/composer.lock" />
-        <option value="$PROJECT_DIR$/CoolQPHP/lang/zh-cn.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/App.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/db/Sql.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/.htaccess" />
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/db/MySql.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Log.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/View.php" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Controller.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Model.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/config.php" />
         <option value="$PROJECT_DIR$/examples/index.html" />
@@ -225,18 +245,29 @@
         <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Log/driver/Socket.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Log/driver/Test.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Common/Function.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/Tpl/dispatch_jump.tpl" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Api/index.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/start.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Hook.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Config.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/MySql.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/base.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Log.php" />
-        <option value="$PROJECT_DIR$/Api/.htaccess" />
+        <option value="$PROJECT_DIR$/CoolQPHP/start.php" />
+        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Loader.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Request.php" />
+        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/File.php" />
+        <option value="$PROJECT_DIR$/CoolQPHP/.htaccess" />
+        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Debug.php" />
+        <option value="$PROJECT_DIR$/Api/.htaccess" />
+        <option value="$PROJECT_DIR$/CoolQPHP/base.php" />
+        <option value="$PROJECT_DIR$/CoolQPHP/Tpl/dispatch_jump.tpl" />
+        <option value="$PROJECT_DIR$/Application/Api/index.php" />
+        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Config.php" />
+        <option value="$PROJECT_DIR$/App/Api/index.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php" />
+        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/MySql.php" />
+        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php" />
+        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/RobotSql.php" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/.gitignore" />
+        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" />
       </list>
     </option>
   </component>
@@ -298,6 +329,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -307,110 +340,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OcrPlugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MusicPlugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ManagePlugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LosingPlugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -438,11 +367,129 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQPHP" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Library" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQPHP" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Library" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Robot" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQPHP" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Library" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Db" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQPHP" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Library" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conf" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="App" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
+              <option name="myItemId" value="Api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="App" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -462,8 +509,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -481,19 +526,19 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/CoolQPHP/.gitignore" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ\Conf" />
+      <recent name="I:\phpStudy\WWW\CoolQ\Application\Admin" />
+      <recent name="I:\phpStudy\WWW\CoolQ\Application\Api" />
+      <recent name="I:\phpStudy\WWW\CoolQ\vendor" />
+      <recent name="I:\phpStudy\WWW\CoolQ\Runtime" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ\Plugin" />
+      <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ\Robot" />
+      <recent name="I:\phpStudy\WWW\CoolQ\Application\Api" />
       <recent name="I:\phpStudy\WWW\CoolQ\Application\Plugin" />
       <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ\Conf" />
-      <recent name="I:\phpStudy\WWW\CoolQ\Plugin\LosingPlugin\lib" />
-      <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\library\CoolQ\log" />
-      <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\library\CoolQ\db" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="I:\phpStudy\WWW\CoolQ\Application\Admin" />
-      <recent name="I:\phpStudy\WWW\CoolQ\Public" />
-      <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP" />
-      <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Tpl" />
-      <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ\Common" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -632,11 +677,12 @@
       <workItem from="1499006564159" duration="4295000" />
       <workItem from="1499094990817" duration="2154000" />
       <workItem from="1499155706103" duration="10484000" />
+      <workItem from="1499170184671" duration="20516000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142602000" />
+    <option name="totallyTimeSpent" value="163118000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -648,7 +694,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1924" height="1048" extended-state="1" />
+    <frame x="-9" y="-9" width="1924" height="1048" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1956978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -678,151 +724,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="968">
-          <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/View.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="33" column="48" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="44" column="8" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/ClassNotFoundException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/ErrorException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/Handle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/HttpException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/HttpResponseException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/PDOException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/RouteNotFoundException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/TemplateNotFoundException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/ThrowableError.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/ValidateException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Cache/driver/File.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Cache/driver/Lite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Cache/driver/Memcache.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Cache/driver/Memcached.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Cache/driver/Redis.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Cache/driver/Sqlite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Cache/driver/Wincache.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -858,13 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/DbException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
@@ -873,45 +772,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Runtime/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Runtime/.gitignore" />
     <entry file="file://$PROJECT_DIR$/Public/.htaccess" />
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Tpl/dispatch_jump.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1521">
-          <caret line="39" column="24" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Runtime/log/201707/01_cli.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Runtime/log/201707/01_cli.log" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/superglobals/_superglobals.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
@@ -920,93 +783,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Debug.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="163" column="23" lean-forward="true" selection-start-line="163" selection-start-column="23" selection-end-line="163" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Log/driver/Test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Log/driver/Socket.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Log/driver/File.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3159">
-          <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Log/driver/Test.php" />
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Log/driver/Socket.php" />
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Log/driver/File.php" />
     <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Hook.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
           <caret line="107" column="15" lean-forward="false" selection-start-line="107" selection-start-column="6" selection-end-line="107" selection-end-column="15" />
           <folding>
-            <element signature="e#7#93#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/MySql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/start.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Log.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2262">
-          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding>
-            <marker date="1499167366348" expanded="true" signature="977:1076" ph="insert into coolq_log... " />
-            <marker date="1499167366348" expanded="true" signature="977:1135" ph="insert into coolq_log... " />
-            <marker date="1499167366348" expanded="true" signature="977:1148" ph="insert into coolq_log... " />
-            <marker date="1499167366348" expanded="true" signature="1398:1569" ph="insert into coolq_log... " />
-            <marker date="1499167366348" expanded="true" signature="1818:1990" ph="insert into coolq_log... " />
-            <marker date="1499167366348" expanded="true" signature="2239:2411" ph="insert into coolq_log... " />
+            <element signature="e#7#93#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1027,9 +812,330 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/src/CoolQSDK/CoolQSDK.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_6.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="1168" column="9" lean-forward="false" selection-start-line="1168" selection-start-column="9" selection-end-line="1168" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-691">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Loader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8775">
+        <state relative-caret-position="-10303">
+          <caret line="297" column="62" lean-forward="false" selection-start-line="297" selection-start-column="47" selection-end-line="297" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/DbException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-234">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/ClassNotFoundException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/File.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/ErrorException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/start.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="54" column="26" lean-forward="true" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Runtime/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugin/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Debug.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="163" column="22" lean-forward="false" selection-start-line="163" selection-start-column="22" selection-end-line="163" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugin/LosingPlugin/lib/LosingMsg.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="1201" column="0" lean-forward="false" selection-start-line="1201" selection-start-column="0" selection-end-line="1201" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Tpl/dispatch_jump.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin/Plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-370">
+          <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="41" />
+          <folding>
+            <element signature="e#6#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding>
+            <element signature="e#7#92#0#PHP" expanded="true" />
+            <element signature="e#113#147#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/MySql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="50" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Api/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="e#6#117#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="66" column="79" lean-forward="false" selection-start-line="66" selection-start-column="72" selection-end-line="66" selection-end-column="79" />
+          <folding>
+            <marker date="1499170157925" expanded="true" signature="977:1148" ph="insert into coolq_log... " />
+            <marker date="1499170157925" expanded="true" signature="1398:1569" ph="insert into coolq_log... " />
+            <marker date="1499170157925" expanded="true" signature="2239:2411" ph="insert into coolq_log... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="48" column="65" lean-forward="false" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
+          <folding>
+            <element signature="e#7#92#0#PHP" expanded="true" />
+            <element signature="e#118#140#0#PHP" expanded="true" />
+            <element signature="e#1182#1220#0#PHP" expanded="false" />
+            <element signature="e#1226#1265#0#PHP" expanded="false" />
+            <marker date="1499191632732" expanded="true" signature="2070:2390" ph="SELECT coolq... coolq_plugin_orders" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="156">
+            <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/RobotSql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="198" column="15" lean-forward="false" selection-start-line="198" selection-start-column="15" selection-end-line="198" selection-end-column="15" />
+          <folding>
+            <element signature="e#140#157#0#PHP" expanded="true" />
+            <element signature="e#413#784#0#PHP" expanded="false" />
+            <element signature="e#790#830#0#PHP" expanded="false" />
+            <element signature="e#836#877#0#PHP" expanded="false" />
+            <element signature="e#1441#2305#0#PHP" expanded="false" />
+            <element signature="e#1883#2038#0#PHP" expanded="false" />
+            <element signature="e#1963#2038#0#PHP" expanded="false" />
+            <element signature="e#2213#2305#0#PHP" expanded="false" />
+            <marker date="1499192035429" expanded="true" signature="1342:1378" ph="SELECT * FRO... coolq_robot" />
+            <marker date="1499192035429" expanded="true" signature="1342:1384" ph="SELECT * FRO... coolq_robot" />
+            <marker date="1499192035429" expanded="true" signature="1342:1386" ph="SELECT * FRO... coolq_robot" />
+            <marker date="1499192035429" expanded="true" signature="1342:12980" ph="SELECT * FRO... coolq_robot" />
+            <marker date="1499192035429" expanded="true" signature="1594:1717" ph="insert into coolq_robot... " />
+            <marker date="1499192035429" expanded="true" signature="1594:1818" ph="insert into coolq_robot... " />
+            <marker date="1499192035429" expanded="true" signature="2059:2101" ph="SELECT * FRO... coolq_robot" />
+            <marker date="1499192035429" expanded="true" signature="2446:2493" ph="SELECT statu... coolq_robot" />
+            <marker date="1499192035429" expanded="true" signature="3017:3075" ph="UPDATE coolq... " />
+            <marker date="1499192035429" expanded="true" signature="3388:3436" ph="SELECT manag... coolq_robot" />
+            <marker date="1499192035429" expanded="true" signature="4185:4245" ph="UPDATE coolq... " />
+            <marker date="1499192035429" expanded="true" signature="4654:4711" ph="SELECT group... coolq_robot" />
+            <marker date="1499192035429" expanded="true" signature="5612:5696" ph="UPDATE coolq... " />
+            <marker date="1499192035429" expanded="true" signature="6257:6341" ph="UPDATE coolq... " />
+            <marker date="1499192035429" expanded="true" signature="6618:6696" ph="UPDATE coolq... " />
+            <marker date="1499192035429" expanded="true" signature="6973:7051" ph="UPDATE coolq... " />
+            <marker date="1499192035429" expanded="true" signature="7394:7478" ph="UPDATE coolq... " />
+            <marker date="1499192035429" expanded="true" signature="7821:7905" ph="UPDATE coolq... " />
+            <marker date="1499192035429" expanded="true" signature="8272:8362" ph="UPDATE coolq... " />
+            <marker date="1499192035429" expanded="true" signature="8729:8819" ph="UPDATE coolq... " />
+            <marker date="1499192035429" expanded="true" signature="9076:9138" ph="UPDATE coolq... " />
+            <marker date="1499192035429" expanded="true" signature="9435:9507" ph="UPDATE coolq... " />
+            <marker date="1499192035429" expanded="true" signature="9819:9895" ph="UPDATE coolq... " />
+            <marker date="1499192035429" expanded="true" signature="10198:10271" ph="UPDATE coolq... " />
+            <marker date="1499192035429" expanded="true" signature="10590:10668" ph="UPDATE coolq... " />
+            <marker date="1499192035429" expanded="true" signature="10905:10971" ph="UPDATE coolq... " />
+            <marker date="1499192035429" expanded="true" signature="11307:11389" ph="UPDATE coolq... " />
+            <marker date="1499192035429" expanded="true" signature="11717:11797" ph="UPDATE coolq... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1037,37 +1143,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding>
-            <marker date="1499168015994" expanded="true" signature="0:215" ph="&lt;IfModule mod_rewrite.c&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1376">
-          <caret line="71" column="9" lean-forward="true" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="596">
-          <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
-          <folding>
-            <element signature="e#113#147#0#PHP" expanded="true" />
-          </folding>
+          <caret line="64" column="22" lean-forward="false" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

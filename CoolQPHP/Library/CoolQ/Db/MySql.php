@@ -12,14 +12,14 @@ namespace  CoolQ\Db;
 class MySql
 {
 
-    private $dbHost;
-    private $dbUser;
-    private $dbPassword;
-    private $dbTable;
-    private $dbPort;
-    private $link;
-    private $result;
-    private static $instance = null;
+    protected $dbHost;
+    protected $dbUser;
+    protected $dbPassword;
+    protected $dbTable;
+    protected $dbPort;
+    protected $link;
+    protected $result;
+    protected static $instance = null;
 
     /**
      * 初始化数据链接数据库
@@ -30,7 +30,7 @@ class MySql
      * * @param string $dbTable
      * * @param string $dbPort
      */
-    private function __construct($dbHost, $dbUser, $dbPassword, $dbTable, $dbPort)
+    protected function __construct($dbHost, $dbUser, $dbPassword, $dbTable, $dbPort)
     {
         $this->dbHost = $dbHost;
         $this->dbUser = $dbUser;
@@ -40,11 +40,11 @@ class MySql
         self::connect($this->dbHost, $this->dbUser, $this->dbPassword, $this->dbTable, $this->dbPort);
     }
 
-    private function __clone()
+    protected function __clone()
     {
     }
 
-    private function __wakeup()
+    protected function __wakeup()
     {
     }
 
@@ -67,7 +67,7 @@ class MySql
      * * @param string $dbTable
      * * @param string $dbPort
      */
-    private function connect($dbHost, $dbUser, $dbPassword, $dbTable, $dbPort)
+    protected function connect($dbHost, $dbUser, $dbPassword, $dbTable, $dbPort)
     {
         $this->link = @mysqli_connect($dbHost, $dbUser, $dbPassword, $dbTable, $dbPort);
         if (mysqli_connect_errno()) {

@@ -239,6 +239,7 @@ class Loader
     // 注册自动加载机制
     public static function register($autoload = '')
     {
+
         // 注册系统自动加载
         spl_autoload_register(function($className){
             $path = str_replace('\\', DIRECTORY_SEPARATOR, $className);
@@ -252,13 +253,14 @@ class Loader
             'behavior' => LIB_PATH . 'behavior' . DS,
             'traits'   => LIB_PATH . 'traits' . DS,
         ]);
+
         // 加载类库映射文件
         if (is_file(RUNTIME_PATH . 'classmap' . EXT)) {
             self::addClassMap(__include_file(RUNTIME_PATH . 'classmap' . EXT));
         }
 
         // Composer自动加载支持
-        if (is_dir(VENDOR_PATH . 'composer')) {
+        if (is_dir(VENDOR_PATH . 'composer' )) {
             self::registerComposerLoader();
         }
 
