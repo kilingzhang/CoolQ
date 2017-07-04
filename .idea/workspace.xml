@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32519d69-6a98-4b5f-8c30-6ce03c762999" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/.gitignore" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,7 +71,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RobotSql.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RobotSql.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/RobotSql.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="518">
@@ -116,6 +114,26 @@
                 <marker date="1499192035429" expanded="true" signature="11307:11389" ph="UPDATE coolq... " />
                 <marker date="1499192035429" expanded="true" signature="11717:11797" ph="UPDATE coolq... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -238,8 +256,8 @@
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/RobotSql.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/.gitignore" />
+        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" />
       </list>
     </option>
   </component>
@@ -495,7 +513,7 @@
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="I:\phpStudy\WWW\CoolQ\Public" />
     <property name="nodejs_interpreter_path" value="F:/Program Files/nodejs/node" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/CoolQPHP/.gitignore" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/CoolQPHP/.gitignore&#10;I:/phpStudy/WWW/CoolQ/CoolQPHP/Library/CoolQ/Conf/.gitignore" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -649,12 +667,12 @@
       <workItem from="1499006564159" duration="4295000" />
       <workItem from="1499094990817" duration="2154000" />
       <workItem from="1499155706103" duration="10484000" />
-      <workItem from="1499170184671" duration="20544000" />
+      <workItem from="1499170184671" duration="20634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163146000" />
+    <option name="totallyTimeSpent" value="163236000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1035,20 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="48" column="65" lean-forward="false" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
-          <folding>
-            <element signature="e#7#92#0#PHP" expanded="true" />
-            <element signature="e#118#140#0#PHP" expanded="true" />
-            <element signature="e#1182#1220#0#PHP" expanded="false" />
-            <element signature="e#1226#1265#0#PHP" expanded="false" />
-            <marker date="1499191632732" expanded="true" signature="2070:2390" ph="SELECT coolq... coolq_plugin_orders" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1060,19 +1064,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php">
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="50" column="31" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="276">
+          <caret line="48" column="65" lean-forward="false" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
+          <folding>
+            <element signature="e#7#92#0#PHP" expanded="true" />
+            <element signature="e#118#140#0#PHP" expanded="true" />
+            <element signature="e#1182#1220#0#PHP" expanded="false" />
+            <element signature="e#1226#1265#0#PHP" expanded="false" />
+            <marker date="1499191632732" expanded="true" signature="2070:2390" ph="SELECT coolq... coolq_plugin_orders" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1118,6 +1120,22 @@
             <marker date="1499192035429" expanded="true" signature="11307:11389" ph="UPDATE coolq... " />
             <marker date="1499192035429" expanded="true" signature="11717:11797" ph="UPDATE coolq... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
