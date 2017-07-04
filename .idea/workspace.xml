@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32519d69-6a98-4b5f-8c30-6ce03c762999" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Api/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/RobotSql.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Plugin/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/.htaccess" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Examples/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/.htaccess" afterPath="$PROJECT_DIR$/CoolQPHP/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/.gitignore" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Config.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/MySql.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/MySql.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Debug.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Debug.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Loader.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Loader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Request.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Request.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/base.php" afterPath="$PROJECT_DIR$/CoolQPHP/base.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin/Plugin.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CoolQPHP/Tpl/dispatch_jump.tpl" afterPath="$PROJECT_DIR$/CoolQPHP/Tpl/dispatch_jump.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -91,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RobotSql.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RobotSql.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/RobotSql.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="518">
@@ -134,16 +116,6 @@
                 <marker date="1499192035429" expanded="true" signature="11307:11389" ph="UPDATE coolq... " />
                 <marker date="1499192035429" expanded="true" signature="11717:11797" ph="UPDATE coolq... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="64" column="22" lean-forward="false" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -266,8 +238,8 @@
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/RobotSql.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/.gitignore" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" />
+        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/.gitignore" />
       </list>
     </option>
   </component>
@@ -677,12 +649,12 @@
       <workItem from="1499006564159" duration="4295000" />
       <workItem from="1499094990817" duration="2154000" />
       <workItem from="1499155706103" duration="10484000" />
-      <workItem from="1499170184671" duration="20516000" />
+      <workItem from="1499170184671" duration="20544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163118000" />
+    <option name="totallyTimeSpent" value="163146000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1088,6 +1060,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="50" column="31" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/RobotSql.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
@@ -1130,22 +1118,6 @@
             <marker date="1499192035429" expanded="true" signature="11307:11389" ph="UPDATE coolq... " />
             <marker date="1499192035429" expanded="true" signature="11717:11797" ph="UPDATE coolq... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="64" column="22" lean-forward="false" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
