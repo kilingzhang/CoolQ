@@ -47,3 +47,8 @@ Temporary Items
 .apdisk
 
 
+
+
+.idea
+composer.lock
+*.log

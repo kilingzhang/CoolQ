@@ -8,12 +8,13 @@
 
 
 
-// ThinkPHP 引导文件
+// CoolQPHP 引导文件
 // 加载基础文件
 require __DIR__ . '/base.php';
 
-use CoolQ\Log;
-Log::init();
+
+// 执行应用
+\CoolQ\App::run();
 
 
 
