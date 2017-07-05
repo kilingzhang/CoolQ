@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32519d69-6a98-4b5f-8c30-6ce03c762999" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Plugin/VipVideoPlugin/VipVideoPlugin.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Plugin/LosingPlugin/LosingPlugin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Controller.php" afterPath="$PROJECT_DIR$/Application/Api/Controller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin/Plugin.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin/Plugin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Plugin/ManagePlugin/ManagePlugin.php" afterPath="$PROJECT_DIR$/Plugin/ManagePlugin/ManagePlugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Plugin/MusicPlugin/MusicPlugin.php" afterPath="$PROJECT_DIR$/Plugin/MusicPlugin/MusicPlugin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Plugin/OcrPlugin/OcrPlugin.php" afterPath="$PROJECT_DIR$/Plugin/OcrPlugin/OcrPlugin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Plugin/TulingPlugin/TulingPlugin.php" afterPath="$PROJECT_DIR$/Plugin/TulingPlugin/TulingPlugin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Plugin/YiBaoPlugin/YiBaoPlugin.php" afterPath="$PROJECT_DIR$/Plugin/YiBaoPlugin/YiBaoPlugin.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,61 +37,11 @@
       <file leaf-file-name="Controller.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Api/Controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
+            <state relative-caret-position="-1443">
               <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="69" selection-end-column="91" />
               <folding>
                 <element signature="e#6#117#0#PHP" expanded="true" />
                 <element signature="e#118#141#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Plugin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin/Plugin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding>
-                <element signature="e#113#135#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YiBaoPlugin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Plugin/YiBaoPlugin/YiBaoPlugin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="67" column="69" lean-forward="false" selection-start-line="67" selection-start-column="69" selection-end-line="67" selection-end-column="69" />
-              <folding>
-                <element signature="e#7#87#0#PHP" expanded="true" />
-                <element signature="e#88#112#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TulingPlugin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Plugin/TulingPlugin/TulingPlugin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1755">
-              <caret line="60" column="84" lean-forward="false" selection-start-line="60" selection-start-column="80" selection-end-line="60" selection-end-column="84" />
-              <folding>
-                <element signature="e#7#87#0#PHP" expanded="true" />
-                <element signature="e#88#112#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OcrPlugin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Plugin/OcrPlugin/OcrPlugin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#7#92#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -187,7 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Db/MySql.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Cache/Driver.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Cache/driver/File.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Cache/driver/Lite.php" />
@@ -224,20 +170,21 @@
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/.gitignore" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Log.php" />
         <option value="$PROJECT_DIR$/Application/Api/index.php" />
-        <option value="$PROJECT_DIR$/Plugin/ManagePlugin/ManagePlugin.php" />
         <option value="$PROJECT_DIR$/Plugin/LosingPlugin/lib/LosingMsg.class.php" />
-        <option value="$PROJECT_DIR$/Plugin/MusicPlugin/MusicPlugin.php" />
         <option value="$PROJECT_DIR$/Plugin/VipVideoPlugin/VipVideoPlugin.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/RobotSql.php" />
         <option value="$PROJECT_DIR$/Application/Api/README.md" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/MsgTool.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php" />
-        <option value="$PROJECT_DIR$/Plugin/OcrPlugin/OcrPlugin.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin/Plugin.php" />
         <option value="$PROJECT_DIR$/Plugin/TulingPlugin/TulingPlugin.php" />
         <option value="$PROJECT_DIR$/Plugin/YiBaoPlugin/YiBaoPlugin.php" />
         <option value="$PROJECT_DIR$/Application/Api/Controller.php" />
+        <option value="$PROJECT_DIR$/Plugin/OcrPlugin/OcrPlugin.php" />
+        <option value="$PROJECT_DIR$/Plugin/MusicPlugin/MusicPlugin.php" />
+        <option value="$PROJECT_DIR$/Plugin/ManagePlugin/ManagePlugin.php" />
+        <option value="$PROJECT_DIR$/Plugin/LosingPlugin/LosingPlugin.php" />
       </list>
     </option>
   </component>
@@ -391,6 +338,60 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Plugin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MusicPlugin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Plugin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ManagePlugin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Plugin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LosingPlugin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="CoolQPHP" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -516,11 +517,11 @@
       <recent name="I:\phpStudy\WWW\CoolQ\Application\Api" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\phpStudy\WWW\CoolQ\Plugin\LosingPlugin" />
       <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ\Conf" />
       <recent name="I:\phpStudy\WWW\CoolQ\Application\Admin" />
       <recent name="I:\phpStudy\WWW\CoolQ\Application\Api" />
       <recent name="I:\phpStudy\WWW\CoolQ\vendor" />
-      <recent name="I:\phpStudy\WWW\CoolQ\Runtime" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -660,12 +661,12 @@
       <workItem from="1499094990817" duration="2154000" />
       <workItem from="1499155706103" duration="10484000" />
       <workItem from="1499170184671" duration="20957000" />
-      <workItem from="1499227071209" duration="39121000" />
+      <workItem from="1499227071209" duration="39630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202680000" />
+    <option name="totallyTimeSpent" value="203189000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -712,13 +713,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_6.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="1168" column="9" lean-forward="false" selection-start-line="1168" selection-start-column="9" selection-end-line="1168" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/temp/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-691">
@@ -953,36 +947,6 @@
             <marker date="1499247121519" expanded="true" signature="1592:1784" ph="insert into coolq_log... " />
             <marker date="1499247121519" expanded="true" signature="2121:2310" ph="insert into coolq_log... " />
             <marker date="1499247121519" expanded="true" signature="2647:2840" ph="insert into coolq_log... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Plugin/ManagePlugin/ManagePlugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#92#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Plugin/LosingPlugin/lib/LosingMsg.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#92#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Plugin/MusicPlugin/MusicPlugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#87#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1309,16 +1273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Plugin/OcrPlugin/OcrPlugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#92#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
@@ -1485,17 +1439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Plugin/TulingPlugin/TulingPlugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
-          <caret line="60" column="84" lean-forward="false" selection-start-line="60" selection-start-column="80" selection-end-line="60" selection-end-column="84" />
-          <folding>
-            <element signature="e#7#87#0#PHP" expanded="true" />
-            <element signature="e#88#112#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin/Plugin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -1517,9 +1460,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Controller.php">
+    <entry file="file://$PROJECT_DIR$/Plugin/TulingPlugin/TulingPlugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <element signature="e#7#87#0#PHP" expanded="true" />
+            <element signature="e#88#112#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugin/OcrPlugin/OcrPlugin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="e#7#92#0#PHP" expanded="true" />
+            <element signature="e#93#117#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugin/LosingPlugin/LosingPlugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding>
+            <element signature="e#93#117#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugin/LosingPlugin/lib/LosingMsg.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-546">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugin/ManagePlugin/ManagePlugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="e#7#92#0#PHP" expanded="true" />
+            <element signature="e#93#117#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugin/MusicPlugin/MusicPlugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="24" column="36" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <element signature="e#7#87#0#PHP" expanded="true" />
+            <element signature="e#88#112#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1443">
           <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="69" selection-end-column="91" />
           <folding>
             <element signature="e#6#117#0#PHP" expanded="true" />

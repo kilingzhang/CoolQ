@@ -7,23 +7,28 @@
  * Time: 14:43
  */
 use CoolQ\Plugin\Plugin;
+use CoolQ\Robot\Robot;
+use CoolQ\MsgTool;
+use CoolQSDK\CQ;
 
 class MusicPlugin extends Plugin
 {
 
     public function Start()
     {
-        $post_type = $this->getGetData()['post_type'];
-        $message_type = $this->getGetData()['message_type'];
-        $user_id = $this->getGetData()['user_id'];
-        $message = $this->getGetData()['message'];
-        $Robot = $this->getRobot();
+        global $Robot;
+        global $data;
+        self::$Plugin = get_class();
+        $post_type = $data['post_type'];
+        $message_type = $data['message_type'];
+        $user_id = $data['user_id'];
+        $message = $data['message'];
         switch ($post_type) {
             case "message":
                 $msg = $this->getMusic($message);
                 switch ($message_type) {
                     case "private":
-                        $sub_type = $this->getGetData()['sub_type'];
+                        $sub_type = $data['sub_type'];
                         switch ($sub_type) {
                             case "friend":
                                 break;
@@ -37,11 +42,11 @@ class MusicPlugin extends Plugin
                         $Robot->sendPrivateMsg($user_id, $msg);
                         break;
                     case "group":
-                        $group_id = $this->getGetData()['group_id'];
+                        $group_id = $data['group_id'];
                         $Robot->sendGroupMsg($group_id, $msg);
                         break;
                     case "discuss":
-                        $discuss_id = $this->getGetData()['discuss_id'];
+                        $discuss_id = $data['discuss_id'];
                         $Robot->sendDiscussMsg($discuss_id, $msg);
                         break;
                 }

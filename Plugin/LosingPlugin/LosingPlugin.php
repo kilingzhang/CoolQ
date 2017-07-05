@@ -11,7 +11,7 @@ use CoolQ\Robot\Robot;
 use CoolQ\MsgTool;
 use CoolQSDK\CQ;
 
-class ManagePlugin extends Plugin
+class LosingPlugin extends Plugin
 {
     public function Start(){
         global $Robot;
