@@ -6,7 +6,7 @@
  * Time: 22:51
  */
 use  CoolQSDK\CoolQSDK;
-use CoolQSDK\MsgTool;
+use CoolQ\MsgTool;
 use CoolQSDK\CQ;
 use CoolQ\Plugin\Plugin;
 use CoolQ\Log;
@@ -25,12 +25,15 @@ global  $Robot;
 Log::Info('上报事件:' . json_encode($data,JSON_UNESCAPED_UNICODE),get_class());
 $Robot = \CoolQ\Robot\Robot::getInstance('127.0.0.1',5700,'slight');
 $Robot->getRobotInfo();
+
+if(!$Robot->is_on_plugin){
+    exit('{"block": true}');
+}
 switch ($post_type) {
 
     //收到消息
     case 'message':
         $message_type = $data['message_type'];
-
         switch ($message_type) {
             //私聊消息
             case "private":
@@ -40,11 +43,21 @@ switch ($post_type) {
                 //如果从群或讨论组来的临时会话则分别是 "group"、"discuss"
                 //"friend"、"group"、"discuss"、"other"
                 $sub_type = $data['sub_type'];
-
+                if($Robot->is_on_friend){
+                    if(($Robot->is_qq_white_list && MsgTool::inArray($user_id,$Robot->getRobotQqWhiteList())) || (!$Robot->is_qq_white_list)){
+                        if(($Robot->is_qq_black_list && !MsgTool::inArray($user_id,$Robot->getRobotQqBlackList())) || (!$Robot->is_qq_black_list)){
+                            if(($Robot->is_keyword && MsgTool::arrayItemIsInString($message,$Robot->getRobotKeyword())) || (!$Robot->is_keyword)){
+                                if($Robot->is_follow){
+                                    $Robot->sendPrivateMsg($user_id,MsgTool::deCodeHtml($message),false);
+                                }else{
+                                    //runPlugin
+                                    $Robot->sendPrivateMsg($user_id,MsgTool::deCodeHtml($message),true);
+                                }
+                            }
+                        }
+                    }
+                }
                 // {"reply":"message","block": true}
-                $Robot->sendPrivateMsg($user_id, MsgTool::deCodeHtml($message));
-
-
                 break;
             //群消息
             case "group":
@@ -56,7 +69,29 @@ switch ($post_type) {
                 //匿名用户 flag，在调用禁言 API 时需要传入
                 $anonymous_flag = $data['anonymous_flag'];
                 // {"reply":"message","block": true,"at_sender":true,"kick":false,"ban":false}
-
+                if($Robot->is_on_group){
+                    if(($Robot->is_group_white_list && MsgTool::inArray($group_id,$Robot->getRobotGroupWhiteList())) || (!$Robot->is_group_white_list)){
+                        if(($Robot->is_group_black_list && !MsgTool::inArray($group_id,$Robot->getRobotGroupBlackList())) || (!$Robot->is_group_black_list)){
+                            if(($Robot->is_qq_black_list && !MsgTool::inArray($user_id,$Robot->getRobotQqBlackList())) || (!$Robot->is_qq_black_list)){
+                                if(($Robot->is_at && MsgTool::inString(CQ::enAtCode($Robot->getQQ()),$message)) || (!$Robot->is_at)){
+                                    if(($Robot->is_keyword && MsgTool::arrayItemIsInString($message,$Robot->getRobotKeyword())) || (!$Robot->is_keyword)){
+                                        if($Robot->is_reply_at){
+                                            //runPlugin
+                                            $Robot->sendGroupMsg($group_id,CQ::enAtCode($user_id) . MsgTool::filterCQAt(MsgTool::deCodeHtml($message)));
+                                        }else{
+                                            if($Robot->is_follow){
+                                                $Robot->sendGroupMsg($group_id,MsgTool::filterCQAt(MsgTool::deCodeHtml($message)),false);
+                                            }else{
+                                                //runPlugin
+                                                $Robot->sendGroupMsg($group_id,MsgTool::filterCQAt(MsgTool::deCodeHtml($message)),true);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
 
 
 

@@ -11,6 +11,7 @@ namespace CoolQ\Db;
 
 use CoolQ\Config;
 use CoolQ\Log;
+use CoolQ\Plugin\Plugin;
 
 class RobotSql extends MySql
 {
@@ -62,7 +63,7 @@ class RobotSql extends MySql
         $res = self::$instance->query($sql);
         if (mysqli_num_rows($res) == 1) {
             $res = self::$instance->getOne($res);
-            Log::Warn("获取机器人配置，机器人：￣" . json_encode($res,JSON_UNESCAPED_UNICODE));
+            Log::Warn("获取机器人配置，机器人：" . json_encode($res,JSON_UNESCAPED_UNICODE));
             return $res;
         } else if (mysqli_num_rows($res) == 0) {
             $sql = "insert into coolq_robot(qq,time,manager,group_white_list, group_black_list, qq_white_list, qq_black_list,keyword) values ('$QQ','" . date('Y-m-d H:i:s', time()) . "','[" . Config::getManager() . "]','[]','[]','[]','[]','[]') ";
