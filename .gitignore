@@ -54,3 +54,5 @@ composer.lock
 *.log
 .gitignore
 CoolQPHP/Library/CoolQ/Conf/Config.php
+Application/Admin/
+Application/Install/
