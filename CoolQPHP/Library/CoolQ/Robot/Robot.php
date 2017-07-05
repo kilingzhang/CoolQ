@@ -93,12 +93,12 @@ class Robot
      * @param $plugin_class_name
      * @return null
      */
-    public static function runPlugin($plugin_class_name, $getData, $Robot)
+    public static function runPlugin($plugin_class_name)
     {
         $Plugin = null;
 //        echo $plugin_class_name . "<br>";
         include_once ROOT_PATH . "Plugin/$plugin_class_name/" . $plugin_class_name . ".php";
-        eval("@\$Plugin = new " . $plugin_class_name . "(\$getData,\$Robot);");
+        eval("@\$Plugin = new " . $plugin_class_name . "();");
         if ($Plugin == null) return null;
         @$Plugin->Start();
         return @$Plugin;
@@ -107,7 +107,7 @@ class Robot
 
     public function getRobotPluginOrders()
     {
-        $sql = "SELECT coolq_plugin_list.name,coolq_plugin_orders.plugin_id,coolq_plugin_orders.order_name,coolq_plugin_list.priority,coolq_plugin_list.status,coolq_plugin_list.plugin_class FROM coolq_plugin_orders,coolq_plugin_list WHERE  coolq_plugin_orders.	plugin_id = coolq_plugin_list.id   ORDER BY  coolq_plugin_list.priority ASC";
+        $sql = "SELECT coolq_plugin_list.name,coolq_plugin_orders.plugin_id,coolq_plugin_orders.order_name,coolq_plugin_list.priority,coolq_plugin_list.status,coolq_plugin_list.plugin_class FROM coolq_plugin_orders,coolq_plugin_list WHERE  coolq_plugin_orders.	plugin_id = coolq_plugin_list.id   ORDER BY  coolq_plugin_list.priority DESC ";
         $rs = self::$RobotSqlinstance->query($sql);
         $array = array();
         while ($r = self::$RobotSqlinstance->getOne($rs)) {

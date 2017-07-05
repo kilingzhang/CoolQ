@@ -13,6 +13,7 @@ class OcrPlugin extends Plugin
 
     public function Start()
     {
+
         $post_type = $this->getGetData()['post_type'];
         $message_type = $this->getGetData()['message_type'];
         $user_id = $this->getGetData()['user_id'];

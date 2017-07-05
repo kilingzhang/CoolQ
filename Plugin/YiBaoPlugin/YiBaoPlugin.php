@@ -7,35 +7,40 @@
  * Time: 14:43
  */
 use CoolQ\Plugin\Plugin;
+use CoolQ\Robot\Robot;
+use CoolQ\MsgTool;
+use CoolQSDK\CQ;
 
 class YiBaoPlugin extends Plugin
 {
 
     public function Start()
     {
-        $post_type = $this->getGetData()['post_type'];
-        $message_type = $this->getGetData()['message_type'];
-        $user_id = $this->getGetData()['user_id'];
-        $message = $this->getGetData()['message'];
-        $Robot = $this->getRobot();
+        global $Robot;
+        global $data;
+        self::$Plugin = get_class();
+        $post_type = $data['post_type'];
+        $message_type = $data['message_type'];
+        $user_id = $data['user_id'];
+        $message = $data['message'];
         switch ($post_type) {
             case "message":
                 $url = "http://www.kilingzhang.com/Api/YiBao/api.php?role=" . Role . "&hash=" . Hash . "&user_id=$user_id&text=" . urlencode($message);
                 $json = file_get_contents($url);
-                $data = json_decode($json, true);
-                $msg = isset($data['data']) ? $data['data'] : "";
+                $res = json_decode($json, true);
+                $msg = isset($res['data']) ? $res['data'] : "";
                 if ($msg != null) {
-                    if (!empty($data) && $data['code'] != 0) {
+                    if (!empty($res) && $res['code'] != 0) {
                         $msg = addslashes($json);
                     } else {
-                        $msg = $data['data'];
+                        $msg = $res['data'];
                     }
                     switch ($message_type) {
                         case "private":
-                            $sub_type = $this->getGetData()['sub_type'];
+                            $sub_type = $data['sub_type'];
                             switch ($sub_type) {
                                 case "friend":
-                                    $Robot->sendPrivateMsg($user_id, CoolQ::deCodeHtml(addslashes($msg)));
+                                    $Robot->sendPrivateMsg($user_id,MsgTool::deCodeHtml($msg),false);
                                     break;
                                 case "group":
 
@@ -49,18 +54,18 @@ class YiBaoPlugin extends Plugin
                             }
                             break;
                         case "group":
-                            $group_id = $this->getGetData()['group_id'];
+                            $group_id = $data['group_id'];
                             $pro = explode("功能", $message);
                             if (count($pro) >= 2) {
-                                $Robot->sendGroupMsg($group_id, CoolQ::deCodeHtml("[CQ:at,qq=$user_id] \n" . $msg));
+                                $Robot->sendGroupMsg($group_id, MsgTool::deCodeHtml("[CQ:at,qq=$user_id] \n" . $msg));
                             } else {
-                                $Robot->sendPrivateMsg($user_id, CoolQ::deCodeHtml($msg));
-                                $Robot->sendGroupMsg($group_id, CoolQ::deCodeHtml("[CQ:at,qq=$user_id]" . "亲,查询结果已经私发给你了~"));
+                                $Robot->sendPrivateMsg($user_id, MsgTool::deCodeHtml($msg));
+                                $Robot->sendGroupMsg($group_id, MsgTool::deCodeHtml("[CQ:at,qq=$user_id]" . "亲,查询结果已经私发给你了~"));
                             }
                             break;
                         case "discuss":
-                            $discuss_id = $this->getGetData()['discuss_id'];
-                            $Robot->sendDiscussMsg($discuss_id, CoolQ::deCodeHtml($data['data']));
+                            $discuss_id = $data['discuss_id'];
+                            $Robot->sendDiscussMsg($discuss_id, MsgTool::deCodeHtml($res['data']));
 
                             break;
                     }

@@ -7,21 +7,20 @@
  * Time: 13:37
  */
 namespace CoolQ\Plugin;
+use CoolQ\Robot\Robot;
+use CoolQ\MsgTool;
+use CoolQSDK\CQ;
 
 class Plugin
 {
 
 
-    public $getData;
     public $Intercept;
-    public $Robot;
     public static $Plugin = null;
 
-    public function __construct($getData, $Robot)
+    public function __construct()
     {
 
-        $this->Robot = $Robot;
-        $this->getData = $getData;
         $this->Intercept = false;
 
     }
@@ -64,5 +63,21 @@ class Plugin
         return $this->Robot;
     }
 
+    public static function runOders($PluginOrders)
+    {
+        global $data;
+        $PluginController = null;
+        foreach ($PluginOrders AS $order) {
+            $pro = explode($order['order_name'], $data['message']);
+            if ((count($pro) >= 2 && $order['status']) || $order['order_name'] == '*') {
+                $PluginController = Robot::runPlugin($order['plugin_class']);
+                if ($PluginController != null && $PluginController->isIntercept() == true) {
+                    echo '{"block": true}';
+                    break;
+                }
+            }
+        }
+        return $PluginController;
+    }
 
 }

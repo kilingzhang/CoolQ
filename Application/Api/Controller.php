@@ -12,6 +12,9 @@ use CoolQ\Plugin\Plugin;
 use CoolQ\Log;
 
 
+global  $Robot;
+global $PluginController;
+global $data;
 
 $data = \CoolQ\Request::put();
 
@@ -21,10 +24,22 @@ $user_id = isset($data['user_id']) && array_key_exists('user_id',$data) ? $data[
 $group_id = isset($data['group_id']) && array_key_exists('group_id',$data) ? $data['group_id'] : null;
 $discuss_id = isset($data['discuss_id']) && array_key_exists('discuss_id',$data) ? $data['discuss_id'] : null;
 $message = $data['message'];
-global  $Robot;
+
 Log::Info('上报事件:' . json_encode($data,JSON_UNESCAPED_UNICODE),get_class());
 $Robot = \CoolQ\Robot\Robot::getInstance('127.0.0.1',5700,'slight');
 $Robot->getRobotInfo();
+$PluginController = null;
+
+
+//$data['post_type'] = 'message';
+//$data['message_type'] = 'private';
+//$data['sub_type'] = 'friend';
+//$data['user_id'] = 1353693508;
+//$data['group_id'] = 438778749;
+//$data['message'] = '傻子';
+
+
+
 
 if(!$Robot->is_on_plugin){
     exit('{"block": true}');
@@ -51,7 +66,8 @@ switch ($post_type) {
                                     $Robot->sendPrivateMsg($user_id,MsgTool::deCodeHtml($message),false);
                                 }else{
                                     //runPlugin
-                                    $Robot->sendPrivateMsg($user_id,MsgTool::deCodeHtml($message),true);
+                                    $PluginOrderList = $Robot->getRobotPluginOrders();
+                                    $PluginController = Plugin::runOders($PluginOrderList);
                                 }
                             }
                         }
@@ -77,13 +93,15 @@ switch ($post_type) {
                                     if(($Robot->is_keyword && MsgTool::arrayItemIsInString($message,$Robot->getRobotKeyword())) || (!$Robot->is_keyword)){
                                         if($Robot->is_reply_at){
                                             //runPlugin
-                                            $Robot->sendGroupMsg($group_id,CQ::enAtCode($user_id) . MsgTool::filterCQAt(MsgTool::deCodeHtml($message)));
+                                            $PluginOrderList = $Robot->getRobotPluginOrders();
+                                            $PluginController = Plugin::runOders($PluginOrderList,$data,$Robot);
                                         }else{
                                             if($Robot->is_follow){
                                                 $Robot->sendGroupMsg($group_id,MsgTool::filterCQAt(MsgTool::deCodeHtml($message)),false);
                                             }else{
                                                 //runPlugin
-                                                $Robot->sendGroupMsg($group_id,MsgTool::filterCQAt(MsgTool::deCodeHtml($message)),true);
+                                                $PluginOrderList = $Robot->getRobotPluginOrders();
+                                                $PluginController = Plugin::runOders($PluginOrderList,$data,$Robot);
                                             }
                                         }
                                     }
@@ -199,6 +217,8 @@ switch ($post_type) {
         # code...
         break;
 }
+
+
 
 
 
