@@ -17,29 +17,30 @@ class Robot
 {
 
     protected static $instance = null;
-    private $path;
-    private $CoolQ;
-    private $CreateTime;
-    private $status;
-    private $manager;
-    private $group_white_list;
-    private $group_black_list;
-    private $qq_white_list;
-    private $qq_black_list;
-    private $keyword;
-    private $is_group_white_list;
-    private $is_group_black_list;
-    private $is_qq_white_list;
-    private $is_qq_black_list;
-    private $is_at;
-    private $is_keyword;
-    private $is_follow;
-    private $is_on_friend;
-    private $is_on_group;
-    private $is_on_discuss;
-    private $is_agree_friend;
-    private $is_agree_group;
-    private $is_on_plugin;
+    protected static $RobotSqlinstance = null;
+    protected $path;
+    protected $CoolQ;
+    protected $CreateTime;
+    protected $status;
+    protected $manager;
+    protected $group_white_list;
+    protected $group_black_list;
+    protected $qq_white_list;
+    protected $qq_black_list;
+    protected $keyword;
+    protected $is_group_white_list;
+    protected $is_group_black_list;
+    protected $is_qq_white_list;
+    protected $is_qq_black_list;
+    protected $is_at;
+    protected $is_keyword;
+    protected $is_follow;
+    protected $is_on_friend;
+    protected $is_on_group;
+    protected $is_on_discuss;
+    protected $is_agree_friend;
+    protected $is_agree_group;
+    protected $is_on_plugin;
 
     /**
      * Robot constructor.
@@ -47,22 +48,23 @@ class Robot
      * @param $PORT
      * @param $TOKEN
      */
-    private function __construct($HOST, $PORT, $TOKEN)
+    protected function __construct($HOST, $PORT, $TOKEN)
     {
-        self::$instance = RobotSql::getInstance(Config::getDbConfig());
+        self::$RobotSqlinstance = RobotSql::getInstance(Config::getDbConfig());
         $this->host = $HOST;
         $this->port = $PORT;
         $this->token = $TOKEN;
         $this->path = $this->host  . ':' . $this->port;
         $this->CoolQ = new CoolQSDK($HOST, $PORT, $TOKEN);
         $this->QQ = Config::getQQ();
+
     }
 
-    private function __clone()
+    protected function __clone()
     {
     }
 
-    private function __wakeup()
+    protected function __wakeup()
     {
     }
 
@@ -109,13 +111,10 @@ class Robot
         return $array;
     }
 
-    /**
-     * 获取CoolQ对象
-     * @return CoolQSDK
-     */
-    public function getRobotCoolQ(){
-        return $this->CoolQ;
+    public function getRobot(){
+        return self::$RobotSqlinstance->getRobot($this->QQ);
     }
+
 
     /**
      * 获取运行机器人QQ
@@ -171,7 +170,7 @@ class Robot
      */
     public function getRobotCreateTime()
     {
-        $this->CreateTime = self::$instance->getCreateTime($this->QQ);
+        $this->CreateTime = self::$RobotSqlinstance->getCreateTime($this->QQ);
         return $this->CreateTime;
     }
 
@@ -181,7 +180,7 @@ class Robot
      */
     public function getRobotStatus()
     {
-        $this->status = self::$instance->getStatus($this->QQ);
+        $this->status = self::$RobotSqlinstance->getStatus($this->QQ);
         return $this->status;
     }
 
@@ -190,7 +189,7 @@ class Robot
      */
     public function setRobotStatus($status)
     {
-        self::$instance->setStatus($this->QQ,$status);
+        self::$RobotSqlinstance->setStatus($this->QQ,$status);
         $this->status = $status;
     }
 
@@ -199,7 +198,7 @@ class Robot
      */
     public function getRobotManager()
     {
-        $this->manager = self::$instance->getManage($this->QQ);
+        $this->manager = self::$RobotSqlinstance->getManage($this->QQ);
         return $this->manager;
     }
 
@@ -208,7 +207,7 @@ class Robot
      */
     public function setRobotManager($manager)
     {
-        self::$instance->setManager($this->QQ,$manager);
+        self::$RobotSqlinstance->setManager($this->QQ,$manager);
         $this->manager = $manager;
     }
 
@@ -217,7 +216,7 @@ class Robot
      */
     public function getRobotGroupWhiteList()
     {
-        $this->group_white_list = self::$instance->getGroupWhiteList($this->QQ);
+        $this->group_white_list = self::$RobotSqlinstance->getGroupWhiteList($this->QQ);
         return $this->group_white_list;
     }
 
@@ -226,7 +225,7 @@ class Robot
      */
     public function setRobotGroupWhiteList($group_white_list)
     {
-        self::$instance->setGroupWhiteList($this->QQ,$group_white_list);
+        self::$RobotSqlinstance->setGroupWhiteList($this->QQ,$group_white_list);
         $this->group_white_list = $group_white_list;
     }
 
@@ -235,7 +234,7 @@ class Robot
      */
     public function getRobotGroupBlackList()
     {
-        $this->group_black_list = self::$instance->getGroupBlackList($this->QQ);
+        $this->group_black_list = self::$RobotSqlinstance->getGroupBlackList($this->QQ);
         return $this->group_black_list;
     }
 
@@ -244,7 +243,7 @@ class Robot
      */
     public function setRobotGroupBlackList($group_black_list)
     {
-        self::$instance->setGroupBlackList($this->QQ,$group_black_list);
+        self::$RobotSqlinstance->setGroupBlackList($this->QQ,$group_black_list);
         $this->group_black_list = $group_black_list;
     }
 
@@ -253,7 +252,7 @@ class Robot
      */
     public function getRobotQqWhiteList()
     {
-        $this->qq_white_list = self::$instance->getQqWhiteList($this->QQ);
+        $this->qq_white_list = self::$RobotSqlinstance->getQqWhiteList($this->QQ);
         return $this->qq_white_list;
     }
 
@@ -262,7 +261,7 @@ class Robot
      */
     public function setRobotQqWhiteList($qq_white_list)
     {
-        self::$instance->setQqWhiteList($this->QQ,$qq_white_list);
+        self::$RobotSqlinstance->setQqWhiteList($this->QQ,$qq_white_list);
         $this->qq_white_list = $qq_white_list;
     }
 
@@ -271,7 +270,7 @@ class Robot
      */
     public function getRobotQqBlackList()
     {
-        $this->qq_black_list = self::$instance->getQqBlackList($this->QQ);
+        $this->qq_black_list = self::$RobotSqlinstance->getQqBlackList($this->QQ);
         return $this->qq_black_list;
     }
 
@@ -280,7 +279,7 @@ class Robot
      */
     public function setRobotQqBlackList($qq_black_list)
     {
-        self::$instance->setQqBlackList($this->QQ,$qq_black_list);
+        self::$RobotSqlinstance->setQqBlackList($this->QQ,$qq_black_list);
         $this->qq_black_list = $qq_black_list;
     }
 
@@ -289,7 +288,7 @@ class Robot
      */
     public function getRobotKeyword()
     {
-        $this->keyword = self::$instance->getKeyword($this->QQ);
+        $this->keyword = self::$RobotSqlinstance->getKeyword($this->QQ);
         return $this->keyword;
     }
 
@@ -298,7 +297,7 @@ class Robot
      */
     public function setRobotKeyword($keyword)
     {
-        self::$instance->setKeyword($this->QQ,$keyword);
+        self::$RobotSqlinstance->setKeyword($this->QQ,$keyword);
         $this->keyword = $keyword;
     }
 
@@ -307,7 +306,7 @@ class Robot
      */
     public function getRobotIsGroupWhiteList()
     {
-        $this->is_group_white_list = self::$instance->getIsGroupWhiteList($this->QQ);
+        $this->is_group_white_list = self::$RobotSqlinstance->getIsGroupWhiteList($this->QQ);
         return $this->is_group_white_list;
     }
 
@@ -316,7 +315,7 @@ class Robot
      */
     public function setRobotIsGroupWhiteList($is_group_white_list)
     {
-        self::$instance->setIsGroupWhiteList($this->QQ,$is_group_white_list);
+        self::$RobotSqlinstance->setIsGroupWhiteList($this->QQ,$is_group_white_list);
         $this->is_group_white_list = $is_group_white_list;
     }
 
@@ -325,7 +324,7 @@ class Robot
      */
     public function getRobotIsGroupBlackList()
     {
-        $this->is_group_black_list = self::$instance->getIsGroupBlackList($this->QQ);
+        $this->is_group_black_list = self::$RobotSqlinstance->getIsGroupBlackList($this->QQ);
         return $this->is_group_black_list;
     }
 
@@ -334,7 +333,7 @@ class Robot
      */
     public function setRobotIsGroupBlackList($is_group_black_list)
     {
-        self::$instance->setIsGroupBlackList($this->QQ,$is_group_black_list);
+        self::$RobotSqlinstance->setIsGroupBlackList($this->QQ,$is_group_black_list);
         $this->is_group_black_list = $is_group_black_list;
     }
 
@@ -343,7 +342,7 @@ class Robot
      */
     public function getRobotIsQqWhiteList()
     {
-        $this->is_qq_white_list = self::$instance->getIsQqWhiteList($this->QQ);
+        $this->is_qq_white_list = self::$RobotSqlinstance->getIsQqWhiteList($this->QQ);
         return $this->is_qq_white_list;
     }
 
@@ -352,7 +351,7 @@ class Robot
      */
     public function setRobotIsQqWhiteList($is_qq_white_list)
     {
-        self::$instance->setIsQqWhiteList($this->QQ,$is_qq_white_list);
+        self::$RobotSqlinstance->setIsQqWhiteList($this->QQ,$is_qq_white_list);
         $this->is_qq_white_list = $is_qq_white_list;
     }
 
@@ -361,7 +360,7 @@ class Robot
      */
     public function getRobotIsQqBlackList()
     {
-        $this->is_qq_black_list = self::$instance->getIsQqBlackList($this->QQ);
+        $this->is_qq_black_list = self::$RobotSqlinstance->getIsQqBlackList($this->QQ);
         return $this->is_qq_black_list;
     }
 
@@ -370,7 +369,7 @@ class Robot
      */
     public function setRobotIsQqBlackList($is_qq_black_list)
     {
-        self::$instance->setIsQqBlackList($this->QQ,$is_qq_black_list);
+        self::$RobotSqlinstance->setIsQqBlackList($this->QQ,$is_qq_black_list);
         $this->is_qq_black_list = $is_qq_black_list;
     }
 
@@ -379,7 +378,7 @@ class Robot
      */
     public function getRobotIsAt()
     {
-        $this->is_at = self::$instance->getIsAt($this->QQ);
+        $this->is_at = self::$RobotSqlinstance->getIsAt($this->QQ);
         return $this->is_at;
     }
 
@@ -388,7 +387,7 @@ class Robot
      */
     public function setRobotIsAt($is_at)
     {
-        self::$instance->setIsAt($this->QQ,$is_at);
+        self::$RobotSqlinstance->setIsAt($this->QQ,$is_at);
         $this->is_at = $is_at;
     }
 
@@ -397,7 +396,7 @@ class Robot
      */
     public function getRobotIsKeyword()
     {
-        $this->is_keyword = self::$instance->getIsKeyWord($this->QQ);
+        $this->is_keyword = self::$RobotSqlinstance->getIsKeyWord($this->QQ);
         return $this->is_keyword;
     }
 
@@ -406,7 +405,7 @@ class Robot
      */
     public function setRobotIsKeyword($is_keyword)
     {
-        self::$instance->setIsKeyword($this->QQ,$is_keyword);
+        self::$RobotSqlinstance->setIsKeyword($this->QQ,$is_keyword);
         $this->is_keyword = $is_keyword;
     }
 
@@ -415,7 +414,7 @@ class Robot
      */
     public function getRobotIsFollow()
     {
-        $this->is_follow = self::$instance->getIsFollow($this->QQ);
+        $this->is_follow = self::$RobotSqlinstance->getIsFollow($this->QQ);
         return $this->is_follow;
     }
 
@@ -424,7 +423,7 @@ class Robot
      */
     public function setRobotIsFollow($is_follow)
     {
-        self::$instance->setIsFollow($this->QQ,$is_follow);
+        self::$RobotSqlinstance->setIsFollow($this->QQ,$is_follow);
         $this->is_follow = $is_follow;
     }
 
@@ -433,7 +432,7 @@ class Robot
      */
     public function getRobotIsOnFriend()
     {
-        $this->is_on_friend = self::$instance->getIsOnFriend($this->QQ);
+        $this->is_on_friend = self::$RobotSqlinstance->getIsOnFriend($this->QQ);
         return $this->is_on_friend;
     }
 
@@ -442,7 +441,7 @@ class Robot
      */
     public function setRobotIsOnFriend($is_on_friend)
     {
-        self::$instance->setIsOnFriend($this->QQ,$is_on_friend);
+        self::$RobotSqlinstance->setIsOnFriend($this->QQ,$is_on_friend);
         $this->is_on_friend = $is_on_friend;
     }
 
@@ -451,7 +450,7 @@ class Robot
      */
     public function getRobotIsOnGroup()
     {
-        $this->is_on_group = self::$instance->getIsOnGroup($this->QQ);
+        $this->is_on_group = self::$RobotSqlinstance->getIsOnGroup($this->QQ);
         return $this->is_on_group;
     }
 
@@ -460,7 +459,7 @@ class Robot
      */
     public function setRobotIsOnGroup($is_on_group)
     {
-        self::$instance->setIsOnGroup($this->QQ,$is_on_group);
+        self::$RobotSqlinstance->setIsOnGroup($this->QQ,$is_on_group);
         $this->is_on_group = $is_on_group;
     }
 
@@ -469,7 +468,7 @@ class Robot
      */
     public function getRobotIsOnDiscuss()
     {
-        $this->is_on_discuss = self::$instance->getIsOnDiscuss($this->QQ);
+        $this->is_on_discuss = self::$RobotSqlinstance->getIsOnDiscuss($this->QQ);
         return $this->is_on_discuss;
     }
 
@@ -478,7 +477,7 @@ class Robot
      */
     public function setRobotIsOnDiscuss($is_on_discuss)
     {
-        self::$instance->setIsOnDiscuss($this->QQ,$is_on_discuss);
+        self::$RobotSqlinstance->setIsOnDiscuss($this->QQ,$is_on_discuss);
         $this->is_on_discuss = $is_on_discuss;
     }
 
@@ -487,7 +486,7 @@ class Robot
      */
     public function getRobotIsAgreeFriend()
     {
-        $this->is_agree_friend = self::$instance->getIsOnAgreeFriend($this->QQ);
+        $this->is_agree_friend = self::$RobotSqlinstance->getIsOnAgreeFriend($this->QQ);
         return $this->is_agree_friend;
     }
 
@@ -496,7 +495,7 @@ class Robot
      */
     public function setRobotIsAgreeFriend($is_agree_friend)
     {
-        self::$instance->setIsOnAgreeFriend($this->QQ,$is_agree_friend);
+        self::$RobotSqlinstance->setIsOnAgreeFriend($this->QQ,$is_agree_friend);
         $this->is_agree_friend = $is_agree_friend;
     }
 
@@ -505,7 +504,7 @@ class Robot
      */
     public function getRobotIsAgreeGroup()
     {
-        $this->is_agree_group = self::$instance->getIsOnAgreeGroup($this->QQ);
+        $this->is_agree_group = self::$RobotSqlinstance->getIsOnAgreeGroup($this->QQ);
         return $this->is_agree_group;
     }
 
@@ -514,7 +513,7 @@ class Robot
      */
     public function setRobotIsAgreeGroup($is_agree_group)
     {
-        self::$instance->setIsOnAgreeGroup($this->QQ,$is_agree_group);
+        self::$RobotSqlinstance->setIsOnAgreeGroup($this->QQ,$is_agree_group);
         $this->is_agree_group = $is_agree_group;
     }
 
@@ -523,7 +522,7 @@ class Robot
      */
     public function getRobotIsOnPlugin()
     {
-        $this->is_on_plugin = self::$instance->getIsOnPlugin($this->QQ);
+        $this->is_on_plugin = self::$RobotSqlinstance->getIsOnPlugin($this->QQ);
         return $this->is_on_plugin;
     }
 
@@ -532,12 +531,19 @@ class Robot
      */
     public function setRobotIsOnPlugin($is_on_plugin)
     {
-        self::$instance->setIsOnPlugin($this->QQ,$is_on_plugin);
+        self::$RobotSqlinstance->setIsOnPlugin($this->QQ,$is_on_plugin);
         $this->is_on_plugin = $is_on_plugin;
     }
 
 
+    public function getRobotSqlnstance(){
+        return self::$RobotSqlinstance;
+    }
 
+
+
+
+    
 
 
 

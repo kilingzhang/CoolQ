@@ -21,7 +21,6 @@ class Log
 {
 
 
-
     // 日志信息
     protected static $log = [];
     // 配置参数
@@ -47,42 +46,48 @@ class Log
     }
 
 
-
-    public static function Info($msg  ,$source = 'CoolQ' , $type = '应用'  ){
+    public static function Info($msg, $source = 'CoolQ', $type = '应用', $QQ = '')
+    {
         $msg = addslashes($msg);
         $source = addslashes($source);
         $type = addslashes($type);
-        $sql = "insert into coolq_log (`msg`, `time`, `source`, `type`, `level`) 
-                  VALUES ('$msg', '". date('Y-m-d H:i:s',time()) ."' , '$source' , '$type' , ".  INFO .")";
+        $QQ = $QQ == '' ? Config::getQQ() : $QQ;
+        $sql = "insert into coolq_log (`msg`, `time`, `source`, `type`, `level`,`robot_qq`) 
+                  VALUES ('$msg', '" . date('Y-m-d H:i:s', time()) . "' , '$source' , '$type' , " . INFO . ",'$QQ')";
         return self::$db->query($sql);
     }
 
 
-
-    public static function Warn($msg  ,$source = 'CoolQ' , $type = '应用'  ){
+    public static function Warn($msg, $source = 'CoolQ', $type = '应用', $QQ = '')
+    {
         $msg = addslashes($msg);
         $source = addslashes($source);
         $type = addslashes($type);
-        $sql = "insert into coolq_log (`msg`, `time`, `source`, `type`, `level`) 
-                  VALUES ('$msg', '". date('Y-m-d H:i:s',time()) ."' , '$source' , '$type' , ".  WARN .")";
+        $QQ = $QQ == '' ? Config::getQQ() : $QQ;
+        $sql = "insert into coolq_log (`msg`, `time`, `source`, `type`, `level`,`robot_qq`) 
+                  VALUES ('$msg', '" . date('Y-m-d H:i:s', time()) . "' , '$source' , '$type' , " . WARN . ",'$QQ')";
         return self::$db->query($sql);
     }
 
-    public static function Error($msg  ,$source = 'CoolQ' , $type = '应用'  ){
+    public static function Error($msg, $source = 'CoolQ', $type = '应用', $QQ = '')
+    {
         $msg = addslashes($msg);
         $source = addslashes($source);
         $type = addslashes($type);
-        $sql = "insert into coolq_log (`msg`, `time`, `source`, `type`, `level`) 
-                  VALUES ('$msg', '". date('Y-m-d H:i:s',time()) ."' , '$source' , '$type' , ".  ERROR .")";
+        $QQ = $QQ == '' ? Config::getQQ() : $QQ;
+        $sql = "insert into coolq_log (`msg`, `time`, `source`, `type`, `level`,`robot_qq`) 
+              VALUES ('$msg', '" . date('Y-m-d H:i:s', time()) . "' , '$source' , '$type' , " . ERROR . ",'$QQ')";
         return self::$db->query($sql);
     }
 
-    public static function Debug($msg  ,$source = 'CoolQ' , $type = '应用'  ){
+    public static function Debug($msg, $source = 'CoolQ', $type = '应用', $QQ = '')
+    {
         $msg = addslashes($msg);
         $source = addslashes($source);
         $type = addslashes($type);
-        $sql = "insert into coolq_log (`msg`, `time`, `source`, `type`, `level`) 
-                  VALUES ('$msg', '". date('Y-m-d H:i:s',time()) ."' , '$source' , '$type' , ".  DEBUG .")";
+        $QQ = $QQ == '' ? Config::getQQ() : $QQ;
+        $sql = "insert into coolq_log (`msg`, `time`, `source`, `type`, `level`,`robot_qq`) 
+                  VALUES ('$msg', '" . date('Y-m-d H:i:s', time()) . "' , '$source' , '$type' , " . DEBUG . ",'$QQ')";
         return self::$db->query($sql);
     }
 
