@@ -31,12 +31,12 @@ class View
     public function render()
     {
         extract($this->variables);
-        $defaultHeader = APP_PATH . 'App/Views/header.php';
-        $defaultFooter = APP_PATH . 'App/Views/footer.php';
+        $defaultHeader = APP_PATH . 'Application/Views/header.php';
+        $defaultFooter = APP_PATH . 'Application/Views/footer.php';
 
-        $controllerHeader = APP_PATH . 'App/Views/' . $this->_controller . '/header.php';
-        $controllerFooter = APP_PATH . 'App/Views/' . $this->_controller . '/footer.php';
-        $controllerLayout = APP_PATH . 'App/Views/' . $this->_controller . '/' . $this->_action . '.php';
+        $controllerHeader = APP_PATH . 'Application/Views/' . $this->_controller . '/header.php';
+        $controllerFooter = APP_PATH . 'Application/Views/' . $this->_controller . '/footer.php';
+        $controllerLayout = APP_PATH . 'Application/Views/' . $this->_controller . '/' . $this->_action . '.php';
 
         // 页头文件
         if (file_exists($controllerHeader)) {

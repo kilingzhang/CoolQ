@@ -79,6 +79,24 @@ class RobotSql extends MySql
     }
 
     /**
+     * 获取机器人创建时间　
+     * @return mixed
+     */
+    public function getCreateTime($QQ)
+    {
+        $sql = "SELECT time FROM coolq_robot WHERE qq = '$QQ'";
+        $res = self::$instance->query($sql);
+        if (!$res) {
+            Log::Warn("获取机器人创建时间失败", get_class(), 'SQL');
+            return $res;
+        }
+        $time = self::$instance->getOne($res)['time'];
+        Log::Info("获取机器人创建时间：$time", get_class(), 'SQL');
+        return $time;
+    }
+
+
+    /**
      * 获取机器人状态　
      * 比较状态时注意　＝＝＝　　比较
      * @return mixed

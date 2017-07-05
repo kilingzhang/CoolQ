@@ -14,8 +14,9 @@ $group_id = isset($data['group_id']) && array_key_exists('group_id',$data) ? $da
 $discuss_id = isset($data['discuss_id']) && array_key_exists('discuss_id',$data) ? $data['discuss_id'] : null;
 $message = $data['message'];
 $Robot = \CoolQ\Robot\Robot::getInstance('127.0.0.1',5700,'slight');
-//$Q = new CoolQSDK('127.0.0.1',5700,'slight');
-//$Q->sendPrivateMsg(1353693508,$message);
+$CoolQ = $Robot->getRobotCoolQ();
+$CoolQ->sendPrivateMsg($user_id,$message);
+$Robot->getRobotStatus($list);
 
 
 
