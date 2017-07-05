@@ -56,7 +56,8 @@ class RobotSql extends MySql
      * @param $QQ
      * @return mixed
      */
-    public  function getRobot($QQ){
+    public function getRobot($QQ)
+    {
         $sql = "SELECT * FROM coolq_robot WHERE qq = '$QQ' ";
         $res = self::$instance->query($sql);
         if (mysqli_num_rows($res) == 1) {
@@ -86,12 +87,12 @@ class RobotSql extends MySql
     {
         $sql = "SELECT status FROM coolq_robot WHERE qq = '$QQ'";
         $res = self::$instance->query($sql);
-        if(!$res){
-            Log::Warn("获取机器人开启状态失败",get_class(),'SQL');
+        if (!$res) {
+            Log::Warn("获取机器人开启状态失败", get_class(), 'SQL');
             return $res;
         }
         $status = self::$instance->getOne($res)['status'];
-        Log::Info("获取机器人开启状态：$status",get_class(),'SQL');
+        Log::Info("获取机器人开启状态：$status", get_class(), 'SQL');
         return $status;
     }
 
@@ -100,14 +101,14 @@ class RobotSql extends MySql
      * @param $status
      * @return mixed
      */
-    public function setStatus($QQ,$status)
+    public function setStatus($QQ, $status)
     {
         $status == true ? $status = 1 : $status = 0;
         $res = self::$instance->query("UPDATE coolq_robot SET status = '$status' WHERE qq = '$QQ'");
-        if($res){
-            Log::Info("获取机器人状态设置成功：$status",get_class(),'SQL');
-        }else{
-            Log::Warn("获取机器人状态设置失败",get_class(),'SQL');
+        if ($res) {
+            Log::Info("设置机器人状态设置成功：$status", get_class(), 'SQL');
+        } else {
+            Log::Warn("设置机器人状态设置失败", get_class(), 'SQL');
         }
         return $res;
     }
@@ -120,13 +121,13 @@ class RobotSql extends MySql
     {
         $sql = "SELECT manager FROM coolq_robot WHERE qq = '$QQ'";
         $res = self::$instance->query($sql);
-        if(!$res){
-            Log::Warn("获取机器人管理员失败",get_class(),'SQL');
+        if (!$res) {
+            Log::Warn("获取机器人管理员失败", get_class(), 'SQL');
             return $res;
         }
         $manager = self::$instance->getOne($res)['manager'];
-        Log::Info("获取机器人管理员：$manager",get_class(),'SQL');
-        return isset($manager) && $manager != "" ? json_decode($manager,true) : array();
+        Log::Info("获取机器人管理员：$manager", get_class(), 'SQL');
+        return isset($manager) && $manager != "" ? json_decode($manager, true) : array();
     }
 
     /**
@@ -134,18 +135,18 @@ class RobotSql extends MySql
      * @param $manager
      * @return bool
      */
-    public function setManager($QQ,$manager)
+    public function setManager($QQ, $manager)
     {
-        if(!is_array($manager)){
-            Log::Warn("设置机器人管理员失败：传入的参数非数组形式：$manager",get_class(),'SQL');
+        if (!is_array($manager)) {
+            Log::Warn("设置机器人管理员失败：传入的参数非数组形式：$manager", get_class(), 'SQL');
             return false;
         }
         $manager = json_encode($manager, JSON_UNESCAPED_UNICODE);
         $res = self::$instance->query("UPDATE coolq_robot SET manager = '$manager' WHERE qq = '$QQ'");
-        if($res){
-            Log::Info("设置机器人管理员成功：". json_encode($manager,JSON_UNESCAPED_UNICODE),get_class(),'SQL');
-        }else{
-            Log::Warn("设置机器人管理员失败",get_class(),'SQL');
+        if ($res) {
+            Log::Info("设置机器人管理员成功：" . json_encode($manager, JSON_UNESCAPED_UNICODE), get_class(), 'SQL');
+        } else {
+            Log::Warn("设置机器人管理员失败", get_class(), 'SQL');
         }
         return $res;
     }
@@ -160,15 +161,14 @@ class RobotSql extends MySql
     {
         $sql = "SELECT group_white_list FROM coolq_robot WHERE qq = '$QQ'";
         $res = self::$instance->query($sql);
-        if(!$res){
-            Log::Warn("获取机器人群组白名单失败",get_class(),'SQL');
+        if (!$res) {
+            Log::Warn("获取机器人群组白名单失败", get_class(), 'SQL');
             return $res;
         }
         $group_white_list = self::$instance->getOne($res)['group_white_list'];
-        Log::Info("获取机器人白名单：$group_white_list",get_class(),'SQL');
-        return isset($group_white_list) && $group_white_list != "" ? json_decode($group_white_list,true) : array();
+        Log::Info("获取机器人白名单：$group_white_list", get_class(), 'SQL');
+        return isset($group_white_list) && $group_white_list != "" ? json_decode($group_white_list, true) : array();
     }
-
 
 
     /**
@@ -177,319 +177,668 @@ class RobotSql extends MySql
      * @param $QQ
      * @param $group_white_list
      */
-    public function setGroupWhiteList($QQ,$group_white_list)
+    public function setGroupWhiteList($QQ, $group_white_list)
     {
-        if(!is_array($group_white_list)){
-            Log::Warn("设置机器人群组白名单失败：传入的参数非数组形式：$group_white_list",get_class(),'SQL');
+        if (!is_array($group_white_list)) {
+            Log::Warn("设置机器人群组白名单失败：传入的参数非数组形式：$group_white_list", get_class(), 'SQL');
             return false;
         }
         $group_white_list = json_encode($group_white_list, JSON_UNESCAPED_UNICODE);
-        $res = self::$instance->query("UPDATE coolq_robot SET group_white_list = '$group_white_list' WHERE qq = '$this->QQ'");
-        if($res){
-            Log::Info("设置机器人群组白名单成功：". json_encode($group_white_list,JSON_UNESCAPED_UNICODE),get_class(),'SQL');
-        }else{
-            Log::Warn("设置机器人群组白名单失败",get_class(),'SQL');
+        $res = self::$instance->query("UPDATE coolq_robot SET group_white_list = '$group_white_list' WHERE qq = '$QQ'");
+        if ($res) {
+            Log::Info("设置机器人群组白名单成功：" . json_encode($group_white_list, JSON_UNESCAPED_UNICODE), get_class(), 'SQL');
+        } else {
+            Log::Warn("设置机器人群组白名单失败", get_class(), 'SQL');
+        }
+        return $res;
+    }
+
+    /**
+     * 获取群组黑名单
+     * @param $QQ
+     * @return array|mixed
+     */
+    public function getGroupBlackList($QQ)
+    {
+        $sql = "SELECT group_black_list FROM coolq_robot WHERE qq = '$QQ'";
+        $res = self::$instance->query($sql);
+        if (!$res) {
+            Log::Warn("获取机器人群组黑名单失败", get_class(), 'SQL');
+            return $res;
+        }
+        $group_black_list = self::$instance->getOne($res)['group_black_list'];
+        Log::Info("获取机器人群组黑名单：$group_black_list", get_class(), 'SQL');
+        return isset($group_black_list) && $group_black_list != "" ? json_decode($group_black_list, true) : array();
+    }
+
+
+    /**
+     * 设置群组黑名单
+     * @param $QQ
+     * @param $group_black_list
+     * @return bool
+     */
+    public function setGroupBlackList($QQ, $group_black_list)
+    {
+        if (!is_array($group_black_list)) {
+            Log::Warn("设置机器人群组黑名单失败：传入的参数非数组形式：$group_black_list", get_class(), 'SQL');
+            return false;
+        }
+        $group_black_list = json_encode($group_black_list, JSON_UNESCAPED_UNICODE);
+        $res = self::$instance->query("UPDATE coolq_robot SET group_black_list = '$group_black_list' WHERE qq = '$QQ'");
+        if ($res) {
+            Log::Info("设置机器人群组黑名单成功：" . json_encode($group_black_list, JSON_UNESCAPED_UNICODE), get_class(), 'SQL');
+        } else {
+            Log::Warn("设置机器人群组黑名单失败", get_class(), 'SQL');
         }
         return $res;
     }
 
 
-    //todo
-
-    #明天起来再搞把￣￣￣
-
     /**
-     * @param mixed $group_black_list
+     * 获取QQ白名单
+     * 如果白名单和黑名单同时开启　以白名单为优先级高的顺序执行
+     * @param $QQ
+     * @return array|mixed
      */
-    public function setGroupBlackList($group_black_list)
+    public function getQqWhiteList($QQ)
     {
-        $this->group_black_list = $group_black_list;
-        $group_black_list = json_encode($group_black_list, JSON_UNESCAPED_UNICODE);
-        self::$instance->query("UPDATE coolq_robot SET group_black_list = '$group_black_list' WHERE qq = '$this->QQ'");
-
+        $sql = "SELECT qq_white_list FROM coolq_robot WHERE qq = '$QQ'";
+        $res = self::$instance->query($sql);
+        if (!$res) {
+            Log::Warn("获取机器人QQ白名单失败", get_class(), 'SQL');
+            return $res;
+        }
+        $qq_white_list = self::$instance->getOne($res)['qq_white_list'];
+        Log::Info("获取机器人QQ白名单：$qq_white_list", get_class(), 'SQL');
+        return isset($qq_white_list) && $qq_white_list != "" ? json_decode($qq_white_list, true) : array();
     }
 
+
     /**
-     * @param mixed $qq_white_list
+     * 设置QQ白名单
+     * 如果白名单和黑名单同时开启　以白名单为优先级高的顺序执行
+     * @param $QQ
+     * @param $group_white_list
      */
-    public function setQqWhiteList($qq_white_list)
+    public function setQqWhiteList($QQ, $qq_white_list)
     {
-        $this->qq_white_list = $qq_white_list;
+        if (!is_array($qq_white_list)) {
+            Log::Warn("设置机器人QQ白名单失败：传入的参数非数组形式：$qq_white_list", get_class(), 'SQL');
+            return false;
+        }
         $qq_white_list = json_encode($qq_white_list, JSON_UNESCAPED_UNICODE);
-        self::$instance->query("UPDATE coolq_robot SET qq_white_list = '$qq_white_list' WHERE qq = '$this->QQ'");
-
+        $res = self::$instance->query("UPDATE coolq_robot SET qq_white_list = '$qq_white_list' WHERE qq = '$QQ'");
+        if ($res) {
+            Log::Info("设置机器人QQ白名单成功：" . json_encode($qq_white_list, JSON_UNESCAPED_UNICODE), get_class(), 'SQL');
+        } else {
+            Log::Warn("设置机器人QQ白名单失败", get_class(), 'SQL');
+        }
+        return $res;
     }
 
+
     /**
-     * @param mixed $qq_black_list
+     * 获取QQ黑名单
+     * @param $QQ
+     * @return array|mixed
      */
-    public function setQqBlackList($qq_black_list)
+
+    public function getQqBlackList($QQ)
     {
-        $this->qq_black_list = $qq_black_list;
+        $sql = "SELECT qq_black_list FROM coolq_robot WHERE qq = '$QQ'";
+        $res = self::$instance->query($sql);
+        if (!$res) {
+            Log::Warn("获取机器人QQ黑名单失败", get_class(), 'SQL');
+            return $res;
+        }
+        $qq_black_list = self::$instance->getOne($res)['qq_black_list'];
+        Log::Info("获取机器人QQ黑名单：$qq_black_list", get_class(), 'SQL');
+        return isset($qq_black_list) && $qq_black_list != "" ? json_decode($qq_black_list, true) : array();
+    }
+
+
+    /**
+     * 设置QQ黑名单
+     * @param $QQ
+     * @param $group_black_list
+     * @return bool
+     */
+    public function setQqBlackList($QQ, $qq_black_list)
+    {
+        if (!is_array($qq_black_list)) {
+            Log::Warn("设置机器人QQ黑名单失败：传入的参数非数组形式：$qq_black_list", get_class(), 'SQL');
+            return false;
+        }
         $qq_black_list = json_encode($qq_black_list, JSON_UNESCAPED_UNICODE);
-        self::$instance->query("UPDATE coolq_robot SET qq_black_list = '$qq_black_list' WHERE qq = '$this->QQ'");
-
-    }
-
-    /**
-     * @param mixed $is_qq_white_list
-     */
-    public function setIsQqWhiteList($is_qq_white_list)
-    {
-        if ($is_qq_white_list) {
-            $is_qq_white_list = 1;
+        $res = self::$instance->query("UPDATE coolq_robot SET qq_black_list = '$qq_black_list' WHERE qq = '$QQ'");
+        if ($res) {
+            Log::Info("设置机器人QQ黑名单成功：" . json_encode($qq_black_list, JSON_UNESCAPED_UNICODE), get_class(), 'SQL');
         } else {
-            $is_qq_white_list = 0;
+            Log::Warn("设置机器人QQ黑名单失败", get_class(), 'SQL');
         }
-        $this->is_qq_white_list = $is_qq_white_list;
-        self::$instance->query("UPDATE coolq_robot SET is_qq_white_list = '$is_qq_white_list' WHERE qq = '$this->QQ'");
-
-    }
-
-    /**
-     * @param mixed $is_qq_black_list
-     */
-    public function setIsQqBlackList($is_qq_black_list)
-    {
-        if ($is_qq_black_list) {
-            $is_qq_black_list = 1;
-        } else {
-            $is_qq_black_list = 0;
-        }
-        $this->is_qq_black_list = $is_qq_black_list;
-        self::$instance->query("UPDATE coolq_robot SET is_qq_black_list = '$is_qq_black_list' WHERE qq = '$this->QQ'");
-
-    }
-
-    /**
-     * @param mixed $is_group_white_list
-     */
-    public function setIsGroupWhiteList($is_group_white_list)
-    {
-        if ($is_group_white_list) {
-            $is_group_white_list = 1;
-        } else {
-            $is_group_white_list = 0;
-        }
-        $this->is_group_white_list = $is_group_white_list;
-        self::$instance->query("UPDATE coolq_robot SET is_group_white_list = '$is_group_white_list' WHERE qq = '$this->QQ'");
-
-    }
-
-    /**
-     * @param mixed $is_group_black_list
-     */
-    public function setIsGroupBlackList($is_group_black_list)
-    {
-        if ($is_group_black_list) {
-            $is_group_black_list = 1;
-        } else {
-            $is_group_black_list = 0;
-        }
-        $this->is_group_black_list = $is_group_black_list;
-        self::$instance->query("UPDATE coolq_robot SET is_group_black_list = '$is_group_black_list' WHERE qq = '$this->QQ'");
-
-    }
-
-    /**
-     * @param mixed $is_at
-     */
-    public function setIsAt($is_at)
-    {
-        if ($is_at) {
-            $is_at = 1;
-        } else {
-            $is_at = 0;
-        }
-        $this->is_at = $is_at;
-        self::$instance->query("UPDATE coolq_robot SET is_at = '$is_at' WHERE qq = '$this->QQ'");
-
-    }
-
-    /**
-     * @param mixed $is_keyword
-     */
-    public function setIsKeyword($is_keyword)
-    {
-        if ($is_keyword) {
-            $is_keyword = 1;
-        } else {
-            $is_keyword = 0;
-        }
-        $this->is_keyword = $is_keyword;
-        self::$instance->query("UPDATE coolq_robot SET is_keyword = '$is_keyword' WHERE qq = '$this->QQ'");
-
-    }
-
-    /**
-     * @param mixed $is_on_friend
-     */
-    public function setIsOnFriend($is_on_friend)
-    {
-        if ($is_on_friend) {
-            $is_on_friend = 1;
-        } else {
-            $is_on_friend = 0;
-        }
-        $this->is_on_friend = $is_on_friend;
-        self::$instance->query("UPDATE coolq_robot SET is_on_friend = '$is_on_friend' WHERE qq = '$this->QQ'");
-    }
-
-    /**
-     * @param mixed $is_on_group
-     */
-    public function setIsOnGroup($is_on_group)
-    {
-        if ($is_on_group) {
-            $is_on_group = 1;
-        } else {
-            $is_on_group = 0;
-        }
-        $this->is_on_group = $is_on_group;
-        self::$instance->query("UPDATE coolq_robot SET is_on_group = 'is_on_group' WHERE qq = '$this->QQ'");
-    }
-
-    /**
-     * @param mixed $is_on_discuss
-     */
-    public function setIsOnDiscuss($is_on_discuss)
-    {
-        if ($is_on_discuss) {
-            $is_on_discuss = 1;
-        } else {
-            $is_on_discuss = 0;
-        }
-        $this->is_on_discuss = $is_on_discuss;
-        self::$instance->query("UPDATE coolq_robot SET is_on_discuss = '$is_on_discuss' WHERE qq = '$this->QQ'");
+        return $res;
     }
 
 
     /**
-     * @param mixed $keyword
+     * 获取QQ关键字
+     * @param $QQ
+     * @return array|mixed
      */
-    public function setKeyword($keyword)
+
+    public function getKeyword($QQ)
     {
-        $this->keyword = $keyword;
+        $sql = "SELECT keyword FROM coolq_robot WHERE qq = '$QQ'";
+        $res = self::$instance->query($sql);
+        if (!$res) {
+            Log::Warn("获取机器人关键字失败", get_class(), 'SQL');
+            return $res;
+        }
+        $keyword = self::$instance->getOne($res)['keyword'];
+        Log::Info("获取机器人关键字：$keyword", get_class(), 'SQL');
+        return isset($keyword) && $keyword != "" ? json_decode($keyword, true) : array();
+    }
+
+
+    /**
+     * 设置QQ关键字
+     * @param $QQ
+     * @param $group_black_list
+     * @return bool
+     */
+    public function setKeyword($QQ, $keyword)
+    {
+        if (!is_array($keyword)) {
+            Log::Warn("设置机器人关键字失败：传入的参数非数组形式：$keyword", get_class(), 'SQL');
+            return false;
+        }
         $keyword = json_encode($keyword, JSON_UNESCAPED_UNICODE);
-        self::$instance->query("UPDATE coolq_robot SET keyword = '$keyword' WHERE qq = '$this->QQ'");
-
-    }
-
-    /**
-     * @param mixed $is_agree_friend
-     */
-    public function setIsAgreeFriend($is_agree_friend)
-    {
-        if ($is_agree_friend) {
-            $is_agree_friend = 1;
+        $res = self::$instance->query("UPDATE coolq_robot SET keyword = '$keyword' WHERE qq = '$QQ'");
+        if ($res) {
+            Log::Info("设置机器人关键字成功：" . json_encode($keyword, JSON_UNESCAPED_UNICODE), get_class(), 'SQL');
         } else {
-            $is_agree_friend = 0;
+            Log::Warn("设置机器人关键字失败", get_class(), 'SQL');
         }
-        $this->is_agree_friend = $is_agree_friend;
-        self::$instance->query("UPDATE coolq_robot SET is_agree_friend = '$is_agree_friend' WHERE qq = '$this->QQ'");
+        return $res;
+    }
 
+
+    /**
+     * 获取机器人是否开启QQ白名单状态　
+     * 比较状态时注意　＝＝＝　　比较
+     * @return mixed
+     */
+    public function getIsQqWhiteList($QQ)
+    {
+        $sql = "SELECT is_qq_white_list FROM coolq_robot WHERE qq = '$QQ'";
+        $res = self::$instance->query($sql);
+        if (!$res) {
+            Log::Warn("获取机器人是否开启白名单失败", get_class(), 'SQL');
+            return $res;
+        }
+        $is_qq_white_list = self::$instance->getOne($res)['is_qq_white_list'];
+        Log::Info("获取机器人是否开启QQ白名单状态：$is_qq_white_list", get_class(), 'SQL');
+        return $is_qq_white_list;
     }
 
     /**
-     * @param mixed $is_agree_group
+     * 设置机器人是否开启QQ白名单状态
+     * @param $QQ
+     * @param $status
+     * @return mixed
      */
-    public function setIsAgreeGroup($is_agree_group)
+    public function setIsQqWhiteList($QQ, $is_qq_white_list)
     {
-        if ($is_agree_group) {
-            $is_agree_group = 1;
+        $is_qq_white_list == true ? $is_qq_white_list = 1 : $is_qq_white_list = 0;
+        $res = self::$instance->query("UPDATE coolq_robot SET is_qq_white_list = '$is_qq_white_list' WHERE qq = '$QQ'");
+        if ($res) {
+            Log::Info("机器人是否开启QQ白名单状态设置成功：$is_qq_white_list", get_class(), 'SQL');
         } else {
-            $is_agree_group = 0;
+            Log::Warn("机器人是否开启QQ白名单状态设置失败", get_class(), 'SQL');
         }
-        $this->is_agree_group = $is_agree_group;
-        self::$instance->query("UPDATE coolq_robot SET is_agree_group = '$is_agree_group' WHERE qq = '$this->QQ'");
-
+        return $res;
     }
 
 
-
     /**
-     * @return MySql|null
-     */
-    public function getDB()
-    {
-        return $this->DB;
-    }
-
-    /**
-     * @param MySql|null $DB
-     */
-    public function setDB($DB)
-    {
-        $this->DB = $DB;
-    }
-
-    /**
+     * 获取机器人是否开启QQ黑名单状态　
+     * 比较状态时注意　＝＝＝　　比较
      * @return mixed
      */
-    public function getPath()
+    public function getIsQqBlackList($QQ)
     {
-        return $this->path;
+        $sql = "SELECT is_qq_black_list FROM coolq_robot WHERE qq = '$QQ'";
+        $res = self::$instance->query($sql);
+        if (!$res) {
+            Log::Warn("获取机器人是否开启黑名单失败", get_class(), 'SQL');
+            return $res;
+        }
+        $is_qq_black_list = self::$instance->getOne($res)['is_qq_black_list'];
+        Log::Info("获取机器人是否开启QQ黑名单状态：$is_qq_black_list", get_class(), 'SQL');
+        return $is_qq_black_list;
     }
 
     /**
-     * @param mixed $path
-     */
-    public function setPath($path)
-    {
-        $this->path = $path;
-    }
-
-    /**
-     * @return CoolQSDK
-     */
-    public function getCoolQ()
-    {
-        return $this->CoolQ;
-    }
-
-    /**
-     * @param CoolQSDK $CoolQ
-     */
-    public function setCoolQ($CoolQ)
-    {
-        $this->CoolQ = $CoolQ;
-    }
-
-    /**
+     * 设置机器人是否开启QQ黑名单状态
+     * @param $QQ
+     * @param $status
      * @return mixed
      */
-    public function getQQ()
+    public function setIsQqBlackList($QQ, $is_qq_black_list)
     {
-        return $this->QQ;
+        $is_qq_black_list == true ? $is_qq_black_list = 1 : $is_qq_black_list = 0;
+        $res = self::$instance->query("UPDATE coolq_robot SET is_qq_black_list = '$is_qq_black_list' WHERE qq = '$QQ'");
+        if ($res) {
+            Log::Info("机器人是否开启QQ黑名单状态设置成功：$is_qq_black_list", get_class(), 'SQL');
+        } else {
+            Log::Warn("机器人是否开启QQ黑名单状态设置失败", get_class(), 'SQL');
+        }
+        return $res;
     }
 
-    /**
-     * @param mixed $QQ
-     */
-    public function setQQ($QQ)
-    {
-        $this->QQ = $QQ;
-    }
 
     /**
+     * 获取机器人是否开启群组白名单状态　
+     * 比较状态时注意　＝＝＝　　比较
      * @return mixed
      */
-    public function getisFollow()
+    public function getIsGroupWhiteList($QQ)
     {
-        return $this->is_follow;
+        $sql = "SELECT is_group_white_list FROM coolq_robot WHERE qq = '$QQ'";
+        $res = self::$instance->query($sql);
+        if (!$res) {
+            Log::Warn("获取机器人是否开启群组白名单失败", get_class(), 'SQL');
+            return $res;
+        }
+        $is_group_white_list = self::$instance->getOne($res)['is_group_white_list'];
+        Log::Info("获取机器人是否开启群组白名单状态：$is_group_white_list", get_class(), 'SQL');
+        return $is_group_white_list;
     }
 
     /**
-     * @param mixed $is_follow
+     * 设置机器人是否开启群组白名单状态
+     * @param $QQ
+     * @param $status
+     * @return mixed
      */
-    public function setIsFollow($is_follow)
+    public function setIsGroupWhiteList($QQ, $is_group_white_list)
     {
-        $this->is_follow = $is_follow;
+        $is_group_white_list == true ? $is_group_white_list = 1 : $is_group_white_list = 0;
+        $res = self::$instance->query("UPDATE coolq_robot SET is_group_white_list = '$is_group_white_list' WHERE qq = '$QQ'");
+        if ($res) {
+            Log::Info("机器人是否开启QQ白名单状态设置成功：$is_group_white_list", get_class(), 'SQL');
+        } else {
+            Log::Warn("机器人是否开启QQ白名单状态设置失败", get_class(), 'SQL');
+        }
+        return $res;
     }
 
 
+    /**
+     * 获取机器人是否开启群组黑名单状态　
+     * 比较状态时注意　＝＝＝　　比较
+     * @return mixed
+     */
+    public function getIsGroupBlackList($QQ)
+    {
+        $sql = "SELECT is_group_black_list FROM coolq_robot WHERE qq = '$QQ'";
+        $res = self::$instance->query($sql);
+        if (!$res) {
+            Log::Warn("获取机器人是否开启群组黑名单失败", get_class(), 'SQL');
+            return $res;
+        }
+        $is_group_black_list = self::$instance->getOne($res)['is_group_black_list'];
+        Log::Info("获取机器人是否开启群组黑名单状态：$is_group_black_list", get_class(), 'SQL');
+        return $is_group_black_list;
+    }
+
+    /**
+     * 设置机器人是否开启群组黑名单状态
+     * @param $QQ
+     * @param $status
+     * @return mixed
+     */
+    public function setIsGroupBlackList($QQ, $is_group_black_list)
+    {
+        $is_group_black_list == true ? $is_group_black_list = 1 : $is_group_black_list = 0;
+        $res = self::$instance->query("UPDATE coolq_robot SET is_group_black_list = '$is_group_black_list' WHERE qq = '$QQ'");
+        if ($res) {
+            Log::Info("机器人是否开启群组黑名单状态设置成功：$is_group_black_list", get_class(), 'SQL');
+        } else {
+            Log::Warn("机器人是否开启群组黑名单状态设置失败", get_class(), 'SQL');
+        }
+        return $res;
+    }
 
 
+    /**
+     * 获取机器人是否开启@　
+     * 比较状态时注意　＝＝＝　　比较
+     * @return mixed
+     */
+    public function getIsAt($QQ)
+    {
+        $sql = "SELECT is_at FROM coolq_robot WHERE qq = '$QQ'";
+        $res = self::$instance->query($sql);
+        if (!$res) {
+            Log::Warn("获取机器人是否开启@失败", get_class(), 'SQL');
+            return $res;
+        }
+        $is_at = self::$instance->getOne($res)['is_at'];
+        Log::Info("获取机器人是否开启@状态：$is_at", get_class(), 'SQL');
+        return $is_at;
+    }
+
+    /**
+     * 设置机器人是是否开启@
+     * @param $QQ
+     * @param $status
+     * @return mixed
+     */
+    public function setIsAt($QQ, $is_at)
+    {
+        $is_at == true ? $is_at = 1 : $is_at = 0;
+        $res = self::$instance->query("UPDATE coolq_robot SET is_at = '$is_at' WHERE qq = '$QQ'");
+        if ($res) {
+            Log::Info("机器人是否开启@设置成功：$is_at", get_class(), 'SQL');
+        } else {
+            Log::Warn("机器人是否开启@设置失败", get_class(), 'SQL');
+        }
+        return $res;
+    }
+
+
+    /**
+     * 获取机器人是否开启关键字　
+     * 比较状态时注意　＝＝＝　　比较
+     * @return mixed
+     */
+    public function getIsKeyWord($QQ)
+    {
+        $sql = "SELECT is_keyword FROM coolq_robot WHERE qq = '$QQ'";
+        $res = self::$instance->query($sql);
+        if (!$res) {
+            Log::Warn("获取机器人是否开启关键字失败", get_class(), 'SQL');
+            return $res;
+        }
+        $is_keyword = self::$instance->getOne($res)['is_keyword'];
+        Log::Info("获取机器人是否开启关键字状态：$is_keyword", get_class(), 'SQL');
+        return $is_keyword;
+    }
+
+    /**
+     * 设置机器人是是否开启关键字
+     * @param $QQ
+     * @param $status
+     * @return mixed
+     */
+    public function setIsKeyWord($QQ, $is_keyword)
+    {
+        $is_keyword == true ? $is_keyword = 1 : $is_keyword = 0;
+        $res = self::$instance->query("UPDATE coolq_robot SET is_keyword = '$is_keyword' WHERE qq = '$QQ'");
+        if ($res) {
+            Log::Info("机器人是否开启关键字设置成功：$is_keyword", get_class(), 'SQL');
+        } else {
+            Log::Warn("机器人是否开启关键字设置失败", get_class(), 'SQL');
+        }
+        return $res;
+    }
+
+    /**
+     * 获取机器人是否开启好友回复
+     * 比较状态时注意　＝＝＝　　比较
+     * @return mixed
+     */
+    public function getIsOnFriend($QQ)
+    {
+        $sql = "SELECT is_on_friend FROM coolq_robot WHERE qq = '$QQ'";
+        $res = self::$instance->query($sql);
+        if (!$res) {
+            Log::Warn("获取机器人是否开启好友回复失败", get_class(), 'SQL');
+            return $res;
+        }
+        $is_on_friend = self::$instance->getOne($res)['is_on_friend'];
+        Log::Info("获取机器人是否开启好友回复状态：$is_on_friend", get_class(), 'SQL');
+        return $is_on_friend;
+    }
+
+    /**
+     * 设置机器人是否开启好友回复
+     * @param $QQ
+     * @param $status
+     * @return mixed
+     */
+    public function setIsOnFriend($QQ, $is_on_friend)
+    {
+        $is_on_friend == true ? $is_on_friend = 1 : $is_on_friend = 0;
+        $res = self::$instance->query("UPDATE coolq_robot SET is_on_friend = '$is_on_friend' WHERE qq = '$QQ'");
+        if ($res) {
+            Log::Info("机器人是否开启好友回复设置成功：$is_on_friend", get_class(), 'SQL');
+        } else {
+            Log::Warn("机器人是否开启好友回复设置失败", get_class(), 'SQL');
+        }
+        return $res;
+    }
+
+    /**
+     * 获取机器人是是否开启群组回复
+     * 比较状态时注意　＝＝＝　　比较
+     * @return mixed
+     */
+    public function getIsOnGroup($QQ)
+    {
+        $sql = "SELECT is_on_group FROM coolq_robot WHERE qq = '$QQ'";
+        $res = self::$instance->query($sql);
+        if (!$res) {
+            Log::Warn("获取机器人是否开启群组回复失败", get_class(), 'SQL');
+            return $res;
+        }
+        $is_on_group = self::$instance->getOne($res)['is_on_group'];
+        Log::Info("获取机器人是否开启群组回复状态：$is_on_group", get_class(), 'SQL');
+        return $is_on_group;
+    }
+
+    /**
+     * 设置机器人是是否开启群组回复
+     * @param $QQ
+     * @param $status
+     * @return mixed
+     */
+    public function setIsOnGroup($QQ, $is_on_group)
+    {
+        $is_on_group == true ? $is_on_group = 1 : $is_on_group = 0;
+        $res = self::$instance->query("UPDATE coolq_robot SET is_on_group = '$is_on_group' WHERE qq = '$QQ'");
+        if ($res) {
+            Log::Info("机器人是否开启群组回复设置成功：$is_on_group", get_class(), 'SQL');
+        } else {
+            Log::Warn("机器人是否开启群组回复设置失败", get_class(), 'SQL');
+        }
+        return $res;
+    }
+
+
+    /**
+     * 获取机器人是是否开启讨论组回复
+     * 比较状态时注意　＝＝＝　　比较
+     * @return mixed
+     */
+    public function getIsOnDiscuss($QQ)
+    {
+        $sql = "SELECT is_on_discuss FROM coolq_robot WHERE qq = '$QQ'";
+        $res = self::$instance->query($sql);
+        if (!$res) {
+            Log::Warn("获取机器人是否开启讨论组回复失败", get_class(), 'SQL');
+            return $res;
+        }
+        $is_on_discuss = self::$instance->getOne($res)['is_on_discuss'];
+        Log::Info("获取机器人是否开启讨论组回复状态：$is_on_discuss", get_class(), 'SQL');
+        return $is_on_discuss;
+    }
+
+    /**
+     * 设置机器人是是否开启讨论组回复
+     * @param $QQ
+     * @param $status
+     * @return mixed
+     */
+    public function setIsOnDiscuss($QQ, $is_on_discuss)
+    {
+        $is_on_discuss == true ? $is_on_discuss = 1 : $is_on_discuss = 0;
+        $res = self::$instance->query("UPDATE coolq_robot SET is_on_discuss = '$is_on_discuss' WHERE qq = '$QQ'");
+        if ($res) {
+            Log::Info("机器人是否开启讨论组回复设置成功：$is_on_discuss", get_class(), 'SQL');
+        } else {
+            Log::Warn("机器人是否开启讨论组回复设置失败", get_class(), 'SQL');
+        }
+        return $res;
+    }
+
+
+    /**
+     * 获取机器人是是否开启同意好友请求
+     * 比较状态时注意　＝＝＝　　比较
+     * @return mixed
+     */
+    public function getIsOnAgreeFriend($QQ)
+    {
+        $sql = "SELECT is_agree_friend FROM coolq_robot WHERE qq = '$QQ'";
+        $res = self::$instance->query($sql);
+        if(!$res){
+            Log::Warn("获取机器人是否开启同意好友请求失败",get_class(),'SQL');
+            return $res;
+        }
+        $is_agree_friend = self::$instance->getOne($res)['is_agree_friend'];
+        Log::Info("获取机器人是否开启同意好友请求状态：$is_agree_friend",get_class(),'SQL');
+        return $is_agree_friend;
+    }
+
+    /**
+     * 设置机器人是是否开启同意好友请求
+     * @param $QQ
+     * @param $status
+     * @return mixed
+     */
+    public function setIsOnAgreeFriend($QQ,$is_agree_friend)
+    {
+        $is_agree_friend == true ? $is_agree_friend = 1 : $is_agree_friend = 0;
+        $res = self::$instance->query("UPDATE coolq_robot SET is_agree_friend = '$is_agree_friend' WHERE qq = '$QQ'");
+        if($res){
+            Log::Info("机器人是否开启同意好友请求设置成功：$is_agree_friend",get_class(),'SQL');
+        }else{
+            Log::Warn("机器人是否开启同意好友请求设置失败",get_class(),'SQL');
+        }
+        return $res;
+    }
+
+    /**
+     * 设置机器人是是否开启同意加群请求
+     * 比较状态时注意　＝＝＝　　比较
+     * @return mixed
+     */
+    public function getIsOnAgreeGroup($QQ)
+    {
+        $sql = "SELECT is_agree_group FROM coolq_robot WHERE qq = '$QQ'";
+        $res = self::$instance->query($sql);
+        if(!$res){
+            Log::Warn("获取机器人是否开启同意加群请求失败",get_class(),'SQL');
+            return $res;
+        }
+        $is_agree_group = self::$instance->getOne($res)['is_agree_group'];
+        Log::Info("获取机器人是否开启同意加群请求状态：$is_agree_group",get_class(),'SQL');
+        return $is_agree_group;
+    }
+
+    /**
+     * 设置机器人是是否开启同意加群请求
+     * @param $QQ
+     * @param $status
+     * @return mixed
+     */
+    public function setIsOnAgreeGroup($QQ,$is_agree_group)
+    {
+        $is_agree_group == true ? $is_agree_group = 1 : $is_agree_group = 0;
+        $res = self::$instance->query("UPDATE coolq_robot SET is_agree_group = '$is_agree_group' WHERE qq = '$QQ'");
+        if($res){
+            Log::Info("机器人是否开启同意加群请求设置成功：$is_agree_group",get_class(),'SQL');
+        }else{
+            Log::Warn("机器人是否开启同意加群请求设置失败",get_class(),'SQL');
+        }
+        return $res;
+    }
+
+
+    /**
+     * 获取机器人是是否开启Debug跟随
+     * 比较状态时注意　＝＝＝　　比较
+     * @return mixed
+     */
+    public function getIsFollow($QQ)
+    {
+        $sql = "SELECT is_follow FROM coolq_robot WHERE qq = '$QQ'";
+        $res = self::$instance->query($sql);
+        if(!$res){
+            Log::Warn("获取机器人是否开启Debug跟随失败",get_class(),'SQL');
+            return $res;
+        }
+        $is_follow = self::$instance->getOne($res)['is_follow'];
+        Log::Info("获取机器人是否开启Debug跟随状态：$is_follow",get_class(),'SQL');
+        return $is_follow;
+    }
+
+    /**
+     * 设置机器人是是否开启Debug跟随
+     * @param $QQ
+     * @param $status
+     * @return mixed
+     */
+    public function setIsFollow($QQ,$is_follow)
+    {
+        $is_follow == true ? $is_follow = 1 : $is_follow = 0;
+        $res = self::$instance->query("UPDATE coolq_robot SET is_follow = '$is_follow' WHERE qq = '$QQ'");
+        if($res){
+            Log::Info("机器人是否开启Debug跟随设置成功：$is_follow",get_class(),'SQL');
+        }else{
+            Log::Warn("机器人是否开启Debug跟随设置失败",get_class(),'SQL');
+        }
+        return $res;
+    }
+
+    /**
+     * 获取机器人是是否开启插件
+     * 比较状态时注意　＝＝＝　　比较
+     * @return mixed
+     */
+    public function getIsOnPlugin($QQ)
+    {
+        $sql = "SELECT is_on_plugin FROM coolq_robot WHERE qq = '$QQ'";
+        $res = self::$instance->query($sql);
+        if(!$res){
+            Log::Warn("获取机器人是否开启插件失败",get_class(),'SQL');
+            return $res;
+        }
+        $is_on_plugin = self::$instance->getOne($res)['is_on_plugin'];
+        Log::Info("获取机器人是否开启插件状态：$is_on_plugin",get_class(),'SQL');
+        return $is_on_plugin;
+    }
+
+    /**
+     * 设置机器人是是否开启插件
+     * @param $QQ
+     * @param $status
+     * @return mixed
+     */
+    public function setIsOnPlugin($QQ,$is_on_plugin)
+    {
+        $is_on_plugin == true ? $is_on_plugin = 1 : $is_on_plugin = 0;
+        $res = self::$instance->query("UPDATE coolq_robot SET is_on_plugin = '$is_on_plugin' WHERE qq = '$QQ'");
+        if($res){
+            Log::Info("机器人是否开启插件设置成功：$is_on_plugin",get_class(),'SQL');
+        }else{
+            Log::Warn("机器人是否开启插件设置失败",get_class(),'SQL');
+        }
+        return $res;
+    }
 
 
 }
