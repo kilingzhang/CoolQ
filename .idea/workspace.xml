@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32519d69-6a98-4b5f-8c30-6ce03c762999" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Plugin/LosingPlugin/LosingPlugin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/coolq_v2.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Plugin/ManagePlugin/ManagePlugin.php" afterPath="$PROJECT_DIR$/Plugin/ManagePlugin/ManagePlugin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Plugin/MusicPlugin/MusicPlugin.php" afterPath="$PROJECT_DIR$/Plugin/MusicPlugin/MusicPlugin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Plugin/OcrPlugin/OcrPlugin.php" afterPath="$PROJECT_DIR$/Plugin/OcrPlugin/OcrPlugin.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,34 +30,7 @@
     <favorites_list name="CoolQ" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Api/Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1443">
-              <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="69" selection-end-column="91" />
-              <folding>
-                <element signature="e#6#117#0#PHP" expanded="true" />
-                <element signature="e#118#141#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Api/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="468">
-                <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -134,7 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Cache/Driver.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Cache/driver/File.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Cache/driver/Lite.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Cache/driver/Memcache.php" />
@@ -185,6 +154,7 @@
         <option value="$PROJECT_DIR$/Plugin/MusicPlugin/MusicPlugin.php" />
         <option value="$PROJECT_DIR$/Plugin/ManagePlugin/ManagePlugin.php" />
         <option value="$PROJECT_DIR$/Plugin/LosingPlugin/LosingPlugin.php" />
+        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/coolq_v2.sql" />
       </list>
     </option>
   </component>
@@ -440,7 +410,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Conf" />
+              <option name="myItemId" value="Db" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -517,11 +487,11 @@
       <recent name="I:\phpStudy\WWW\CoolQ\Application\Api" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ\Db" />
       <recent name="I:\phpStudy\WWW\CoolQ\Plugin\LosingPlugin" />
       <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ\Conf" />
       <recent name="I:\phpStudy\WWW\CoolQ\Application\Admin" />
       <recent name="I:\phpStudy\WWW\CoolQ\Application\Api" />
-      <recent name="I:\phpStudy\WWW\CoolQ\vendor" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -661,12 +631,12 @@
       <workItem from="1499094990817" duration="2154000" />
       <workItem from="1499155706103" duration="10484000" />
       <workItem from="1499170184671" duration="20957000" />
-      <workItem from="1499227071209" duration="39630000" />
+      <workItem from="1499227071209" duration="39880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203189000" />
+    <option name="totallyTimeSpent" value="203439000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -679,9 +649,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="1" width="1924" height="1037" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1956978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1956978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -713,14 +682,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/temp/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-691">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Loader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10303">
@@ -1262,17 +1223,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="468">
-            <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
@@ -1522,10 +1472,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/coolq_v2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4370">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="251">
+            <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Api/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1443">
-          <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="69" selection-end-column="91" />
+          <caret line="68" column="36" lean-forward="false" selection-start-line="68" selection-start-column="36" selection-end-line="69" selection-end-column="91" />
           <folding>
             <element signature="e#6#117#0#PHP" expanded="true" />
             <element signature="e#118#141#0#PHP" expanded="true" />
