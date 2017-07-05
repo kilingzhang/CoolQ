@@ -6,6 +6,8 @@
  * Date: 2017/5/7 0007
  * Time: 18:08
  */
+use CoolQ\Plugin\Plugin;
+
 class VipVideoPlugin extends Plugin
 {
 

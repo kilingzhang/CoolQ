@@ -111,7 +111,7 @@ class App
             }
         }else{
             //上报事件
-            require ROOT_PATH . 'Application\Api\index.php';
+            require ROOT_PATH . 'Application\Api\Controller.php';
         }
 
 

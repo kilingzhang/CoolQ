@@ -49,7 +49,7 @@ class Log
     public static function Info($msg, $source = 'CoolQ', $type = '应用', $QQ = '')
     {
         $msg = addslashes($msg);
-        $source = addslashes($source);
+        $source = addslashes($source == null ? 'CoolQ' : $source);
         $type = addslashes($type);
         $QQ = $QQ == '' ? Config::getQQ() : $QQ;
         $sql = "insert into coolq_log (`msg`, `time`, `source`, `type`, `level`,`robot_qq`) 
@@ -61,7 +61,7 @@ class Log
     public static function Warn($msg, $source = 'CoolQ', $type = '应用', $QQ = '')
     {
         $msg = addslashes($msg);
-        $source = addslashes($source);
+        $source = addslashes($source == null ? 'CoolQ' : $source);
         $type = addslashes($type);
         $QQ = $QQ == '' ? Config::getQQ() : $QQ;
         $sql = "insert into coolq_log (`msg`, `time`, `source`, `type`, `level`,`robot_qq`) 
@@ -72,7 +72,7 @@ class Log
     public static function Error($msg, $source = 'CoolQ', $type = '应用', $QQ = '')
     {
         $msg = addslashes($msg);
-        $source = addslashes($source);
+        $source = addslashes($source == null ? 'CoolQ' : $source);
         $type = addslashes($type);
         $QQ = $QQ == '' ? Config::getQQ() : $QQ;
         $sql = "insert into coolq_log (`msg`, `time`, `source`, `type`, `level`,`robot_qq`) 
@@ -83,7 +83,7 @@ class Log
     public static function Debug($msg, $source = 'CoolQ', $type = '应用', $QQ = '')
     {
         $msg = addslashes($msg);
-        $source = addslashes($source);
+        $source = addslashes($source == null ? 'CoolQ' : $source);
         $type = addslashes($type);
         $QQ = $QQ == '' ? Config::getQQ() : $QQ;
         $sql = "insert into coolq_log (`msg`, `time`, `source`, `type`, `level`,`robot_qq`) 

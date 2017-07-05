@@ -6,6 +6,8 @@
  * Date: 2017/5/5
  * Time: 14:43
  */
+use CoolQ\Plugin\Plugin;
+
 class TulingPlugin extends Plugin
 {
 

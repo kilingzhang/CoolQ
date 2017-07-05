@@ -6,6 +6,8 @@
  * Date: 2017/2/14
  * Time: 13:37
  */
+namespace CoolQ\Plugin;
+
 class Plugin
 {
 
@@ -13,6 +15,7 @@ class Plugin
     public $getData;
     public $Intercept;
     public $Robot;
+    public static $Plugin = null;
 
     public function __construct($getData, $Robot)
     {
