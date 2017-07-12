@@ -25,7 +25,7 @@ class YiBaoPlugin extends Plugin
         $message = $data['message'];
         switch ($post_type) {
             case "message":
-                $url = "http://www.kilingzhang.com/Api/YiBao/api.php?role=" . Role . "&hash=" . Hash . "&user_id=$user_id&text=" . urlencode($message);
+                $url = "http://www.kilingzhang.com/Public/YiBao/api.php?role=" . Role . "&hash=" . Hash . "&user_id=$user_id&text=" . urlencode($message);
                 $json = file_get_contents($url);
                 $res = json_decode($json, true);
                 $msg = isset($res['data']) ? $res['data'] : "";

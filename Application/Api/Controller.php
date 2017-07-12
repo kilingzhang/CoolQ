@@ -15,7 +15,7 @@ use CoolQ\Log;
 global  $Robot;
 global $PluginController;
 global $data;
-
+global $stime;
 $data = \CoolQ\Request::put();
 
 $post_type = $data['post_type'];
@@ -25,22 +25,25 @@ $group_id = isset($data['group_id']) && array_key_exists('group_id',$data) ? $da
 $discuss_id = isset($data['discuss_id']) && array_key_exists('discuss_id',$data) ? $data['discuss_id'] : null;
 $message = $data['message'];
 
+
+$data['post_type'] = 'message';
+$data['message_type'] = 'private';
+$data['sub_type'] = 'friend';
+$data['user_id'] = 1353693508;
+$data['group_id'] = 438778749;
+$data['message'] = '傻子';
+
+$stime = microtime(true);
+global $stime;
+$etime = microtime(true);
+//echo 'time:' . ($etime - $stime) . "<br>";
 Log::Info('上报事件:' . json_encode($data,JSON_UNESCAPED_UNICODE),get_class());
 $Robot = \CoolQ\Robot\Robot::getInstance('127.0.0.1',5700,'slight');
 $Robot->getRobotInfo();
 $PluginController = null;
 
 
-//$data['post_type'] = 'message';
-//$data['message_type'] = 'private';
-//$data['sub_type'] = 'friend';
-//$data['user_id'] = 1353693508;
-//$data['group_id'] = 438778749;
-//$data['message'] = '傻子';
-
-
-
-
+$post_type = $data['post_type'];
 if(!$Robot->is_on_plugin){
     exit('{"block": true}');
 }
@@ -48,16 +51,19 @@ switch ($post_type) {
 
     //收到消息
     case 'message':
+
         $message_type = $data['message_type'];
         switch ($message_type) {
             //私聊消息
             case "private":
+
                 $user_id = $data['user_id'];
                 $message = $data['message'];
                 //消息子类型，如果是好友则是 "friend"，
                 //如果从群或讨论组来的临时会话则分别是 "group"、"discuss"
                 //"friend"、"group"、"discuss"、"other"
                 $sub_type = $data['sub_type'];
+
                 if($Robot->is_on_friend){
                     if(($Robot->is_qq_white_list && MsgTool::inArray($user_id,$Robot->getRobotQqWhiteList())) || (!$Robot->is_qq_white_list)){
                         if(($Robot->is_qq_black_list && !MsgTool::inArray($user_id,$Robot->getRobotQqBlackList())) || (!$Robot->is_qq_black_list)){
@@ -65,9 +71,13 @@ switch ($post_type) {
                                 if($Robot->is_follow){
                                     $Robot->sendPrivateMsg($user_id,MsgTool::deCodeHtml($message),false);
                                 }else{
+
                                     //runPlugin
                                     $PluginOrderList = $Robot->getRobotPluginOrders();
                                     $PluginController = Plugin::runOders($PluginOrderList);
+
+
+
                                 }
                             }
                         }

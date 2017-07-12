@@ -99,15 +99,43 @@ class App
         global $_Module;
         global $_Controller;
         global $_Action;
-        $_Param = null;
         if (count($Route) > 0 && $Route[0] != ''){
-            $_Module = isset($Route[0]) ? $Route[0] : "";
-            $_Controller = isset($Route[1]) ? $Route[1] : "";
-            $_Action = isset($Route[2]) ? $Route[2] : "";
-            if(count($Route) > 3){
-                for($i=3 ; $i<count($Route) ; $i+=2){
-                    $_Param[$Route[$i]] = isset($Route[$i+1]) ? htmlspecialchars($Route[$i+1]) : "";
-                }
+            $_Module = isset($Route[0]) ? ucwords($Route[0]) : "";
+            $_Controller = isset($Route[1]) ? ucwords($Route[1]) : "";
+            $_Action = isset($Route[2]) ? ucwords($Route[2]) : "";
+            switch ($_Module){
+                case "Api":
+                    //上报事件
+                    $file =  ROOT_PATH . 'Application\Api';
+                    if($_Controller){
+                        $file .= "\\{$_Controller}.html";
+                        if(file_exists($file)){
+                            include $file;
+                        }
+                    }else{
+                        $file .= "\Controller.php";
+                        if(file_exists($file)){
+                            include $file;
+                        }
+                    }
+                    break;
+                default:
+                    $file =  ROOT_PATH . "Application\\{$_Module}";
+                    if(file_exists($file)){
+                        if($_Controller){
+                            $file .= "\\{$_Controller}.html";
+                            if(file_exists($file)){
+                                include $file;
+                            }
+                        }else{
+                            $file .= "\\index.html";
+                            if(file_exists($file)){
+                                include $file;
+                            }
+                        }
+                    }
+
+                    break;
             }
         }else{
             //上报事件

@@ -1,10 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>CoolQ后台管理</title>
+
+    <!-- Bootstrap -->
+    <link href="/CoolQ/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Loading Flat UI -->
+    <link href="/CoolQ/assets/FlatUI/dist/css/flat-ui.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-$END$
+<div id="container">
+    <div id="RobotApp">
+        <div class="col-xs-12">
+            <div class="tile">
+                <img :src="RobotQQImage" alt="Pensils" class="tile-image">
+                <h3 class="tile-title">{{RobotQQ}}</h3>
+                <p>Easy to add or change elements. </p>
+                <a class="btn btn-primary btn-large btn-block" :href="QQLink">Send Message</a>
+            </div>
+
+            <ul class="list-group">
+                <li class="list-group-item">
+                    机器人状态：
+                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
+                </li>
+                <li class="list-group-item">创建时间：
+                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
+                </li>
+                <li class="list-group-item">管理员：
+                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
+                </li>
+                <li class="list-group-item">好友白名单：
+                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
+                </li>
+                <li class="list-group-item">好友黑名单：
+                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
+                </li>
+                <li class="list-group-item">群组白名单：
+                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
+                </li>
+                <li class="list-group-item">@回复：
+                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
+                </li>
+                <li class="list-group-item">关键字回复：
+                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
+                </li>
+                <li class="list-group-item">跟随模式：
+                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
+                </li>
+                <li class="list-group-item">好友聊天：
+                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
+                </li>
+                <li class="list-group-item">群组聊天：
+                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
+                </li>
+                <li class="list-group-item">讨论组：
+                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
+                </li>
+                <li class="list-group-item">插件：
+                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
+                </li>
+                <li class="list-group-item">同意好友请求：
+                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
+                </li>
+                <li class="list-group-item">同意群组请求：
+                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
+                </li>
+                <li class="list-group-item">回复@：
+                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</div> <!-- /container -->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/CoolQ/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/CoolQ/node_modules/vue/dist/vue.js"></script>
+<script src="/CoolQ/assets/index.js"></script>
+
+
+<script src="/CoolQ/assets/FlatUI/dist/js/vendor/video.js"></script>
+<script src="/CoolQ/assets/FlatUI/dist/js/flat-ui.min.js"></script>
+<script src="/CoolQ/assets/FlatUI/docs/assets/js/application.js"></script>
+<script src="/CoolQ/assets/jquery.nicescroll.min.js"></script>
+<script>
+        var robot = new Vue({
+            el: '#RobotApp',
+            mounted: function () {
+                 this.$nextTick(function () {
+                     this.RobotQQ = window.localStorage.getItem( AppHash + 'RobotQQ' )
+                     this.RobotQQImage = 'http://q.qlogo.cn/headimg_dl?bs=qq&dst_uin=' + this.RobotQQ + '&src_uin=www.59u.me&fid=blog&spec=100'
+                     this.QQLink = 'http://wpa.qq.com/msgrd?v=3&uin=' + this.RobotQQ + '&site=qq&menu=yes'
+                 })
+            },
+            data: {
+                status: true,
+                RobotQQ: '',
+                RobotQQImage: '',
+                QQLink: ''
+            }
+        })
+
+        $(document).ready(function () {
+        var nice = $("html").niceScroll();  // The document page (body)
+        $("#container").niceScroll("#RobotApp", {
+            cursorcolor: "#3498db",
+            cursoropacitymax: 0.7,
+            boxzoom: true,
+            touchbehavior: true
+        });  // Second scrollable DIV
+    });
+
+
+</script>
 </body>
 </html>

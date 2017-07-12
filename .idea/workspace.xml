@@ -2,10 +2,443 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32519d69-6a98-4b5f-8c30-6ce03c762999" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/coolq_v2.sql" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/.versions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/accordion.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/accordion.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/accordion.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/accordion.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/ad.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/ad.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/api.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/breadcrumb.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/breadcrumb.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/button.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/button.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/card.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/card.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/checkbox.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/checkbox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/checkbox.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/checkbox.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/colorize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/colorize.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/comment.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/comment.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/container.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/container.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/dimmer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/dimmer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/dimmer.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/dimmer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/divider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/divider.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/dropdown.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/dropdown.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/dropdown.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/embed.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/embed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/embed.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/embed.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/feed.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/feed.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/flag.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/flag.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/form.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/form.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/form.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/grid.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/grid.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/header.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/header.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/icon.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/icon.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/image.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/image.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/input.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/input.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/item.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/item.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/label.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/label.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/list.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/list.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/loader.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/loader.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/menu.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/menu.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/message.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/message.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/modal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/modal.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/modal.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/nag.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/nag.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/nag.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/nag.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/popup.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/popup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/popup.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/popup.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/progress.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/progress.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/progress.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/progress.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/rail.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/rail.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/rating.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/rating.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/rating.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/rating.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/reset.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/reset.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/reveal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/reveal.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/search.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/search.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/search.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/search.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/segment.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/segment.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/shape.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/shape.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/shape.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/shape.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/sidebar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/sidebar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/sidebar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/sidebar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/site.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/site.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/site.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/site.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/state.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/state.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/statistic.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/statistic.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/step.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/step.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/sticky.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/sticky.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/sticky.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/sticky.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/tab.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/tab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/tab.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/tab.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/table.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/table.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/transition.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/transition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/transition.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/transition.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/video.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/video.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/video.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/video.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/visibility.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/visibility.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/visit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/components/visit.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/package.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/semantic.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/semantic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/semantic.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/semantic.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/themes/default/assets/fonts/icons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/themes/default/assets/fonts/icons.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/themes/default/assets/fonts/icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/themes/default/assets/fonts/icons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/themes/default/assets/fonts/icons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/themes/default/assets/fonts/icons.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Public/semantic/themes/default/assets/images/flags.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/css/flat-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/css/flat-ui.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/css/flat-ui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/css/vendor/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/css/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/css/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/css/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/css/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/css/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/glyphicons/flat-ui-icons-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/glyphicons/flat-ui-icons-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/glyphicons/flat-ui-icons-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/glyphicons/flat-ui-icons-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/glyphicons/selection.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-black.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-black.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-black.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-bold.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-bold.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-bolditalic.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-bolditalic.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-bolditalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-bolditalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-italic.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-italic.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-italic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-italic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-light.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-light.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-light.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/fonts/lato/lato-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/png/Book.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/png/Calendar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/png/Chat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/png/Clipboard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/png/Compas.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/png/Gift-Box.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/png/Infinity-Loop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/png/Mail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/png/Map.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/png/Pensils.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/png/Pocket.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/png/Retina-Ready.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/png/Toilet-Paper.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/png/Watches.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/svg/book.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/svg/calendar.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/svg/chat.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/svg/clipboard.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/svg/clocks.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/svg/compas.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/svg/gift-box.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/svg/loop.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/svg/mail.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/svg/map.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/svg/paper-bag.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/svg/pencils.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/svg/retina.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/svg/ribbon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/icons/svg/toilet-paper.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/login/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/login/imac-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/login/imac.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/tile/ribbon-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/img/tile/ribbon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/js/flat-ui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/js/flat-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/js/vendor/html5shiv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/js/vendor/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/js/vendor/jquery.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/js/vendor/respond.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/js/vendor/video-js.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/dist/js/vendor/video.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/css/demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/css/demo.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/css/docs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/css/docs.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/css/src/demo.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/css/src/docs.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/css/src/prettyprint.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/img/demo/browser-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/img/demo/browser-author.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/img/demo/browser-pic-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/img/demo/browser-pic-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/img/demo/browser-pic-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/img/demo/browser-pic-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/img/demo/browser-pic-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/img/demo/browser-pic-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/img/demo/browser.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/img/demo/html-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/img/demo/logo-mask-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/img/demo/logo-mask.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/img/demo/video.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/img/example-image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/img/footer/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/img/getting-started/icomoon_import.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/img/video/poster.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/js/application.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/assets/js/prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/components.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/examples/buttons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/examples/dropdowns.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/examples/forms.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/examples/navbar-fixed-top.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/examples/navbar-static-top.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/examples/navbars-with-elements.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/examples/navbars.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/examples/pagination.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/examples/radiocheck.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/examples/select.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/examples/switches.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/examples/tagsinput.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/examples/thumbnails.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/examples/tiles.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/examples/todo-list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/examples/tooltips.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/examples/typography.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/examples/vertical-slider.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/getting-started.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/docs/template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/glyphicons/flat-ui-icons-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/glyphicons/flat-ui-icons-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/glyphicons/flat-ui-icons-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/glyphicons/flat-ui-icons-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/glyphicons/selection.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-black.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-black.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-black.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-bold.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-bold.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-bolditalic.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-bolditalic.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-bolditalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-bolditalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-italic.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-italic.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-italic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-italic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-light.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-light.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-light.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/fonts/lato/lato-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/png/Book.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/png/Calendar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/png/Chat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/png/Clipboard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/png/Compas.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/png/Gift-Box.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/png/Infinity-Loop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/png/Mail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/png/Map.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/png/Pensils.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/png/Pocket.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/png/Retina-Ready.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/png/Toilet-Paper.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/png/Watches.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/svg/book.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/svg/calendar.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/svg/chat.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/svg/clipboard.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/svg/clocks.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/svg/compas.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/svg/gift-box.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/svg/loop.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/svg/mail.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/svg/map.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/svg/paper-bag.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/svg/pencils.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/svg/retina.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/svg/ribbon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/icons/svg/toilet-paper.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/login/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/login/imac-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/login/imac.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/tile/ribbon-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/img/tile/ribbon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/js/.jscs.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/js/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/js/radiocheck.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/.csscomb.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/.csslintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/flat-ui.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/background-clip.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/background-variant.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/border-radius.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/center-block.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/clearfix.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/forms.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/gradients.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/grid.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/hide-text.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/image.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/nav-divider.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/navbar-vertical-align.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/opacity.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/pallets.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/reset-filter.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/resize.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/responsive-visibility.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/select.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/size.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/switches.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/tab-focus.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/text-emphasis.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/text-overflow.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/mixins/vendor-prefixes.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/button-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/code.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/dropdowns.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/footer.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/forms.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/glyphicons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/input-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/local-fonts.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/login.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/navbar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/pager.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/palette.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/print.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/progress-bars.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/radiocheck.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/scaffolding.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/select.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/share.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/slider.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/switch.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/tagsinput.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/thumbnails.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/tiles.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/todo-list.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/tooltip.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/type.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/typeahead.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/modules/video.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/spaces.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Flat-UI-master/package.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Log.html" afterPath="$PROJECT_DIR$/Application/Admin/Log.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Robot.html" afterPath="$PROJECT_DIR$/Application/Admin/Robot.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Welcome.html" afterPath="$PROJECT_DIR$/Application/Admin/Welcome.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/index.html" afterPath="$PROJECT_DIR$/Application/Admin/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Controller.php" afterPath="$PROJECT_DIR$/Application/Api/Controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin/Plugin.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin/Plugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Plugin/TulingPlugin/TulingPlugin.php" afterPath="$PROJECT_DIR$/Plugin/TulingPlugin/TulingPlugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Plugin/YiBaoPlugin/YiBaoPlugin.php" afterPath="$PROJECT_DIR$/Plugin/YiBaoPlugin/YiBaoPlugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/.htaccess" afterPath="$PROJECT_DIR$/Public/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/index.js" afterPath="$PROJECT_DIR$/assets/index.js" />
     </list>
+    <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,14 +469,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>FALSE</find>
-      <find>EXTEND_PATH</find>
-      <find>Coo</find>
       <find>thin</find>
       <find>write</find>
       <find>think</find>
@@ -71,6 +502,9 @@
       <find>get_class()</find>
       <find>$is_on_plugin</find>
       <find>$this-&gt;getGetData()</find>
+      <find>http://www.bootcss.com/</find>
+      <find>../..</find>
+      <find>h4</find>
     </findStrings>
     <replaceStrings>
       <replace>InsertMsgLog</replace>
@@ -96,6 +530,8 @@
       <replace>Log::Info</replace>
       <replace>Plugin::$Plugin</replace>
       <replace>$data</replace>
+      <replace>http://www.bootcss.com/p/flat-ui/</replace>
+      <replace>/CoolQ</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -104,18 +540,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Cache/driver/File.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Cache/driver/Lite.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Cache/driver/Memcache.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Cache/driver/Memcached.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Cache/driver/Redis.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Cache/driver/Sqlite.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Cache/driver/Wincache.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Cache/driver/Xcache.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Log/driver/File.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Log/driver/Socket.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/library/CoolQ/Log/driver/Test.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Common/Function.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Hook.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/start.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Loader.php" />
@@ -141,20 +565,32 @@
         <option value="$PROJECT_DIR$/Application/Api/index.php" />
         <option value="$PROJECT_DIR$/Plugin/LosingPlugin/lib/LosingMsg.class.php" />
         <option value="$PROJECT_DIR$/Plugin/VipVideoPlugin/VipVideoPlugin.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/RobotSql.php" />
         <option value="$PROJECT_DIR$/Application/Api/README.md" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/MsgTool.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin/Plugin.php" />
-        <option value="$PROJECT_DIR$/Plugin/TulingPlugin/TulingPlugin.php" />
         <option value="$PROJECT_DIR$/Plugin/YiBaoPlugin/YiBaoPlugin.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Controller.php" />
-        <option value="$PROJECT_DIR$/Plugin/OcrPlugin/OcrPlugin.php" />
-        <option value="$PROJECT_DIR$/Plugin/MusicPlugin/MusicPlugin.php" />
         <option value="$PROJECT_DIR$/Plugin/ManagePlugin/ManagePlugin.php" />
         <option value="$PROJECT_DIR$/Plugin/LosingPlugin/LosingPlugin.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/coolq_v2.sql" />
+        <option value="$PROJECT_DIR$/Examples/index.html" />
+        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin/Plugin.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php" />
+        <option value="$PROJECT_DIR$/assets/bootstrap/dist/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/assets/vue/vue.js" />
+        <option value="$PROJECT_DIR$/assets/Admin/js/index.js" />
+        <option value="$PROJECT_DIR$/assets/comm.js" />
+        <option value="$PROJECT_DIR$/Public/.htaccess" />
+        <option value="$PROJECT_DIR$/Application/Admin/Log.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/Welcome.html" />
+        <option value="$PROJECT_DIR$/assets/index.js" />
+        <option value="$PROJECT_DIR$/Application/Admin/index.html" />
+        <option value="$PROJECT_DIR$/Application/Api/Controller.php" />
+        <option value="$PROJECT_DIR$/Plugin/TulingPlugin/TulingPlugin.php" />
+        <option value="$PROJECT_DIR$/Plugin/OcrPlugin/OcrPlugin.php" />
+        <option value="$PROJECT_DIR$/Plugin/MusicPlugin/MusicPlugin.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Robot.html" />
       </list>
     </option>
   </component>
@@ -170,6 +606,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
@@ -177,10 +616,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="1" />
-    <option name="width" value="1924" />
-    <option name="height" value="1037" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -216,7 +655,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -230,244 +668,15 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YiBaoPlugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TulingPlugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OcrPlugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MusicPlugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ManagePlugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LosingPlugin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQPHP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQPHP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Library" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQPHP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Library" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Db" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Public" />
+    <property name="last_opened_file_path" value="I:/Vue.js/ShoppingCart" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -476,7 +685,11 @@
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="I:\phpStudy\WWW\CoolQ\Public" />
     <property name="nodejs_interpreter_path" value="F:/Program Files/nodejs/node" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php&#10;I:/phpStudy/WWW/CoolQ/CoolQPHP/.gitignore&#10;I:/phpStudy/WWW/CoolQ/.gitignore&#10;I:/phpStudy/WWW/CoolQ/CoolQPHP/Library/CoolQ/Conf/.gitignore" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php&#10;I:/phpStudy/WWW/CoolQ/CoolQPHP/.gitignore&#10;I:/phpStudy/WWW/CoolQ/.gitignore&#10;I:/phpStudy/WWW/CoolQ/CoolQPHP/Library/CoolQ/Conf/.gitignore&#10;I:/phpStudy/WWW/CoolQ/Application/Api/Controller.php" />
+    <property name="node.js.path.for.package.jscs" value="G:/Program Files/nodejs/node" />
+    <property name="node.js.detected.package.jscs" value="true" />
+    <property name="node.js.selected.package.jscs" value="I:\phpStudy\WWW\CoolQ" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -487,11 +700,11 @@
       <recent name="I:\phpStudy\WWW\CoolQ\Application\Api" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\phpStudy\WWW\CoolQ\assets" />
+      <recent name="I:\phpStudy\WWW\CoolQ\Application" />
+      <recent name="I:\phpStudy\WWW\CoolQ\Application\Admin" />
       <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ\Db" />
       <recent name="I:\phpStudy\WWW\CoolQ\Plugin\LosingPlugin" />
-      <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ\Conf" />
-      <recent name="I:\phpStudy\WWW\CoolQ\Application\Admin" />
-      <recent name="I:\phpStudy\WWW\CoolQ\Application\Api" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -507,10 +720,6 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
-      <PhpTestRunnerSettings />
-      <method />
-    </configuration>
     <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
       <node-interpreter value="project" />
       <working-dir value="" />
@@ -528,21 +737,6 @@
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
-      <method />
-    </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
-      <PhpTestRunnerSettings />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -631,12 +825,18 @@
       <workItem from="1499094990817" duration="2154000" />
       <workItem from="1499155706103" duration="10484000" />
       <workItem from="1499170184671" duration="20957000" />
-      <workItem from="1499227071209" duration="39880000" />
+      <workItem from="1499227071209" duration="40676000" />
+      <workItem from="1499312141461" duration="839000" />
+      <workItem from="1499322091742" duration="3655000" />
+      <workItem from="1499504103559" duration="633000" />
+      <workItem from="1499777519268" duration="22077000" />
+      <workItem from="1499856203520" duration="21984000" />
+      <workItem from="1499882877944" duration="277000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203439000" />
+    <option name="totallyTimeSpent" value="253700000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -648,25 +848,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="1" width="1924" height="1037" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1956978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19270833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821077" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -682,212 +885,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Loader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10303">
-          <caret line="297" column="62" lean-forward="false" selection-start-line="297" selection-start-column="47" selection-end-line="297" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/DbException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/ClassNotFoundException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/File.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Exception/ErrorException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="54" column="26" lean-forward="true" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Runtime/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Debug.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="163" column="22" lean-forward="false" selection-start-line="163" selection-start-column="22" selection-end-line="163" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="1201" column="0" lean-forward="false" selection-start-line="1201" selection-start-column="0" selection-end-line="1201" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Tpl/dispatch_jump.php" />
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-370">
-          <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="41" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/temp/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="156">
-            <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="4" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/robots.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Runtime/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/src/CoolQSDK/CoolQSDK.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-446">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="381" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/MySql.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
           <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -895,7 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -903,63 +903,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding>
-            <marker date="1499247121519" expanded="true" signature="1063:1255" ph="insert into coolq_log... " />
-            <marker date="1499247121519" expanded="true" signature="1592:1784" ph="insert into coolq_log... " />
-            <marker date="1499247121519" expanded="true" signature="2121:2310" ph="insert into coolq_log... " />
-            <marker date="1499247121519" expanded="true" signature="2647:2840" ph="insert into coolq_log... " />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Plugin/VipVideoPlugin/VipVideoPlugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/start.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#92#0#PHP" expanded="true" />
-            <element signature="e#113#147#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Plugin/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugin/VipVideoPlugin/VipVideoPlugin.php" />
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -967,7 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="19" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -975,7 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -983,7 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1482">
           <caret line="50" column="31" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,235 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="370" column="45" lean-forward="false" selection-start-line="370" selection-start-column="45" selection-end-line="370" selection-end-column="45" />
-          <folding>
-            <element signature="e#140#157#0#PHP" expanded="true" />
-            <element signature="e#438#809#0#PHP" expanded="false" />
-            <element signature="e#815#855#0#PHP" expanded="false" />
-            <element signature="e#861#902#0#PHP" expanded="false" />
-            <element signature="e#908#1239#0#PHP" expanded="false" />
-            <element signature="e#1021#1201#0#PHP" expanded="false" />
-            <element signature="e#1245#1314#0#PHP" expanded="false" />
-            <element signature="e#1319#2447#0#PHP" expanded="false" />
-            <element signature="e#1676#2441#0#PHP" expanded="false" />
-            <element signature="e#2019#2174#0#PHP" expanded="false" />
-            <element signature="e#2099#2174#0#PHP" expanded="false" />
-            <element signature="e#2349#2441#0#PHP" expanded="false" />
-            <element signature="e#2453#2503#0#PHP" expanded="false" />
-            <element signature="e#2508#2920#0#PHP" expanded="false" />
-            <element signature="e#2666#2775#0#PHP" expanded="false" />
-            <element signature="e#2927#2998#0#PHP" expanded="false" />
-            <element signature="e#3003#3421#0#PHP" expanded="false" />
-            <element signature="e#3159#3268#0#PHP" expanded="false" />
-            <element signature="e#3427#3499#0#PHP" expanded="false" />
-            <element signature="e#3504#3909#0#PHP" expanded="false" />
-            <element signature="e#3712#3882#0#PHP" expanded="false" />
-            <element signature="e#3804#3882#0#PHP" expanded="false" />
-            <element signature="e#3915#3971#0#PHP" expanded="false" />
-            <element signature="e#3976#4462#0#PHP" expanded="false" />
-            <element signature="e#4133#4241#0#PHP" expanded="false" />
-            <element signature="e#4468#4540#0#PHP" expanded="false" />
-            <element signature="e#4545#5158#0#PHP" expanded="false" />
-            <element signature="e#4601#4744#0#PHP" expanded="false" />
-            <element signature="e#4922#5131#0#PHP" expanded="false" />
-            <element signature="e#5054#5131#0#PHP" expanded="false" />
-            <element signature="e#5164#5271#0#PHP" expanded="false" />
-            <element signature="e#5276#5835#0#PHP" expanded="false" />
-            <element signature="e#5450#5560#0#PHP" expanded="false" />
-            <element signature="e#5842#5954#0#PHP" expanded="false" />
-            <element signature="e#5959#6657#0#PHP" expanded="false" />
-            <element signature="e#6031#6194#0#PHP" expanded="false" />
-            <element signature="e#6408#6630#0#PHP" expanded="false" />
-            <element signature="e#6551#6630#0#PHP" expanded="false" />
-            <element signature="e#6663#6734#0#PHP" expanded="false" />
-            <element signature="e#6739#7300#0#PHP" expanded="false" />
-            <element signature="e#6913#7023#0#PHP" expanded="false" />
-            <element signature="e#7307#7403#0#PHP" expanded="false" />
-            <element signature="e#7408#8106#0#PHP" expanded="false" />
-            <element signature="e#7480#7643#0#PHP" expanded="false" />
-            <element signature="e#8113#8220#0#PHP" expanded="false" />
-            <element signature="e#8225#8762#0#PHP" expanded="false" />
-            <element signature="e#8393#8503#0#PHP" expanded="false" />
-            <element signature="e#8769#8881#0#PHP" expanded="false" />
-            <element signature="e#8886#9557#0#PHP" expanded="false" />
-            <element signature="e#8952#9109#0#PHP" expanded="false" />
-            <element signature="e#9311#9530#0#PHP" expanded="false" />
-            <element signature="e#9451#9530#0#PHP" expanded="false" />
-            <element signature="e#9564#9635#0#PHP" expanded="false" />
-            <element signature="e#9641#10178#0#PHP" expanded="false" />
-            <element signature="e#9809#9919#0#PHP" expanded="false" />
-            <element signature="e#10185#10281#0#PHP" expanded="false" />
-            <element signature="e#10286#10957#0#PHP" expanded="false" />
-            <element signature="e#10352#10509#0#PHP" expanded="false" />
-            <element signature="e#10711#10930#0#PHP" expanded="false" />
-            <element signature="e#10851#10930#0#PHP" expanded="false" />
-            <element signature="e#10964#11035#0#PHP" expanded="false" />
-            <element signature="e#11041#11528#0#PHP" expanded="false" />
-            <element signature="e#11199#11307#0#PHP" expanded="false" />
-            <element signature="e#11535#11631#0#PHP" expanded="false" />
-            <element signature="e#11636#12249#0#PHP" expanded="false" />
-            <element signature="e#11692#11835#0#PHP" expanded="false" />
-            <element signature="e#12013#12222#0#PHP" expanded="false" />
-            <element signature="e#12145#12222#0#PHP" expanded="false" />
-            <element signature="e#12256#12336#0#PHP" expanded="false" />
-            <element signature="e#12341#12826#0#PHP" expanded="false" />
-            <element signature="e#12514#12626#0#PHP" expanded="false" />
-            <element signature="e#12832#12928#0#PHP" expanded="false" />
-            <element signature="e#12933#13429#0#PHP" expanded="false" />
-            <element signature="e#13208#13402#0#PHP" expanded="false" />
-            <element signature="e#13317#13402#0#PHP" expanded="false" />
-            <element signature="e#13436#13516#0#PHP" expanded="false" />
-            <element signature="e#13521#14006#0#PHP" expanded="false" />
-            <element signature="e#13694#13806#0#PHP" expanded="false" />
-            <element signature="e#14012#14108#0#PHP" expanded="false" />
-            <element signature="e#14113#14609#0#PHP" expanded="false" />
-            <element signature="e#14388#14582#0#PHP" expanded="false" />
-            <element signature="e#14497#14582#0#PHP" expanded="false" />
-            <element signature="e#14616#14696#0#PHP" expanded="false" />
-            <element signature="e#14701#15206#0#PHP" expanded="false" />
-            <element signature="e#14880#14994#0#PHP" expanded="false" />
-            <element signature="e#15212#15308#0#PHP" expanded="false" />
-            <element signature="e#15313#15833#0#PHP" expanded="false" />
-            <element signature="e#15609#15806#0#PHP" expanded="false" />
-            <element signature="e#15721#15806#0#PHP" expanded="false" />
-            <element signature="e#15840#15920#0#PHP" expanded="false" />
-            <element signature="e#15925#16430#0#PHP" expanded="false" />
-            <element signature="e#16104#16218#0#PHP" expanded="false" />
-            <element signature="e#16436#16532#0#PHP" expanded="false" />
-            <element signature="e#16537#17057#0#PHP" expanded="false" />
-            <element signature="e#16833#17030#0#PHP" expanded="false" />
-            <element signature="e#16945#17030#0#PHP" expanded="false" />
-            <element signature="e#17064#17138#0#PHP" expanded="false" />
-            <element signature="e#17143#17558#0#PHP" expanded="false" />
-            <element signature="e#17296#17406#0#PHP" expanded="false" />
-            <element signature="e#17564#17655#0#PHP" expanded="false" />
-            <element signature="e#17660#18058#0#PHP" expanded="false" />
-            <element signature="e#17860#18031#0#PHP" expanded="false" />
-            <element signature="e#17952#18031#0#PHP" expanded="false" />
-            <element signature="e#18065#18141#0#PHP" expanded="false" />
-            <element signature="e#18146#18595#0#PHP" expanded="false" />
-            <element signature="e#18309#18421#0#PHP" expanded="false" />
-            <element signature="e#18601#18694#0#PHP" expanded="false" />
-            <element signature="e#18699#19141#0#PHP" expanded="false" />
-            <element signature="e#18934#19114#0#PHP" expanded="false" />
-            <element signature="e#19033#19114#0#PHP" expanded="false" />
-            <element signature="e#19147#19223#0#PHP" expanded="false" />
-            <element signature="e#19228#19690#0#PHP" expanded="false" />
-            <element signature="e#19394#19507#0#PHP" expanded="false" />
-            <element signature="e#19696#19789#0#PHP" expanded="false" />
-            <element signature="e#19794#20253#0#PHP" expanded="false" />
-            <element signature="e#20042#20226#0#PHP" expanded="false" />
-            <element signature="e#20144#20226#0#PHP" expanded="false" />
-            <element signature="e#20259#20336#0#PHP" expanded="false" />
-            <element signature="e#20341#20797#0#PHP" expanded="false" />
-            <element signature="e#20505#20618#0#PHP" expanded="false" />
-            <element signature="e#20803#20897#0#PHP" expanded="false" />
-            <element signature="e#20902#21353#0#PHP" expanded="false" />
-            <element signature="e#21143#21326#0#PHP" expanded="false" />
-            <element signature="e#21244#21326#0#PHP" expanded="false" />
-            <element signature="e#21360#21438#0#PHP" expanded="false" />
-            <element signature="e#21443#21913#0#PHP" expanded="false" />
-            <element signature="e#21611#21725#0#PHP" expanded="false" />
-            <element signature="e#21919#22014#0#PHP" expanded="false" />
-            <element signature="e#22019#22488#0#PHP" expanded="false" />
-            <element signature="e#22274#22461#0#PHP" expanded="false" />
-            <element signature="e#22378#22461#0#PHP" expanded="false" />
-            <element signature="e#22495#22574#0#PHP" expanded="false" />
-            <element signature="e#22579#23059#0#PHP" expanded="false" />
-            <element signature="e#22753#22864#0#PHP" expanded="false" />
-            <element signature="e#23065#23161#0#PHP" expanded="false" />
-            <element signature="e#23166#23646#0#PHP" expanded="false" />
-            <element signature="e#23436#23619#0#PHP" expanded="false" />
-            <element signature="e#23538#23619#0#PHP" expanded="false" />
-            <element signature="e#23652#23731#0#PHP" expanded="false" />
-            <element signature="e#23736#24210#0#PHP" expanded="false" />
-            <element signature="e#23908#24019#0#PHP" expanded="false" />
-            <element signature="e#24216#24312#0#PHP" expanded="false" />
-            <element signature="e#24317#24789#0#PHP" expanded="false" />
-            <element signature="e#24580#24762#0#PHP" expanded="false" />
-            <element signature="e#24681#24762#0#PHP" expanded="false" />
-            <element signature="e#24796#24876#0#PHP" expanded="false" />
-            <element signature="e#24881#25326#0#PHP" expanded="false" />
-            <element signature="e#25042#25154#0#PHP" expanded="false" />
-            <element signature="e#25332#25429#0#PHP" expanded="false" />
-            <element signature="e#25434#25867#0#PHP" expanded="false" />
-            <element signature="e#25661#25840#0#PHP" expanded="false" />
-            <element signature="e#25758#25840#0#PHP" expanded="false" />
-            <element signature="e#25873#25948#0#PHP" expanded="false" />
-            <element signature="e#25953#26405#0#PHP" expanded="false" />
-            <element signature="e#26119#26226#0#PHP" expanded="false" />
-            <element signature="e#26411#26503#0#PHP" expanded="false" />
-            <element signature="e#26960#27036#0#PHP" expanded="false" />
-            <element signature="e#27041#27493#0#PHP" expanded="false" />
-            <element signature="e#27205#27315#0#PHP" expanded="false" />
-            <element signature="e#27499#27593#0#PHP" expanded="false" />
-            <element signature="e#27598#28042#0#PHP" expanded="false" />
-            <element signature="e#27838#28015#0#PHP" expanded="false" />
-            <element signature="e#27935#28015#0#PHP" expanded="false" />
-            <element signature="e#28048#28126#0#PHP" expanded="false" />
-            <element signature="e#28131#28613#0#PHP" expanded="false" />
-            <element signature="e#28305#28416#0#PHP" expanded="false" />
-            <element signature="e#28619#28714#0#PHP" expanded="false" />
-            <element signature="e#28719#29129#0#PHP" expanded="false" />
-            <element signature="e#28912#29102#0#PHP" expanded="false" />
-            <element signature="e#29018#29102#0#PHP" expanded="false" />
-            <element signature="e#29135#29213#0#PHP" expanded="false" />
-            <element signature="e#29218#29718#0#PHP" expanded="false" />
-            <element signature="e#29398#29509#0#PHP" expanded="false" />
-            <element signature="e#29724#29819#0#PHP" expanded="false" />
-            <element signature="e#29824#30242#0#PHP" expanded="false" />
-            <element signature="e#30028#30215#0#PHP" expanded="false" />
-            <element signature="e#30134#30215#0#PHP" expanded="false" />
-            <marker date="1499278229667" expanded="false" signature="1371:1413" ph="SELECT * FRO... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="1730:1954" ph="insert into coolq_robot... " />
-            <marker date="1499278229667" expanded="false" signature="2195:2237" ph="SELECT * FRO... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="2565:2610" ph="SELECT time " />
-            <marker date="1499278229667" expanded="false" signature="3056:3103" ph="SELECT statu... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="3642:3700" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="4029:4077" ph="SELECT manag... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="4850:4910" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="5337:5394" ph="SELECT group... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="6318:6396" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="6800:6857" ph="SELECT group... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="7767:7845" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="8283:8337" ph="SELECT qq_wh... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="9227:9299" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="9699:9753" ph="SELECT qq_bl... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="10627:10699" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="11095:11143" ph="SELECT keywo... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="11941:12001" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="12401:12458" ph="SELECT is_qq... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="13118:13196" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="13581:13638" ph="SELECT is_qq... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="14298:14376" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="14764:14824" ph="SELECT is_gr... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="15513:15597" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="15988:16048" ph="SELECT is_gr... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="16737:16821" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="17194:17240" ph="SELECT is_at... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="17792:17848" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="18202:18253" ph="SELECT is_ke... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="18856:18922" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="19285:19338" ph="SELECT is_on... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="19960:20030" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="20397:20449" ph="SELECT is_on... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="21063:21131" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="21501:21555" ph="SELECT is_on... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="22190:22262" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="22641:22697" ph="SELECT is_ag... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="23348:23424" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="23797:23852" ph="SELECT is_ag... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="24494:24568" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="24936:24986" ph="SELECT is_fo... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="25585:25649" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="26010:26063" ph="SELECT is_on... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="26673:26743" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="27097:27149" ph="SELECT is_re... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="27758:27826" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="28192:28249" ph="SELECT qq_re... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="28822:28900" ph="UPDATE coolq... " />
-            <marker date="1499278229667" expanded="false" signature="29282:29342" ph="SELECT group... coolq_robot" />
-            <marker date="1499278229667" expanded="false" signature="29932:30016" ph="UPDATE coolq... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1227,175 +946,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
           <caret line="98" column="43" lean-forward="true" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
-          <folding>
-            <element signature="e#118#132#0#PHP" expanded="true" />
-            <element signature="e#1013#1111#0#PHP" expanded="false" />
-            <element signature="e#1116#1501#0#PHP" expanded="false" />
-            <element signature="e#1507#1547#0#PHP" expanded="false" />
-            <element signature="e#1553#1594#0#PHP" expanded="false" />
-            <element signature="e#1600#1744#0#PHP" expanded="false" />
-            <element signature="e#1749#2005#0#PHP" expanded="false" />
-            <element signature="e#1865#1967#0#PHP" expanded="false" />
-            <element signature="e#2011#2075#0#PHP" expanded="false" />
-            <element signature="e#3064#4914#0#PHP" expanded="false" />
-            <element signature="e#4921#4968#0#PHP" expanded="false" />
-            <element signature="e#4973#5034#0#PHP" expanded="false" />
-            <element signature="e#5041#5073#0#PHP" expanded="false" />
-            <element signature="e#5078#5148#0#PHP" expanded="false" />
-            <element signature="e#5155#5187#0#PHP" expanded="false" />
-            <element signature="e#5192#5262#0#PHP" expanded="false" />
-            <element signature="e#5269#5301#0#PHP" expanded="false" />
-            <element signature="e#5306#5378#0#PHP" expanded="false" />
-            <element signature="e#5385#5418#0#PHP" expanded="false" />
-            <element signature="e#5423#5493#0#PHP" expanded="false" />
-            <element signature="e#5500#5532#0#PHP" expanded="false" />
-            <element signature="e#5537#5698#0#PHP" expanded="false" />
-            <element signature="e#5705#5737#0#PHP" expanded="false" />
-            <element signature="e#5742#5887#0#PHP" expanded="false" />
-            <element signature="e#5893#5932#0#PHP" expanded="false" />
-            <element signature="e#5937#6085#0#PHP" expanded="false" />
-            <element signature="e#6091#6123#0#PHP" expanded="false" />
-            <element signature="e#6128#6276#0#PHP" expanded="false" />
-            <element signature="e#6282#6322#0#PHP" expanded="false" />
-            <element signature="e#6327#6481#0#PHP" expanded="false" />
-            <element signature="e#6487#6519#0#PHP" expanded="false" />
-            <element signature="e#6524#6705#0#PHP" expanded="false" />
-            <element signature="e#6711#6760#0#PHP" expanded="false" />
-            <element signature="e#6765#6969#0#PHP" expanded="false" />
-            <element signature="e#6975#7007#0#PHP" expanded="false" />
-            <element signature="e#7012#7193#0#PHP" expanded="false" />
-            <element signature="e#7199#7248#0#PHP" expanded="false" />
-            <element signature="e#7253#7457#0#PHP" expanded="false" />
-            <element signature="e#7463#7495#0#PHP" expanded="false" />
-            <element signature="e#7500#7669#0#PHP" expanded="false" />
-            <element signature="e#7675#7721#0#PHP" expanded="false" />
-            <element signature="e#7726#7912#0#PHP" expanded="false" />
-            <element signature="e#7918#7950#0#PHP" expanded="false" />
-            <element signature="e#8130#8176#0#PHP" expanded="false" />
-            <element signature="e#8181#8367#0#PHP" expanded="false" />
-            <element signature="e#8373#8405#0#PHP" expanded="false" />
-            <element signature="e#8410#8559#0#PHP" expanded="false" />
-            <element signature="e#8565#8605#0#PHP" expanded="false" />
-            <element signature="e#8771#8803#0#PHP" expanded="false" />
-            <element signature="e#8808#8989#0#PHP" expanded="false" />
-            <element signature="e#8995#9044#0#PHP" expanded="false" />
-            <element signature="e#9049#9253#0#PHP" expanded="false" />
-            <element signature="e#9259#9291#0#PHP" expanded="false" />
-            <element signature="e#9296#9489#0#PHP" expanded="false" />
-            <element signature="e#9495#9547#0#PHP" expanded="false" />
-            <element signature="e#9552#9774#0#PHP" expanded="false" />
-            <element signature="e#9780#9812#0#PHP" expanded="false" />
-            <element signature="e#9817#10008#0#PHP" expanded="false" />
-            <element signature="e#10014#10066#0#PHP" expanded="false" />
-            <element signature="e#10071#10291#0#PHP" expanded="false" />
-            <element signature="e#10297#10329#0#PHP" expanded="false" />
-            <element signature="e#10334#10525#0#PHP" expanded="false" />
-            <element signature="e#10531#10583#0#PHP" expanded="false" />
-            <element signature="e#10588#10808#0#PHP" expanded="false" />
-            <element signature="e#10814#10846#0#PHP" expanded="false" />
-            <element signature="e#10851#11030#0#PHP" expanded="false" />
-            <element signature="e#11036#11085#0#PHP" expanded="false" />
-            <element signature="e#11090#11292#0#PHP" expanded="false" />
-            <element signature="e#11298#11330#0#PHP" expanded="false" />
-            <element signature="e#11335#11514#0#PHP" expanded="false" />
-            <element signature="e#11520#11569#0#PHP" expanded="false" />
-            <element signature="e#11574#11776#0#PHP" expanded="false" />
-            <element signature="e#11782#11814#0#PHP" expanded="false" />
-            <element signature="e#11819#11958#0#PHP" expanded="false" />
-            <element signature="e#11964#12002#0#PHP" expanded="false" />
-            <element signature="e#12007#12147#0#PHP" expanded="false" />
-            <element signature="e#12153#12185#0#PHP" expanded="false" />
-            <element signature="e#12190#12349#0#PHP" expanded="false" />
-            <element signature="e#12355#12398#0#PHP" expanded="false" />
-            <element signature="e#12403#12573#0#PHP" expanded="false" />
-            <element signature="e#12579#12611#0#PHP" expanded="false" />
-            <element signature="e#12616#12771#0#PHP" expanded="false" />
-            <element signature="e#12777#12819#0#PHP" expanded="false" />
-            <element signature="e#12824#12988#0#PHP" expanded="false" />
-            <element signature="e#12994#13026#0#PHP" expanded="false" />
-            <element signature="e#13031#13196#0#PHP" expanded="false" />
-            <element signature="e#13202#13247#0#PHP" expanded="false" />
-            <element signature="e#13252#13432#0#PHP" expanded="false" />
-            <element signature="e#13438#13470#0#PHP" expanded="false" />
-            <element signature="e#13475#13636#0#PHP" expanded="false" />
-            <element signature="e#13642#13686#0#PHP" expanded="false" />
-            <element signature="e#13691#13865#0#PHP" expanded="false" />
-            <element signature="e#13871#13903#0#PHP" expanded="false" />
-            <element signature="e#13908#14077#0#PHP" expanded="false" />
-            <element signature="e#14083#14129#0#PHP" expanded="false" />
-            <element signature="e#14134#14320#0#PHP" expanded="false" />
-            <element signature="e#14326#14358#0#PHP" expanded="false" />
-            <element signature="e#14363#14542#0#PHP" expanded="false" />
-            <element signature="e#14548#14596#0#PHP" expanded="false" />
-            <element signature="e#14601#14801#0#PHP" expanded="false" />
-            <element signature="e#14807#14839#0#PHP" expanded="false" />
-            <element signature="e#14844#15019#0#PHP" expanded="false" />
-            <element signature="e#15025#15072#0#PHP" expanded="false" />
-            <element signature="e#15077#15271#0#PHP" expanded="false" />
-            <element signature="e#15277#15309#0#PHP" expanded="false" />
-            <element signature="e#15535#15715#0#PHP" expanded="false" />
-            <element signature="e#15721#15753#0#PHP" expanded="false" />
-            <element signature="e#15758#15919#0#PHP" expanded="false" />
-            <element signature="e#15925#15969#0#PHP" expanded="false" />
-            <element signature="e#15974#16148#0#PHP" expanded="false" />
-            <element signature="e#16156#16244#0#PHP" expanded="false" />
-            <element signature="e#16254#16279#0#PHP" expanded="false" />
-            <element signature="e#16286#16680#0#PHP" expanded="false" />
-            <element signature="e#16685#16849#0#PHP" expanded="false" />
-            <element signature="e#16856#17172#0#PHP" expanded="false" />
-            <element signature="e#17177#17456#0#PHP" expanded="false" />
-            <element signature="e#17462#17770#0#PHP" expanded="false" />
-            <element signature="e#17775#18052#0#PHP" expanded="false" />
-            <element signature="e#18058#18405#0#PHP" expanded="false" />
-            <element signature="e#18410#18702#0#PHP" expanded="false" />
-            <element signature="e#18708#18928#0#PHP" expanded="false" />
-            <element signature="e#18933#19149#0#PHP" expanded="false" />
-            <element signature="e#19155#19430#0#PHP" expanded="false" />
-            <element signature="e#19435#19749#0#PHP" expanded="false" />
-            <element signature="e#19755#20032#0#PHP" expanded="false" />
-            <element signature="e#20037#20307#0#PHP" expanded="false" />
-            <element signature="e#20313#20530#0#PHP" expanded="false" />
-            <element signature="e#20535#20779#0#PHP" expanded="false" />
-            <element signature="e#20785#21092#0#PHP" expanded="false" />
-            <element signature="e#21097#21380#0#PHP" expanded="false" />
-            <element signature="e#21386#21666#0#PHP" expanded="false" />
-            <element signature="e#21671#21948#0#PHP" expanded="false" />
-            <element signature="e#21954#22173#0#PHP" expanded="false" />
-            <element signature="e#22178#22423#0#PHP" expanded="false" />
-            <element signature="e#22429#22820#0#PHP" expanded="false" />
-            <element signature="e#22825#23192#0#PHP" expanded="false" />
-            <element signature="e#23198#23469#0#PHP" expanded="false" />
-            <element signature="e#23474#23738#0#PHP" expanded="false" />
-            <element signature="e#23744#23987#0#PHP" expanded="false" />
-            <element signature="e#23992#24246#0#PHP" expanded="false" />
-            <element signature="e#24252#24452#0#PHP" expanded="false" />
-            <element signature="e#24457#24665#0#PHP" expanded="false" />
-            <element signature="e#24671#24975#0#PHP" expanded="false" />
-            <element signature="e#24980#25269#0#PHP" expanded="false" />
-            <element signature="e#25275#25656#0#PHP" expanded="false" />
-            <element signature="e#25661#25968#0#PHP" expanded="false" />
-            <element signature="e#25974#26144#0#PHP" expanded="false" />
-            <element signature="e#26149#26359#0#PHP" expanded="false" />
-            <element signature="e#26366#26664#0#PHP" expanded="false" />
-            <element signature="e#26669#26948#0#PHP" expanded="false" />
-            <element signature="e#26955#27207#0#PHP" expanded="false" />
-            <element signature="e#27212#27446#0#PHP" expanded="false" />
-            <element signature="e#27452#27522#0#PHP" expanded="false" />
-            <element signature="e#27527#27689#0#PHP" expanded="false" />
-            <element signature="e#27695#27771#0#PHP" expanded="false" />
-            <element signature="e#27776#27945#0#PHP" expanded="false" />
-            <marker date="1499286423605" expanded="true" signature="2530:2851" ph="SELECT coolq... coolq_plugin_orders" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin/Plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#113#135#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1403,72 +953,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
           <caret line="67" column="69" lean-forward="false" selection-start-line="67" selection-start-column="69" selection-end-line="67" selection-end-column="69" />
-          <folding>
-            <element signature="e#7#87#0#PHP" expanded="true" />
-            <element signature="e#88#112#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Plugin/TulingPlugin/TulingPlugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="e#7#87#0#PHP" expanded="true" />
-            <element signature="e#88#112#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Plugin/OcrPlugin/OcrPlugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="20" column="36" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="20" selection-end-column="36" />
-          <folding>
-            <element signature="e#7#92#0#PHP" expanded="true" />
-            <element signature="e#93#117#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Plugin/LosingPlugin/LosingPlugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <element signature="e#93#117#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Plugin/LosingPlugin/lib/LosingMsg.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-546">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Plugin/ManagePlugin/ManagePlugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-          <folding>
-            <element signature="e#7#92#0#PHP" expanded="true" />
-            <element signature="e#93#117#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Plugin/MusicPlugin/MusicPlugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="24" column="36" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="24" selection-end-column="36" />
-          <folding>
-            <element signature="e#7#87#0#PHP" expanded="true" />
-            <element signature="e#88#112#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1476,7 +960,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4370">
           <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1485,19 +968,242 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="251">
             <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/index.html" />
+    <entry file="file://$PROJECT_DIR$/Public/semantic/semantic.min.js" />
+    <entry file="file://$PROJECT_DIR$/assets/semantic/semantic.min.js" />
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/bootstrap/js/tests/unit/tab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin/Plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="62" column="12" lean-forward="false" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/start.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3450">
+          <caret line="115" column="35" lean-forward="true" selection-start-line="115" selection-start-column="35" selection-end-line="115" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/vue.js" />
+    <entry file="file://$PROJECT_DIR$/assets/bootstrap/docs/assets/js/vendor/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6939">
+          <caret line="4" column="936" lean-forward="false" selection-start-line="4" selection-start-column="936" selection-end-line="4" selection-end-column="936" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/bootstrap/js/tests/vendor/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/Admin/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/Flat-UI-master/js/.jshintrc" />
+    <entry file="file://$PROJECT_DIR$/assets/FlatUI/dist/js/vendor/video.js" />
+    <entry file="file://$PROJECT_DIR$/assets/bootstrap/dist/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="4" column="72878" lean-forward="false" selection-start-line="4" selection-start-column="72878" selection-end-line="4" selection-end-column="72878" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/jquery.nicescroll.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/comm.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/vue/dist/vue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/.htaccess" />
+    <entry file="file://$PROJECT_DIR$/assets/FlatUI/docs/assets/js/application.js" />
+    <entry file="file://$PROJECT_DIR$/Application/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugin/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="1382" column="0" lean-forward="false" selection-start-line="1382" selection-start-column="0" selection-end-line="1382" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Log.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="64" column="31" lean-forward="false" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="1348" column="29" lean-forward="false" selection-start-line="1348" selection-start-column="17" selection-end-line="1348" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="86" column="47" lean-forward="false" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="116" column="8" lean-forward="true" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Api/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1443">
-          <caret line="68" column="36" lean-forward="false" selection-start-line="68" selection-start-column="36" selection-end-line="69" selection-end-column="91" />
+        <state relative-caret-position="498">
+          <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugin/TulingPlugin/TulingPlugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugin/OcrPlugin/OcrPlugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="63" column="46" lean-forward="false" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugin/MusicPlugin/MusicPlugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="699">
+          <caret line="67" column="69" lean-forward="false" selection-start-line="67" selection-start-column="69" selection-end-line="67" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugin/ManagePlugin/ManagePlugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugin/LosingPlugin/LosingPlugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugin/LosingPlugin/lib/LosingMsg.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3831">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Robot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="67" column="15" lean-forward="false" selection-start-line="67" selection-start-column="15" selection-end-line="67" selection-end-column="15" />
           <folding>
-            <element signature="e#6#117#0#PHP" expanded="true" />
-            <element signature="e#118#141#0#PHP" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#7;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#8;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#9;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#10;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#11;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#12;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#13;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#14;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#15;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

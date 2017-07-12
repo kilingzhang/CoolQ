@@ -1,0 +1,19 @@
+{
+  "name": "coolq",
+  "version": "1.0.0",
+  "description": "CoolQ 后台管理",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slight-sky/CoolQ.git"
+  },
+  "author": "kilingzhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slight-sky/CoolQ/issues"
+  },
+  "homepage": "https://github.com/slight-sky/CoolQ#readme"
+}

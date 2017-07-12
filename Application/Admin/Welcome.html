@@ -9,7 +9,8 @@
 
     <!-- Bootstrap -->
     <link href="../../assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Loading Flat UI -->
+    <link href="../../assets/FlatUI/dist/css/flat-ui.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,41 +19,79 @@
     <![endif]-->
 </head>
 <body>
-<div class="panel panel-info">
-    <div class="panel-heading">
-        <h3 class="panel-title">欢迎</h3>
+<div id="container">
+    <div class="WelcomeApp">
+
+
+        <div class="row demo-row">
+            <div class="col-xs-3">
+                <a href="#fakelink" class="btn btn-block btn-lg btn-success">Success Button</a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#fakelink" class="btn btn-block btn-lg btn-inverse">Inverse Button</a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#fakelink" class="btn btn-block btn-lg btn-info">Info Button</a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#fakelink" class="btn btn-block btn-lg btn-default disabled">Disabled Button</a>
+            </div>
+        </div> <!-- /row -->
+
+        <h3 class="demo-panel-title">Input</h3>
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="form-group">
+                    <input type="text" value="" placeholder="Inactive" class="form-control"/>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="form-group has-error">
+                    <input type="text" value="" placeholder="Error" class="form-control"/>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="form-group has-success">
+                    <input type="text" value="" placeholder="Success" class="form-control"/>
+                    <span class="input-icon fui-check-inverted"></span>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="form-group">
+                    <input type="text" value="Disabled" disabled="disabled" class="form-control"/>
+                </div>
+            </div>
+        </div> <!-- /row -->
+
+
     </div>
-    <div class="panel-body">
-        <div class="alert alert-warning">
-            <button type="button" class="close" data-dismiss="alert">×</button>
-            <h4>
-                提示!
-            </h4> <strong>警告!</strong> 请注意你的个人隐私安全.
-        </div>
-        <table class="table table-responsive">
-            <caption>日志消息</caption>
-            <thead>
-            <tr>
-                <th>内容</th>
-                <th>来源</th>
-                <th>类型</th>
-                <th>操作</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>上报事件:上报事件:{"post_type":"message","message_type":"private","sub_type":"frie</td>
-                <td>CoolQ</td>
-                <td>应用</td>
-                <td class="btn bg-info">详情</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
+</div> <!-- /container -->
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../../assets/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../node_modules/vue/dist/vue.js"></script>
+<script src="/CoolQ/assets/index.js"></script>
+
+
+<script src="../../assets/FlatUI/dist/js/vendor/video.js"></script>
+<script src="../../assets/FlatUI/dist/js/flat-ui.min.js"></script>
+<script src="../../assets/FlatUI/docs/assets/js/application.js"></script>
+<script src="../../assets/jquery.nicescroll.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        var nice = $("html").niceScroll();  // The document page (body)
+        $("#container").niceScroll("#WelcomeApp", {
+            cursorcolor: "#3498db",
+            cursoropacitymax: 0.7,
+            boxzoom: true,
+            touchbehavior: true
+        });  // Second scrollable DIV
+    });
+
+</script>
 </body>
 </html>

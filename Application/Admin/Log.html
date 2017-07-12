@@ -8,8 +8,9 @@
     <title>CoolQ后台管理</title>
 
     <!-- Bootstrap -->
-    <link href="../../assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="/CoolQ/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Loading Flat UI -->
+    <link href="/CoolQ/assets/FlatUI/dist/css/flat-ui.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,41 +19,68 @@
     <![endif]-->
 </head>
 <body>
-<div class="panel panel-info">
-    <div class="panel-heading">
-        <h3 class="panel-title">欢迎</h3>
-    </div>
-    <div class="panel-body">
-        <div class="alert alert-warning">
-            <button type="button" class="close" data-dismiss="alert">×</button>
-            <h4>
-                提示!
-            </h4> <strong>警告!</strong> 请注意你的个人隐私安全.
+<div id="container">
+    <div id="LogApp">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">欢迎</h3>
+            </div>
+            <div class="panel-body">
+                <div class="alert alert-warning">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <h4>
+                        提示!
+                    </h4> <strong>警告!</strong> 请注意你的个人隐私安全.
+                </div>
+                <table class="table table-responsive">
+                    <caption>日志消息</caption>
+                    <thead>
+                    <tr>
+                        <th>内容</th>
+                        <th>来源</th>
+                        <th>类型</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>上报事件:上报事件:{"post_type":"message","message_type":"private","sub_type":"frie</td>
+                        <td>CoolQ</td>
+                        <td>应用</td>
+                        <td class="btn bg-info">详情</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <table class="table table-responsive">
-            <caption>日志消息</caption>
-            <thead>
-            <tr>
-                <th>内容</th>
-                <th>来源</th>
-                <th>类型</th>
-                <th>操作</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>上报事件:上报事件:{"post_type":"message","message_type":"private","sub_type":"frie</td>
-                <td>CoolQ</td>
-                <td>应用</td>
-                <td class="btn bg-info">详情</td>
-            </tr>
-            </tbody>
-        </table>
     </div>
-</div>
+</div> <!-- /container -->
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../../assets/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/CoolQ/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/CoolQ/node_modules/vue/dist/vue.js"></script>
+<script src="/CoolQ/assets/index.js"></script>
+
+
+<script src="/CoolQ/assets/FlatUI/dist/js/vendor/video.js"></script>
+<script src="/CoolQ/assets/FlatUI/dist/js/flat-ui.min.js"></script>
+<script src="/CoolQ/assets/FlatUI/docs/assets/js/application.js"></script>
+<script src="/CoolQ/assets/jquery.nicescroll.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        var nice = $("html").niceScroll();  // The document page (body)
+        $("#container").niceScroll("#LogApp", {
+            cursorcolor: "#3498db",
+            cursoropacitymax: 0.7,
+            boxzoom: true,
+            touchbehavior: true
+        });  // Second scrollable DIV
+    });
+
+</script>
 </body>
 </html>

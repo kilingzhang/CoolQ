@@ -26,7 +26,8 @@ class TulingPlugin extends Plugin
         switch ($post_type) {
             case "message":
                 $url = "http://www.kilingzhang.com/Api/YiBao/api.php?role=" . Role . "&hash=" . Hash . "&user_id=$user_id&text=" . urlencode($message) . "&on=true";
-                $json = file_get_contents($url);
+
+               $json = file_get_contents($url);
                 $res = json_decode($json, true);
                 if (!empty($res) && $res['code'] != 0) {
                     $msg = addslashes($json);

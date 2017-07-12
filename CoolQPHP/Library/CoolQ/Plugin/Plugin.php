@@ -68,6 +68,7 @@ class Plugin
         global $data;
         $PluginController = null;
         foreach ($PluginOrders AS $order) {
+
             $pro = explode($order['order_name'], $data['message']);
             if ((count($pro) >= 2 && $order['status']) || $order['order_name'] == '*') {
                 $PluginController = Robot::runPlugin($order['plugin_class']);
@@ -76,6 +77,7 @@ class Plugin
                     break;
                 }
             }
+
         }
         return $PluginController;
     }
