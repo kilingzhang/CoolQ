@@ -35,5 +35,14 @@ class Config
         return self::$db;
     }
 
+    public static function getCoolQConfig()
+    {
+        return array(
+            'host'=>HOST,
+            'port'=>PORT,
+            'token'=>TOKEN
+        );
+    }
+
 
 }

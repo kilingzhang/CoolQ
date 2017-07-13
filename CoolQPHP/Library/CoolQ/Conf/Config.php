@@ -30,9 +30,9 @@ define("secret","8a08a86c4ae39f34");
 
 
 //CoolQPHP HTTP API
-define("PATH","http://127.0.0.1");
+define("HOST","127.0.0.1");
 define("PORT",5700);
-define("TOKEN","");
+define("TOKEN","slight");
 define("QQ",1246002938);
 define("MANAGERQQ",1353693508);
 

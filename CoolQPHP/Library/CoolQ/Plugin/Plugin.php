@@ -69,6 +69,12 @@ class Plugin
         $PluginController = null;
         foreach ($PluginOrders AS $order) {
 
+
+//            global $stime;
+//            global $Robot;
+//            $etime = microtime(true);
+//            $Robot->sendPrivateMsg(1353693508,MsgTool::deCodeHtml($etime - $stime),false);
+
             $pro = explode($order['order_name'], $data['message']);
             if ((count($pro) >= 2 && $order['status']) || $order['order_name'] == '*') {
                 $PluginController = Robot::runPlugin($order['plugin_class']);

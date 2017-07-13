@@ -27,5 +27,15 @@ var PATH = "/CoolQ/";
 
 var AppHash = "ea38741f674c4883900df8fe7d809813";
 
+function getItem(key) {
+    return window.localStorage.getItem(key)
+}
 
+function setItem(key,value) {
+    window.localStorage.setItem(key,value)
+}
+
+function Log(params) {
+    console.log(params)
+}
 

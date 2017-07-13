@@ -122,10 +122,16 @@ class Robot
         $CreateTime = $res['time'];
         $this->status = $res['status'];
         $this->manager = isset($res['manager']) && $res['manager'] != "" ? json_decode($res['manager'], true) : array();
+        $res['manager'] = isset($res['manager']) && $res['manager'] != "" ? json_decode($res['manager'], true) : array();
         $this->group_white_list = isset($res['group_white_list']) && $res['group_white_list'] != "" ? json_decode($res['group_white_list'], true) : array();
+        $res['group_white_list'] = isset($res['group_white_list']) && $res['group_white_list'] != "" ? json_decode($res['group_white_list'], true) : array();
         $this->group_black_list = isset($res['group_black_list']) && $res['group_black_list'] != "" ? json_decode($res['group_black_list'], true) : array();
+        $res['group_black_list'] = isset($res['group_black_list']) && $res['group_black_list'] != "" ? json_decode($res['group_black_list'], true) : array();
         $this->qq_white_list = isset($res['qq_white_list']) && $res['qq_white_list'] != "" ? json_decode($res['qq_white_list'], true) : array();
+        $res['qq_white_list'] = isset($res['qq_white_list']) && $res['qq_white_list'] != "" ? json_decode($res['qq_white_list'], true) : array();
         $this->qq_black_list = isset($res['qq_black_list']) && $res['qq_black_list'] != "" ? json_decode($res['qq_black_list'], true) : array();
+        $res['qq_black_list'] = isset($res['qq_black_list']) && $res['qq_black_list'] != "" ? json_decode($res['qq_black_list'], true) : array();
+        $res['keyword'] = isset($res['keyword']) && $res['keyword'] != "" ? json_decode($res['keyword'], true) : array();
         $this->keyword = $res['keyword'];
         $this->is_group_white_list = $res['is_group_white_list'];
         $this->is_group_black_list = $res['is_group_black_list'];

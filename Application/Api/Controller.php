@@ -16,6 +16,15 @@ global  $Robot;
 global $PluginController;
 global $data;
 global $stime;
+
+$stime = microtime(true);
+
+//global $stime;
+//global $Robot;
+//$etime = microtime(true);
+//$Robot->sendPrivateMsg(1353693508,MsgTool::deCodeHtml($etime - $stime),false);
+
+
 $data = \CoolQ\Request::put();
 
 $post_type = $data['post_type'];
@@ -26,21 +35,19 @@ $discuss_id = isset($data['discuss_id']) && array_key_exists('discuss_id',$data)
 $message = $data['message'];
 
 
-$data['post_type'] = 'message';
-$data['message_type'] = 'private';
-$data['sub_type'] = 'friend';
-$data['user_id'] = 1353693508;
-$data['group_id'] = 438778749;
-$data['message'] = '傻子';
+//$data['post_type'] = 'message';
+//$data['message_type'] = 'private';
+//$data['sub_type'] = 'friend';
+//$data['user_id'] = 1353693508;
+//$data['group_id'] = 438778749;
+//$data['message'] = '傻子';
 
-$stime = microtime(true);
-global $stime;
-$etime = microtime(true);
-//echo 'time:' . ($etime - $stime) . "<br>";
 Log::Info('上报事件:' . json_encode($data,JSON_UNESCAPED_UNICODE),get_class());
-$Robot = \CoolQ\Robot\Robot::getInstance('127.0.0.1',5700,'slight');
+$con = \CoolQ\Config::getCoolQConfig();
+$Robot = \CoolQ\Robot\Robot::getInstance($con['host'],$con['port'],$con['token']);
 $Robot->getRobotInfo();
 $PluginController = null;
+
 
 
 $post_type = $data['post_type'];
@@ -75,8 +82,6 @@ switch ($post_type) {
                                     //runPlugin
                                     $PluginOrderList = $Robot->getRobotPluginOrders();
                                     $PluginController = Plugin::runOders($PluginOrderList);
-
-
 
                                 }
                             }

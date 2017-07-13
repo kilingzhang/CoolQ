@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,117 +19,234 @@
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
-<div id="container">
-    <div id="RobotApp">
-        <div class="col-xs-12">
-            <div class="tile">
-                <img :src="RobotQQImage" alt="Pensils" class="tile-image">
-                <h3 class="tile-title">{{RobotQQ}}</h3>
-                <p>Easy to add or change elements. </p>
-                <a class="btn btn-primary btn-large btn-block" :href="QQLink">Send Message</a>
+    <div id="container">
+        <div id="RobotApp">
+            <div class="col-xs-12">
+                <div class="tile">
+                    <img :src="RobotQQImage" alt="Pensils" class="tile-image">
+                    <h3 class="tile-title">{{RobotQQ}}</h3>
+                    <p>Easy to add or change elements. </p>
+                    <a class="btn btn-primary btn-large btn-block" :href="QQLink">Send Message</a>
+                </div>
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="" title="手动刷新状态">刷新</a>
+                        <p v-show="status">运行中···</p>
+                        <p v-show="!status">离线中···</p>
+                    </li>
+                    <li class="list-group-item">
+                        机器人状态：
+                        <a @click="setStatus('status')" class="btn pull-right text-center" :class="{'btn-danger': status , 'btn-success': !status}"
+                            style="margin-top: -5px;">{{ status | OnOFF }}</a>
+                    </li>
+                    <li class="list-group-item">创建时间：{{time}}
+                    </li>
+                    <li class="list-group-item">管理员：{{manager}}
+                    </li>
+                    <li class="list-group-item">好友白名单：{{qq_white_list}}
+                        <a @click="setStatus('is_qq_white_list')" class="btn pull-right text-center" :class="{'btn-danger': is_qq_white_list , 'btn-success': !is_qq_white_list}"
+                            style="margin-top: -5px;">{{ is_qq_white_list | OnOFF }}</a>
+                    </li>
+                    <li class="list-group-item">好友黑名单：{{qq_black_list}}
+                        <a @click="setStatus('is_qq_black_list')" class="btn pull-right text-center" :class="{'btn-danger': is_qq_black_list , 'btn-success': !is_qq_black_list}"
+                            style="margin-top: -5px;">{{ is_qq_black_list | OnOFF }}</a>
+                    </li>
+                    <li class="list-group-item">群组白名单：{{group_white_list}}
+                        <a @click="setStatus('is_group_white_list')" class="btn pull-right text-center" :class="{'btn-danger': is_group_white_list , 'btn-success': !is_group_white_list}"
+                            style="margin-top: -5px;">{{ is_group_white_list | OnOFF }}</a>
+                    </li>
+                    <li class="list-group-item">群组黑名单：{{group_black_list}}
+                        <a @click="setStatus('is_group_black_list')" class="btn pull-right text-center" :class="{'btn-danger': is_group_black_list , 'btn-success': !is_group_black_list}"
+                            style="margin-top: -5px;">{{ is_group_black_list | OnOFF }}</a>
+                    </li>
+                    <li class="list-group-item">@回复：
+                        <a @click="setStatus('is_at')" class="btn pull-right text-center" :class="{'btn-danger': is_at , 'btn-success': !is_at}" style="margin-top: -5px;">{{ is_at | OnOFF }}</a>
+                    </li>
+                    <li class="list-group-item">关键字回复：{{keyword}}
+                        <a @click="setStatus('is_keyword')" class="btn pull-right text-center" :class="{'btn-danger': is_keyword , 'btn-success': !is_keyword}"
+                            style="margin-top: -5px;">{{ is_keyword | OnOFF }}</a>
+                    </li>
+                    <li class="list-group-item">跟随模式：
+                        <a @click="setStatus('is_follow')" class="btn pull-right text-center" :class="{'btn-danger': is_follow , 'btn-success': !is_follow}"
+                            style="margin-top: -5px;">{{ is_follow | OnOFF }}</a>
+                    </li>
+                    <li class="list-group-item">好友聊天：
+                        <a @click="setStatus('is_on_friend')" class="btn pull-right text-center" :class="{'btn-danger': is_on_friend , 'btn-success': !is_on_friend}"
+                            style="margin-top: -5px;">{{ is_on_friend | OnOFF }}</a>
+                    </li>
+                    <li class="list-group-item">群组聊天：
+                        <a @click="setStatus('is_on_group')" class="btn pull-right text-center" :class="{'btn-danger': is_on_group , 'btn-success': !is_on_group}"
+                            style="margin-top: -5px;">{{ is_on_group | OnOFF }}</a>
+                    </li>
+                    <li class="list-group-item">讨论组：
+                        <a @click="setStatus('is_on_discuss')" class="btn pull-right text-center" :class="{'btn-danger': is_on_discuss , 'btn-success': !is_on_discuss}"
+                            style="margin-top: -5px;">{{ is_on_discuss | OnOFF }}</a>
+                    </li>
+                    <li class="list-group-item">插件：
+                        <a @click="setStatus('is_on_plugin')" class="btn pull-right text-center" :class="{'btn-danger': is_on_plugin , 'btn-success': !is_on_plugin}"
+                            style="margin-top: -5px;">{{ is_on_plugin | OnOFF }}</a>
+                    </li>
+                    <li class="list-group-item">同意好友请求：{{qq_refuse_reason}}
+                        <a @click="setStatus('is_agree_friend')" class="btn pull-right text-center" :class="{'btn-danger': is_agree_friend , 'btn-success': !is_agree_friend}"
+                            style="margin-top: -5px;">{{ is_agree_friend | OnOFF }}</a>
+                    </li>
+                    <li class="list-group-item">同意群组请求：{{group_refuse_reason}}
+                        <a @click="setStatus('is_agree_group')" class="btn pull-right text-center" :class="{'btn-danger': is_agree_group , 'btn-success': !is_agree_group}"
+                            style="margin-top: -5px;">{{ is_agree_group | OnOFF }}</a>
+                    </li>
+                    <li class="list-group-item">回复@：
+                        <a @click="setStatus('is_reply_at')" class="btn pull-right text-center" :class="{'btn-danger': is_reply_at , 'btn-success': !is_reply_at}"
+                            style="margin-top: -5px;">{{ is_reply_at | OnOFF }}</a>
+                    </li>
+
+                </ul>
+
             </div>
 
-            <ul class="list-group">
-                <li class="list-group-item">
-                    机器人状态：
-                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
-                </li>
-                <li class="list-group-item">创建时间：
-                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
-                </li>
-                <li class="list-group-item">管理员：
-                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
-                </li>
-                <li class="list-group-item">好友白名单：
-                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
-                </li>
-                <li class="list-group-item">好友黑名单：
-                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
-                </li>
-                <li class="list-group-item">群组白名单：
-                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
-                </li>
-                <li class="list-group-item">@回复：
-                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
-                </li>
-                <li class="list-group-item">关键字回复：
-                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
-                </li>
-                <li class="list-group-item">跟随模式：
-                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
-                </li>
-                <li class="list-group-item">好友聊天：
-                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
-                </li>
-                <li class="list-group-item">群组聊天：
-                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
-                </li>
-                <li class="list-group-item">讨论组：
-                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
-                </li>
-                <li class="list-group-item">插件：
-                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
-                </li>
-                <li class="list-group-item">同意好友请求：
-                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
-                </li>
-                <li class="list-group-item">同意群组请求：
-                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
-                </li>
-                <li class="list-group-item">回复@：
-                    <a href="" class="btn pull-right text-center" :class="{'btn-success': status , 'btn-danger': !status}" style="margin-top: -5px;">开启</a>
-                </li>
-
-            </ul>
-
         </div>
-
     </div>
-</div> <!-- /container -->
+    <!-- /container -->
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="/CoolQ/assets/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/CoolQ/node_modules/vue/dist/vue.js"></script>
-<script src="/CoolQ/assets/index.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/CoolQ/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/CoolQ/node_modules/vue/dist/vue.js"></script>
+    <script src="/CoolQ/node_modules/vue-resource/dist/vue-resource.js"></script>
+    <script src="/CoolQ/assets/index.js"></script>
 
 
-<script src="/CoolQ/assets/FlatUI/dist/js/vendor/video.js"></script>
-<script src="/CoolQ/assets/FlatUI/dist/js/flat-ui.min.js"></script>
-<script src="/CoolQ/assets/FlatUI/docs/assets/js/application.js"></script>
-<script src="/CoolQ/assets/jquery.nicescroll.min.js"></script>
-<script>
+    <script src="/CoolQ/assets/FlatUI/dist/js/vendor/video.js"></script>
+    <script src="/CoolQ/assets/FlatUI/dist/js/flat-ui.min.js"></script>
+    <script src="/CoolQ/assets/FlatUI/docs/assets/js/application.js"></script>
+    <script src="/CoolQ/assets/jquery.nicescroll.min.js"></script>
+    <script>
+        Vue.filter('OnOFF', function (value) {
+            if (value == 1) {
+                return '关闭'
+            } else {
+                return '开启'
+            }
+        })
+
         var robot = new Vue({
             el: '#RobotApp',
             mounted: function () {
-                 this.$nextTick(function () {
-                     this.RobotQQ = window.localStorage.getItem( AppHash + 'RobotQQ' )
-                     this.RobotQQImage = 'http://q.qlogo.cn/headimg_dl?bs=qq&dst_uin=' + this.RobotQQ + '&src_uin=www.59u.me&fid=blog&spec=100'
-                     this.QQLink = 'http://wpa.qq.com/msgrd?v=3&uin=' + this.RobotQQ + '&site=qq&menu=yes'
-                 })
+                this.$nextTick(function () {
+                    this.init()
+                    this.initData()
+                })
             },
             data: {
                 status: true,
                 RobotQQ: '',
                 RobotQQImage: '',
-                QQLink: ''
+                QQLink: '',
+                time: '',
+                status: '',
+                manager: '',
+                group_white_list: '',
+                group_black_list: '',
+                qq_white_list: '',
+                qq_black_list: '',
+                keyword: '',
+                is_group_black_list: '',
+                is_group_white_list: '',
+                is_qq_black_list: '',
+                is_qq_white_list: '',
+                is_at: '',
+                is_keyword: '',
+                is_follow: '',
+                is_on_friend: '',
+                is_on_group: '',
+                is_on_discuss: '',
+                is_agree_friend: '',
+                is_on_plugin: '',
+                is_agree_group: '',
+                qq_refuse_reason: '',
+                group_refuse_reason: '',
+                is_reply_at: '',
+            },
+            filter: {
+
+            },
+            methods: {
+                init: function () {
+                    var _this = this
+                    this.$http.get("/CoolQ/Public/api/robot/get/?id=1246002938&apikey=ea38741f674c4883900df8fe7d809813", {}).then(function (res) {
+                        res = res.body
+                        if (res.code == 0) {
+                            Log(JSON.stringify(res.data))
+                            _this.time = res.data.time
+                            _this.status = res.data.status == 1 ? true : false
+                            _this.manager = res.data.manager
+                            _this.group_white_list = res.data.group_white_list
+                            _this.group_black_list = res.data.group_black_list
+                            _this.qq_white_list = res.data.qq_white_list
+                            _this.qq_black_list = res.data.qq_black_list
+                            _this.keyword = res.data.keyword
+                            _this.is_group_black_list = res.data.is_group_black_list == 1 ? true : false
+                            _this.is_group_white_list = res.data.is_group_white_list == 1 ? true : false
+                            _this.is_qq_black_list = res.data.is_qq_black_list == 1 ? true : false
+                            _this.is_qq_white_list = res.data.is_qq_white_list == 1 ? true : false
+                            _this.is_at = res.data.is_at == 1 ? true : false
+                            _this.is_keyword = res.data.is_keyword == 1 ? true : false
+                            _this.is_follow = res.data.is_follow == 1 ? true : false
+                            _this.is_on_friend = res.data.is_on_friend == 1 ? true : false
+                            _this.is_on_group = res.data.is_on_group == 1 ? true : false
+                            _this.is_on_discuss = res.data.is_on_discuss == 1 ? true : false
+                            _this.is_agree_friend = res.data.is_agree_friend == 1 ? true : false
+                            _this.is_on_plugin = res.data.is_on_plugin == 1 ? true : false
+                            _this.is_agree_group = res.data.is_agree_group == 1 ? true : false
+                            _this.qq_refuse_reason = res.data.qq_refuse_reason
+                            _this.group_refuse_reason = res.data.group_refuse_reason
+                            _this.is_reply_at = res.data.is_reply_at == 1 ? true : false
+
+                        } else {
+                            alert(res.msg)
+                        }
+                    })
+                },
+                initData: function () {
+                    this.RobotQQ = getItem(AppHash + 'RobotQQ')
+                    this.RobotQQImage = 'http://q.qlogo.cn/headimg_dl?bs=qq&dst_uin=' + this.RobotQQ + '&src_uin=www.59u.me&fid=blog&spec=100'
+                    this.QQLink = 'tencent://message/?Menu=yes&uin=' + this.RobotQQ + '&Service=112'
+                },
+                setStatus: function (params) {
+                    bool = 'this.' + params
+                    eval(bool + '=!' + bool)
+                    this.$http.get("/CoolQ/Public/api/robot/set/" + params + "/" + eval(bool) + "/?id=1246002938&apikey=ea38741f674c4883900df8fe7d809813", {}).then(function (res) {
+                        // Log(res)                       
+                        res = res.body
+                        if (res.code == 0) {
+                            Log(JSON.stringify(res.msg))
+                            alert(res.msg)
+                        } else {
+                            alert(res.msg)
+                        }
+                    })
+                }
             }
         })
 
+
+
+
+
         $(document).ready(function () {
-        var nice = $("html").niceScroll();  // The document page (body)
-        $("#container").niceScroll("#RobotApp", {
-            cursorcolor: "#3498db",
-            cursoropacitymax: 0.7,
-            boxzoom: true,
-            touchbehavior: true
-        });  // Second scrollable DIV
-    });
-
-
-</script>
+            var nice = $("html").niceScroll();  // The document page (body)
+            $("#container").niceScroll("#RobotApp", {
+                cursorcolor: "#3498db",
+                cursoropacitymax: 0.7,
+                boxzoom: true,
+                touchbehavior: true
+            });  // Second scrollable DIV
+        });
+    </script>
 </body>
+
 </html>

@@ -99,16 +99,24 @@ class App
         global $_Module;
         global $_Controller;
         global $_Action;
+        global $stime;
+
+        $stime = microtime(true);
+
         if (count($Route) > 0 && $Route[0] != ''){
             $_Module = isset($Route[0]) ? ucwords($Route[0]) : "";
             $_Controller = isset($Route[1]) ? ucwords($Route[1]) : "";
             $_Action = isset($Route[2]) ? ucwords($Route[2]) : "";
+            $_Key = isset($Route[3]) ? ucwords($Route[3]) : "";
+            $_Value = isset($Route[4]) ? ucwords($Route[4]) : "";
+            $_Param = $Route;
+
             switch ($_Module){
                 case "Api":
                     //上报事件
                     $file =  ROOT_PATH . 'Application\Api';
                     if($_Controller){
-                        $file .= "\\{$_Controller}.html";
+                        $file .= "\\{$_Controller}.php";
                         if(file_exists($file)){
                             include $file;
                         }
