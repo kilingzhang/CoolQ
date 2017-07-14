@@ -50,6 +50,7 @@ $PluginController = null;
 
 
 
+
 $post_type = $data['post_type'];
 if(!$Robot->is_on_plugin){
     exit('{"block": true}');

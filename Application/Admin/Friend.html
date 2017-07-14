@@ -22,7 +22,7 @@
 
 <body>
     <div id="container">
-        <div id="LogApp">
+        <div id="FriendApp">
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <h3 class="panel-title">欢迎</h3>
@@ -84,7 +84,7 @@
         })
 
         var log = new Vue({
-            el: '#LogApp',
+            el: '#FriendApp',
             mounted: function () {
                 this.$nextTick(function () {
                     this.init()
@@ -123,7 +123,7 @@
 
         $(document).ready(function () {
             var nice = $("html").niceScroll();  // The document page (body)
-            $("#container").niceScroll("#LogApp", {
+            $("#container").niceScroll("#FriendApp", {
                 cursorcolor: "#3498db",
                 cursoropacitymax: 0.7,
                 boxzoom: true,

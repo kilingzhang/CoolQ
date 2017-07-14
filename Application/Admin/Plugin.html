@@ -22,43 +22,27 @@
 
 <body>
     <div id="container">
-        <div id="LogApp">
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <h3 class="panel-title">欢迎</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="alert alert-warning">
-                        <button type="button" class="close" data-dismiss="alert">×</button>
-                        <h4>
-                            提示!
-                        </h4> <strong>警告!</strong> 请注意你的个人隐私安全.
+        <div id="PluginApp">
+            <h2>创建模态框（Modal）</h2>
+            <!-- 按钮触发模态框 -->
+            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">开始演示模态框</button>
+            <!-- 模态框（Modal） -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">模态框（Modal）标题</h4>
+                        </div>
+                        <div class="modal-body">在这里添加一些文本</div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary">提交更改</button>
+                        </div>
                     </div>
-                    <table class="table table-responsive">
-                        <caption>日志消息</caption>
-                        <thead>
-                            <tr>
-                                <th>内容</th>
-                                <th>来源</th>
-                                <th>类型</th>
-                                <th>操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <li class="list-group-item">
-                                <a href="" title="手动刷新状态">刷新</a>
-                                <p v-show="status">运行中···</p>
-                                <p v-show="!status">离线中···</p>
-                            </li>
-                            <tr v-for="item in RobotLog">
-                                <td>{{item.msg | SubStr }}</td>
-                                <td v-text="item.source"></td>
-                                <td v-text="item.type"></td>
-                                <td class="btn bg-info" @click="Alert(item.msg)">详情</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <!-- /.modal-content -->
                 </div>
+                <!-- /.modal -->
             </div>
         </div>
     </div>
@@ -84,7 +68,7 @@
         })
 
         var log = new Vue({
-            el: '#LogApp',
+            el: '#PluginApp',
             mounted: function () {
                 this.$nextTick(function () {
                     this.init()
@@ -123,14 +107,13 @@
 
         $(document).ready(function () {
             var nice = $("html").niceScroll();  // The document page (body)
-            $("#container").niceScroll("#LogApp", {
+            $("#container").niceScroll("#PluginApp", {
                 cursorcolor: "#3498db",
                 cursoropacitymax: 0.7,
                 boxzoom: true,
                 touchbehavior: true
             });  // Second scrollable DIV
         });
-
     </script>
 </body>
 

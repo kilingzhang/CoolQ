@@ -112,12 +112,19 @@
                 init: function () {
                     setItem(AppHash + 'RobotQQ', 1246002938);
                     vm.RobotQQ = getItem(AppHash + 'RobotQQ')
-
+                    
                     Log('init')
                 }
             }
         })
 
+        
+        $(document).ready(function () {
+           $('.list-group-item').click(function() {
+               $('.list-group-item').removeClass('active')
+               $(this).addClass('active')
+           })
+        });
       
     </script>
 

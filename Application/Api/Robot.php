@@ -39,6 +39,9 @@ $keys = array(
     'qq_refuse_reason'=> 'RobotQQRefuseReason',
     'group_refuse_reason'=> 'RobotGroupRefuseReason',
     'is_reply_at'=> 'RobotIsReplyAt',
+    'get_group_list'=>'GroupList',
+    'get_group_member_list'=>'GroupMemberList',
+
 );
 
 global $_Action;
@@ -49,7 +52,7 @@ switch ($_Action) {
         $_Key = isset($_Param[3]) ? ucwords($_Param[3]) : "";
         if ($_Key != "") {
             $_Key = strtolower($_Key);
-            eval("@\$reply = \$Robot->get". $keys[$_Key] . "();");
+            eval("@\$reply = \$Robot->get". $keys[$_Key] . "($_Value);");
             Reply::EchoReply($reply);
         } else {
             Reply::EchoReply($Robot->getRobotInfo());

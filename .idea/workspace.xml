@@ -2,23 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32519d69-6a98-4b5f-8c30-6ce03c762999" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Robot.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/IsReply.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Reply.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Friend.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Group.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Plugin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Api/CoolQ.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Friend.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Group.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Log.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Plugin.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/.idea/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/.idea/coolQ-sdk-php.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/Autoloader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/QQfaceId.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/examples/getLoginInfo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/src/CoolQSDK/CQ.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/src/CoolQSDK/CoolQSDK.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/src/CoolQSDK/MsgTool.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Log.html" afterPath="$PROJECT_DIR$/Application/Admin/Log.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Robot.html" afterPath="$PROJECT_DIR$/Application/Admin/Robot.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Welcome.html" afterPath="$PROJECT_DIR$/Application/Admin/Welcome.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/index.html" afterPath="$PROJECT_DIR$/Application/Admin/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Controller.php" afterPath="$PROJECT_DIR$/Application/Api/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Config.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin/Plugin.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin/Plugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Api/Robot.php" afterPath="$PROJECT_DIR$/Application/Api/Robot.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php" afterPath="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/index.js" afterPath="$PROJECT_DIR$/assets/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.npminstall.done" afterPath="$PROJECT_DIR$/node_modules/.npminstall.done" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,11 +71,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Robot.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Api/Controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="624">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoolQ.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Api/CoolQ.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Group.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Api/Group.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Robot.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Api/Robot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="908">
-              <caret line="59" column="63" lean-forward="true" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="63" />
+            <state relative-caret-position="546">
+              <caret line="53" column="38" lean-forward="false" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
               <folding>
                 <element signature="e#6#118#0#PHP" expanded="true" />
                 <element signature="e#119#141#0#PHP" expanded="true" />
@@ -59,204 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Api/Controller.php">
+      <file leaf-file-name="CoolQSDK.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/src/CoolQSDK/CoolQSDK.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Robot.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="214" column="7" lean-forward="true" selection-start-line="214" selection-start-column="7" selection-end-line="214" selection-end-column="7" />
-              <folding>
-                <element signature="e#1013#1111#0#PHP" expanded="false" />
-                <element signature="e#1116#1501#0#PHP" expanded="false" />
-                <element signature="e#1507#1547#0#PHP" expanded="false" />
-                <element signature="e#1553#1594#0#PHP" expanded="false" />
-                <element signature="e#1600#1744#0#PHP" expanded="false" />
-                <element signature="e#1749#2005#0#PHP" expanded="false" />
-                <element signature="e#1865#1967#0#PHP" expanded="false" />
-                <element signature="e#2011#2075#0#PHP" expanded="false" />
-                <element signature="e#2469#3058#0#PHP" expanded="false" />
-                <element signature="e#2941#3029#0#PHP" expanded="false" />
-                <element signature="e#3064#5766#0#PHP" expanded="false" />
-                <element signature="e#5773#5820#0#PHP" expanded="false" />
-                <element signature="e#5825#5886#0#PHP" expanded="false" />
-                <element signature="e#5893#5925#0#PHP" expanded="false" />
-                <element signature="e#5930#6000#0#PHP" expanded="false" />
-                <element signature="e#6007#6039#0#PHP" expanded="false" />
-                <element signature="e#6044#6114#0#PHP" expanded="false" />
-                <element signature="e#6121#6153#0#PHP" expanded="false" />
-                <element signature="e#6158#6230#0#PHP" expanded="false" />
-                <element signature="e#6237#6270#0#PHP" expanded="false" />
-                <element signature="e#6275#6345#0#PHP" expanded="false" />
-                <element signature="e#6352#6384#0#PHP" expanded="false" />
-                <element signature="e#6389#6550#0#PHP" expanded="false" />
-                <element signature="e#6557#6589#0#PHP" expanded="false" />
-                <element signature="e#6594#6739#0#PHP" expanded="false" />
-                <element signature="e#6745#6784#0#PHP" expanded="false" />
-                <element signature="e#6789#6937#0#PHP" expanded="false" />
-                <element signature="e#6943#6975#0#PHP" expanded="false" />
-                <element signature="e#6980#7128#0#PHP" expanded="false" />
-                <element signature="e#7134#7174#0#PHP" expanded="false" />
-                <element signature="e#7179#7333#0#PHP" expanded="false" />
-                <element signature="e#7339#7371#0#PHP" expanded="false" />
-                <element signature="e#7376#7557#0#PHP" expanded="false" />
-                <element signature="e#7563#7612#0#PHP" expanded="false" />
-                <element signature="e#7617#7821#0#PHP" expanded="false" />
-                <element signature="e#7827#7859#0#PHP" expanded="false" />
-                <element signature="e#7864#8045#0#PHP" expanded="false" />
-                <element signature="e#8051#8100#0#PHP" expanded="false" />
-                <element signature="e#8105#8309#0#PHP" expanded="false" />
-                <element signature="e#8315#8347#0#PHP" expanded="false" />
-                <element signature="e#8352#8521#0#PHP" expanded="false" />
-                <element signature="e#8527#8573#0#PHP" expanded="false" />
-                <element signature="e#8578#8764#0#PHP" expanded="false" />
-                <element signature="e#8770#8802#0#PHP" expanded="false" />
-                <element signature="e#8807#8976#0#PHP" expanded="false" />
-                <element signature="e#8982#9028#0#PHP" expanded="false" />
-                <element signature="e#9033#9219#0#PHP" expanded="false" />
-                <element signature="e#9225#9257#0#PHP" expanded="false" />
-                <element signature="e#9262#9411#0#PHP" expanded="false" />
-                <element signature="e#9417#9457#0#PHP" expanded="false" />
-                <element signature="e#9462#9616#0#PHP" expanded="false" />
-                <element signature="e#9623#9655#0#PHP" expanded="false" />
-                <element signature="e#9660#9841#0#PHP" expanded="false" />
-                <element signature="e#9847#9896#0#PHP" expanded="false" />
-                <element signature="e#9901#10105#0#PHP" expanded="false" />
-                <element signature="e#10111#10143#0#PHP" expanded="false" />
-                <element signature="e#10148#10341#0#PHP" expanded="false" />
-                <element signature="e#10347#10399#0#PHP" expanded="false" />
-                <element signature="e#10404#10626#0#PHP" expanded="false" />
-                <element signature="e#10632#10664#0#PHP" expanded="false" />
-                <element signature="e#10669#10860#0#PHP" expanded="false" />
-                <element signature="e#10866#10918#0#PHP" expanded="false" />
-                <element signature="e#10923#11143#0#PHP" expanded="false" />
-                <element signature="e#11149#11181#0#PHP" expanded="false" />
-                <element signature="e#11186#11377#0#PHP" expanded="false" />
-                <element signature="e#11383#11435#0#PHP" expanded="false" />
-                <element signature="e#11440#11660#0#PHP" expanded="false" />
-                <element signature="e#11666#11698#0#PHP" expanded="false" />
-                <element signature="e#11703#11882#0#PHP" expanded="false" />
-                <element signature="e#11888#11937#0#PHP" expanded="false" />
-                <element signature="e#11942#12144#0#PHP" expanded="false" />
-                <element signature="e#12150#12182#0#PHP" expanded="false" />
-                <element signature="e#12187#12366#0#PHP" expanded="false" />
-                <element signature="e#12372#12421#0#PHP" expanded="false" />
-                <element signature="e#12426#12628#0#PHP" expanded="false" />
-                <element signature="e#12634#12666#0#PHP" expanded="false" />
-                <element signature="e#12671#12810#0#PHP" expanded="false" />
-                <element signature="e#12816#12854#0#PHP" expanded="false" />
-                <element signature="e#12859#12999#0#PHP" expanded="false" />
-                <element signature="e#13005#13037#0#PHP" expanded="false" />
-                <element signature="e#13042#13201#0#PHP" expanded="false" />
-                <element signature="e#13207#13250#0#PHP" expanded="false" />
-                <element signature="e#13255#13425#0#PHP" expanded="false" />
-                <element signature="e#13431#13463#0#PHP" expanded="false" />
-                <element signature="e#13468#13623#0#PHP" expanded="false" />
-                <element signature="e#13629#13671#0#PHP" expanded="false" />
-                <element signature="e#13676#13840#0#PHP" expanded="false" />
-                <element signature="e#13846#13878#0#PHP" expanded="false" />
-                <element signature="e#13883#14048#0#PHP" expanded="false" />
-                <element signature="e#14054#14099#0#PHP" expanded="false" />
-                <element signature="e#14104#14284#0#PHP" expanded="false" />
-                <element signature="e#14290#14322#0#PHP" expanded="false" />
-                <element signature="e#14327#14488#0#PHP" expanded="false" />
-                <element signature="e#14494#14538#0#PHP" expanded="false" />
-                <element signature="e#14543#14717#0#PHP" expanded="false" />
-                <element signature="e#14723#14755#0#PHP" expanded="false" />
-                <element signature="e#14760#14929#0#PHP" expanded="false" />
-                <element signature="e#14935#14981#0#PHP" expanded="false" />
-                <element signature="e#14986#15172#0#PHP" expanded="false" />
-                <element signature="e#15178#15210#0#PHP" expanded="false" />
-                <element signature="e#15215#15394#0#PHP" expanded="false" />
-                <element signature="e#15400#15448#0#PHP" expanded="false" />
-                <element signature="e#15453#15653#0#PHP" expanded="false" />
-                <element signature="e#15659#15691#0#PHP" expanded="false" />
-                <element signature="e#15696#15871#0#PHP" expanded="false" />
-                <element signature="e#15877#15924#0#PHP" expanded="false" />
-                <element signature="e#15929#16123#0#PHP" expanded="false" />
-                <element signature="e#16129#16161#0#PHP" expanded="false" />
-                <element signature="e#16166#16331#0#PHP" expanded="false" />
-                <element signature="e#16337#16382#0#PHP" expanded="false" />
-                <element signature="e#16387#16567#0#PHP" expanded="false" />
-                <element signature="e#16573#16605#0#PHP" expanded="false" />
-                <element signature="e#16610#16771#0#PHP" expanded="false" />
-                <element signature="e#16777#16821#0#PHP" expanded="false" />
-                <element signature="e#16826#17000#0#PHP" expanded="false" />
-                <element signature="e#17008#17096#0#PHP" expanded="false" />
-                <element signature="e#17106#17131#0#PHP" expanded="false" />
-                <element signature="e#17138#17532#0#PHP" expanded="false" />
-                <element signature="e#17537#17701#0#PHP" expanded="false" />
-                <element signature="e#17708#18024#0#PHP" expanded="false" />
-                <element signature="e#18029#18308#0#PHP" expanded="false" />
-                <element signature="e#18314#18622#0#PHP" expanded="false" />
-                <element signature="e#18627#18904#0#PHP" expanded="false" />
-                <element signature="e#18910#19257#0#PHP" expanded="false" />
-                <element signature="e#19262#19554#0#PHP" expanded="false" />
-                <element signature="e#19560#19780#0#PHP" expanded="false" />
-                <element signature="e#19785#20001#0#PHP" expanded="false" />
-                <element signature="e#20007#20282#0#PHP" expanded="false" />
-                <element signature="e#20287#20601#0#PHP" expanded="false" />
-                <element signature="e#20607#20884#0#PHP" expanded="false" />
-                <element signature="e#20889#21159#0#PHP" expanded="false" />
-                <element signature="e#21165#21382#0#PHP" expanded="false" />
-                <element signature="e#21387#21631#0#PHP" expanded="false" />
-                <element signature="e#21637#21944#0#PHP" expanded="false" />
-                <element signature="e#21949#22232#0#PHP" expanded="false" />
-                <element signature="e#22238#22518#0#PHP" expanded="false" />
-                <element signature="e#22523#22800#0#PHP" expanded="false" />
-                <element signature="e#22806#23025#0#PHP" expanded="false" />
-                <element signature="e#23030#23275#0#PHP" expanded="false" />
-                <element signature="e#23281#23672#0#PHP" expanded="false" />
-                <element signature="e#23677#24044#0#PHP" expanded="false" />
-                <element signature="e#24050#24321#0#PHP" expanded="false" />
-                <element signature="e#24326#24590#0#PHP" expanded="false" />
-                <element signature="e#24596#24839#0#PHP" expanded="false" />
-                <element signature="e#24844#25098#0#PHP" expanded="false" />
-                <element signature="e#25104#25304#0#PHP" expanded="false" />
-                <element signature="e#25309#25517#0#PHP" expanded="false" />
-                <element signature="e#25523#25827#0#PHP" expanded="false" />
-                <element signature="e#25832#26121#0#PHP" expanded="false" />
-                <element signature="e#26127#26508#0#PHP" expanded="false" />
-                <element signature="e#26513#26820#0#PHP" expanded="false" />
-                <element signature="e#26826#26996#0#PHP" expanded="false" />
-                <element signature="e#27001#27211#0#PHP" expanded="false" />
-                <element signature="e#27218#27516#0#PHP" expanded="false" />
-                <element signature="e#27521#27800#0#PHP" expanded="false" />
-                <element signature="e#27807#28059#0#PHP" expanded="false" />
-                <element signature="e#28064#28298#0#PHP" expanded="false" />
-                <element signature="e#28304#28374#0#PHP" expanded="false" />
-                <element signature="e#28379#28541#0#PHP" expanded="false" />
-                <element signature="e#28547#28623#0#PHP" expanded="false" />
-                <element signature="e#28628#28797#0#PHP" expanded="false" />
-                <marker date="1499964802914" expanded="false" signature="2530:2851" ph="SELECT coolq... coolq_plugin_orders" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="110" column="19" lean-forward="false" selection-start-line="110" selection-start-column="12" selection-end-line="110" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IsReply.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/IsReply.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="371">
+              <caret line="336" column="51" lean-forward="false" selection-start-line="336" selection-start-column="30" selection-end-line="336" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -267,8 +129,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -340,12 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Request.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/File.php" />
-        <option value="$PROJECT_DIR$/CoolQPHP/.htaccess" />
-        <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Debug.php" />
-        <option value="$PROJECT_DIR$/Api/.htaccess" />
-        <option value="$PROJECT_DIR$/CoolQPHP/base.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Tpl/dispatch_jump.tpl" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/MySql.php" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -368,7 +224,6 @@
         <option value="$PROJECT_DIR$/Plugin/LosingPlugin/LosingPlugin.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/coolq_v2.sql" />
         <option value="$PROJECT_DIR$/Examples/index.html" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/assets/bootstrap/dist/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/assets/vue/vue.js" />
         <option value="$PROJECT_DIR$/assets/Admin/js/index.js" />
@@ -388,9 +243,16 @@
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/App.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Plugin/Plugin.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Reply.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Plugin.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Friend.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/Group.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/Plugin.html" />
+        <option value="$PROJECT_DIR$/Application/Api/Log.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/src/CoolQSDK/CoolQSDK.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Controller.php" />
         <option value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php" />
         <option value="$PROJECT_DIR$/Application/Api/Robot.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Controller.php" />
       </list>
     </option>
   </component>
@@ -428,10 +290,13 @@
           <State>
             <id />
           </State>
+          <State>
+            <id>General</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>AngularJS</id>
+            <id>ProblematicWhitespace</id>
           </State>
         </selected-state>
       </profile-state>
@@ -466,6 +331,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slight-sky" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coolq-sdk-php" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slight-sky" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coolq-sdk-php" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQSDK" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -541,32 +472,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQPHP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Library" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conf" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoolQ" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -589,14 +494,32 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolQ" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="I:/Vue.js/ShoppingCart" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../coolq-sdk-php" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -605,26 +528,26 @@
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="I:\phpStudy\WWW\CoolQ\Public" />
     <property name="nodejs_interpreter_path" value="F:/Program Files/nodejs/node" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php&#10;I:/phpStudy/WWW/CoolQ/CoolQPHP/.gitignore&#10;I:/phpStudy/WWW/CoolQ/.gitignore&#10;I:/phpStudy/WWW/CoolQ/CoolQPHP/Library/CoolQ/Conf/.gitignore&#10;I:/phpStudy/WWW/CoolQ/Application/Api/Controller.php" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Conf/Config.php&#10;I:/phpStudy/WWW/CoolQ/CoolQPHP/.gitignore&#10;I:/phpStudy/WWW/CoolQ/.gitignore&#10;I:/phpStudy/WWW/CoolQ/CoolQPHP/Library/CoolQ/Conf/.gitignore&#10;I:/phpStudy/WWW/CoolQ/Application/Api/Controller.php&#10;I:/phpStudy/WWW/CoolQ/vendor/slight-sky/coolq-sdk-php/src/CoolQSDK/CoolQSDK.php" />
     <property name="node.js.path.for.package.jscs" value="G:/Program Files/nodejs/node" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.selected.package.jscs" value="I:\phpStudy\WWW\CoolQ" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ" />
-      <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ\temp" />
-      <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ\Plugin" />
-      <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ\Robot" />
-      <recent name="I:\phpStudy\WWW\CoolQ\Application\Api" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="I:\phpStudy\WWW\CoolQ\assets" />
       <recent name="I:\phpStudy\WWW\CoolQ\Application" />
       <recent name="I:\phpStudy\WWW\CoolQ\Application\Admin" />
       <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ\Db" />
       <recent name="I:\phpStudy\WWW\CoolQ\Plugin\LosingPlugin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ" />
+      <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ\temp" />
+      <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ\Plugin" />
+      <recent name="I:\phpStudy\WWW\CoolQ\CoolQPHP\Library\CoolQ\Robot" />
+      <recent name="I:\phpStudy\WWW\CoolQ\Application\Api" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -771,12 +694,12 @@
       <workItem from="1499777519268" duration="22077000" />
       <workItem from="1499856203520" duration="21984000" />
       <workItem from="1499882877944" duration="626000" />
-      <workItem from="1499917402536" duration="21265000" />
+      <workItem from="1499917402536" duration="33853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="275314000" />
+    <option name="totallyTimeSpent" value="287902000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -826,83 +749,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/MsgTool.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/RobotSql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="370" column="45" lean-forward="false" selection-start-line="370" selection-start-column="45" selection-end-line="370" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Plugin/YiBaoPlugin/YiBaoPlugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="67" column="69" lean-forward="false" selection-start-line="67" selection-start-column="69" selection-end-line="67" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/coolq_v2.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4370">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="251">
-            <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/index.html" />
-    <entry file="file://$PROJECT_DIR$/Public/semantic/semantic.min.js" />
-    <entry file="file://$PROJECT_DIR$/assets/semantic/semantic.min.js" />
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/bootstrap/js/tests/unit/tab.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/vue/vue.js" />
-    <entry file="file://$PROJECT_DIR$/assets/bootstrap/docs/assets/js/vendor/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6939">
-          <caret line="4" column="936" lean-forward="false" selection-start-line="4" selection-start-column="936" selection-end-line="4" selection-end-column="936" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/bootstrap/js/tests/vendor/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/Admin/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1083,14 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Reply.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="51" column="53" lean-forward="false" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/_types.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
@@ -1115,10 +953,194 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/MySql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Reply.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="51" column="27" lean-forward="false" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Friend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Friend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <marker date="1500010512726" expanded="true" signature="193:236" ph="select * fro... coolq_log" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Plugin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Group.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1225">
+            <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Db/RobotSql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7546">
+          <caret line="106" column="20" lean-forward="false" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="20" />
+          <folding>
+            <marker date="1499278229667" expanded="true" signature="1371:1413" ph="SELECT * FRO... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="1730:1954" ph="insert into coolq_robot... " />
+            <marker date="1499278229667" expanded="true" signature="2195:2237" ph="SELECT * FRO... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="2565:2610" ph="SELECT time " />
+            <marker date="1499278229667" expanded="true" signature="3056:3103" ph="SELECT statu... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="3642:3700" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="4029:4077" ph="SELECT manag... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="4850:4910" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="5337:5394" ph="SELECT group... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="6318:6396" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="6800:6857" ph="SELECT group... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="7767:7845" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="8283:8337" ph="SELECT qq_wh... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="9227:9299" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="9699:9753" ph="SELECT qq_bl... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="10627:10699" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="11095:11143" ph="SELECT keywo... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="11941:12001" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="12401:12458" ph="SELECT is_qq... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="13118:13196" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="13581:13638" ph="SELECT is_qq... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="14298:14376" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="14764:14824" ph="SELECT is_gr... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="15513:15597" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="15988:16048" ph="SELECT is_gr... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="16737:16821" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="17194:17240" ph="SELECT is_at... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="17792:17848" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="18202:18253" ph="SELECT is_ke... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="18856:18922" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="19285:19338" ph="SELECT is_on... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="19960:20030" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="20397:20449" ph="SELECT is_on... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="21063:21131" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="21501:21555" ph="SELECT is_on... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="22190:22262" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="22641:22697" ph="SELECT is_ag... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="23348:23424" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="23797:23852" ph="SELECT is_ag... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="24494:24568" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="24936:24986" ph="SELECT is_fo... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="25585:25649" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="26010:26063" ph="SELECT is_on... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="26673:26743" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="27097:27149" ph="SELECT is_re... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="27758:27826" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="28192:28249" ph="SELECT qq_re... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="28822:28900" ph="UPDATE coolq... " />
+            <marker date="1499278229667" expanded="true" signature="29282:29342" ph="SELECT group... coolq_robot" />
+            <marker date="1499278229667" expanded="true" signature="29932:30016" ph="UPDATE coolq... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/CoolQ.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Group.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/slight-sky/coolq-sdk-php/src/CoolQSDK/CoolQSDK.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="336" column="51" lean-forward="false" selection-start-line="336" selection-start-column="30" selection-end-line="336" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CoolQPHP/Library/CoolQ/Robot/Robot.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="214" column="7" lean-forward="true" selection-start-line="214" selection-start-column="7" selection-end-line="214" selection-end-column="7" />
+        <state relative-caret-position="336">
+          <caret line="945" column="0" lean-forward="false" selection-start-line="945" selection-start-column="0" selection-end-line="945" selection-end-column="0" />
           <folding>
             <element signature="e#1013#1111#0#PHP" expanded="false" />
             <element signature="e#1116#1501#0#PHP" expanded="false" />
@@ -1271,37 +1293,28 @@
             <element signature="e#25832#26121#0#PHP" expanded="false" />
             <element signature="e#26127#26508#0#PHP" expanded="false" />
             <element signature="e#26513#26820#0#PHP" expanded="false" />
-            <element signature="e#26826#26996#0#PHP" expanded="false" />
-            <element signature="e#27001#27211#0#PHP" expanded="false" />
-            <element signature="e#27218#27516#0#PHP" expanded="false" />
-            <element signature="e#27521#27800#0#PHP" expanded="false" />
-            <element signature="e#27807#28059#0#PHP" expanded="false" />
-            <element signature="e#28064#28298#0#PHP" expanded="false" />
-            <element signature="e#28304#28374#0#PHP" expanded="false" />
-            <element signature="e#28379#28541#0#PHP" expanded="false" />
-            <element signature="e#28547#28623#0#PHP" expanded="false" />
-            <element signature="e#28628#28797#0#PHP" expanded="false" />
-            <marker date="1499964802914" expanded="false" signature="2530:2851" ph="SELECT coolq... coolq_plugin_orders" />
+            <element signature="e#27126#27296#0#PHP" expanded="false" />
+            <element signature="e#27518#27816#0#PHP" expanded="false" />
+            <element signature="e#27821#28100#0#PHP" expanded="false" />
+            <element signature="e#28107#28359#0#PHP" expanded="false" />
+            <element signature="e#28364#28598#0#PHP" expanded="false" />
+            <element signature="e#28604#28674#0#PHP" expanded="false" />
+            <element signature="e#28679#28841#0#PHP" expanded="false" />
+            <element signature="e#28847#28923#0#PHP" expanded="false" />
+            <element signature="e#28928#29097#0#PHP" expanded="false" />
+            <marker date="1500058167018" expanded="false" signature="2530:2851" ph="SELECT coolq... coolq_plugin_orders" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Api/Robot.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="908">
-          <caret line="59" column="63" lean-forward="true" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="63" />
+        <state relative-caret-position="546">
+          <caret line="53" column="38" lean-forward="false" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
           <folding>
             <element signature="e#6#118#0#PHP" expanded="true" />
             <element signature="e#119#141#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>

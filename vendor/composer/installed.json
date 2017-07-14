@@ -1,20 +1,20 @@
 [
     {
         "name": "slight-sky/coolq-sdk-php",
-        "version": "0.3",
-        "version_normalized": "0.3.0.0",
+        "version": "0.4",
+        "version_normalized": "0.4.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/slight-sky/coolq-sdk-php.git",
-            "reference": "7b2908b0088c27d65cf27b09a067a2b150c2b6d6"
+            "reference": "1374ae4bc67ccc628a6862a5144d6eeec04a5640"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/slight-sky/coolq-sdk-php/zipball/7b2908b0088c27d65cf27b09a067a2b150c2b6d6",
-            "reference": "7b2908b0088c27d65cf27b09a067a2b150c2b6d6",
+            "url": "https://api.github.com/repos/slight-sky/coolq-sdk-php/zipball/1374ae4bc67ccc628a6862a5144d6eeec04a5640",
+            "reference": "1374ae4bc67ccc628a6862a5144d6eeec04a5640",
             "shasum": ""
         },
-        "time": "2017-07-01 11:38:45",
+        "time": "2017-07-14 05:58:44",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

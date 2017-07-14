@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>CoolQ后台管理</title>
+
+    <!-- Bootstrap -->
+    <link href="/CoolQ/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Loading Flat UI -->
+    <link href="/CoolQ/assets/FlatUI/dist/css/flat-ui.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="container">
+        <div id="GroupApp">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">欢迎</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="alert alert-warning">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <h4>
+                            提示!
+                        </h4> <strong>警告!</strong> 请注意你的个人隐私安全.
+                    </div>
+                    <table class="table table-responsive">
+                        <caption>日志消息</caption>
+                        <thead>
+                            <tr>
+                                <th>群名</th>
+                                <th>群号</th>
+                                <th>操作</th>
+                                <th>操作</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <li class="list-group-item">
+                            </li>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <p v-show="status">运行中···</p>
+                                </td>
+                                <td>
+                                    <p v-show="!status">离线中···</p>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <a href="" title="手动刷新状态">刷新</a>
+                                </td>
+                            </tr>
+                            <tr v-for="item in RobotGroupList">
+                                <td v-text="item.group_name"></td>
+                                <td v-text="item.group_id"></td>
+                                <td>
+                                    <a class="btn bg-warning btn-lg" @click="Ban(item)">  设置屏蔽  </a>
+                                </td>
+                                <td>
+                                    <a class="btn bg-info btn-lg" @click="White(item)">  设置白名单  </a>
+                                </td>
+                                <td>
+                                    <a class="btn bg-success btn-lg" data-toggle="modal" data-target="#myModal" @click="List(item)">  查看群成员  </a>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 按钮触发模态框 -->
+
+            <!-- 模态框（Modal） -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+                            <h4 class="modal-title" id="myModalLabel">
+                                群成员列表
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table table-responsive">
+                                <caption>群成员列表</caption>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="item in GruopList">
+                                        <td v-text="item.user_id"></td>
+                                        <td v-text="item.nickname"></td>
+                                        <td v-text="item.card"></td>
+                                        <td v-text="item.role"></td>
+                                        <td><a class="btn btn-info">操作</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal -->
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/CoolQ/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/CoolQ/node_modules/vue/dist/vue.js"></script>
+    <script src="/CoolQ/node_modules/vue-resource/dist/vue-resource.js"></script>
+    <script src="/CoolQ/assets/index.js"></script>
+
+
+    <script src="/CoolQ/assets/FlatUI/dist/js/vendor/video.js"></script>
+    <script src="/CoolQ/assets/FlatUI/docs/assets/js/application.js"></script>
+    <script src="/CoolQ/assets/jquery.nicescroll.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            var nice = $("html").niceScroll();  // The document page (body)
+            $("#container").niceScroll("#GroupApp", {
+                cursorcolor: "#3498db",
+                cursoropacitymax: 0.7,
+                boxzoom: true,
+                touchbehavior: true
+            });  // Second scrollable DIV
+        });
+
+        Vue.filter('SubStr', function (params) {
+            return params.substring(0, 200)
+        })
+
+        var log = new Vue({
+            el: '#GroupApp',
+            mounted: function () {
+                this.$nextTick(function () {
+                    this.init()
+                })
+            },
+            data: {
+                status: true,
+                RobotQQ: '',
+                RobotQQImage: '',
+                RobotGroupList: '',
+                GruopList: '',
+
+            },
+            filter: {
+
+            },
+            methods: {
+                init: function () {
+                    var _this = this
+                    this.$http.get("/CoolQ/Public/api/Robot/get/get_group_list/?id=1246002938&apikey=ea38741f674c4883900df8fe7d809813", {}).then(function (res) {
+                        res = res.body
+                        if (res.code == 0) {
+                            res = JSON.parse(res.data)
+                            res = res.data
+                            this.RobotGroupList = res
+                        } else {
+                            alert(res.msg)
+                        }
+                    })
+                },
+                Ban: function (params) {
+                    alert(params)
+                },
+                White: function (params) {
+                    alert(params)
+                },
+                List: function (params) {
+                    this.$http.get("/CoolQ/Public/api/Robot/get/get_group_member_list/" + params.group_id + "?id=1246002938&apikey=ea38741f674c4883900df8fe7d809813", {}).then(function (res) {
+                        res = res.body
+                        if (res.code == 0) {
+                            res = JSON.parse(res.data)
+                            res = res.data
+                            this.GruopList = res
+                            Log(this.GruopList)
+                        } else {
+                            alert(res.msg)
+                        }
+                    })
+                },
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>
