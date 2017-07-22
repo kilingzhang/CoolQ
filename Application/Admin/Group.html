@@ -40,6 +40,7 @@
                             <tr>
                                 <th>群名</th>
                                 <th>群号</th>
+                                <th>状态</th>
                                 <th>操作</th>
                                 <th>操作</th>
                                 <th>操作</th>
@@ -64,6 +65,7 @@
                             <tr v-for="item in RobotGroupList">
                                 <td v-text="item.group_name"></td>
                                 <td v-text="item.group_id"></td>
+                                <td v-text="item.status"></td>
                                 <td>
                                     <a class="btn bg-warning btn-lg" @click="Ban(item)">  设置屏蔽  </a>
                                 </td>
@@ -108,8 +110,8 @@
                                         <td v-text="item.user_id"></td>
                                         <td v-text="item.nickname"></td>
                                         <td v-text="item.card"></td>
+                                        <td><a class="btn btn-info">操作</td>                                        
                                         <td v-text="item.role"></td>
-                                        <td><a class="btn btn-info">操作</td>
                                     </tr>
 
                                 </tbody>
@@ -117,7 +119,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">关闭
-				</button>
+				            </button>
                         </div>
                     </div>
                     <!-- /.modal-content -->
@@ -170,6 +172,8 @@
                 RobotQQImage: '',
                 RobotGroupList: '',
                 GruopList: '',
+                groupBlackList: '',
+                groupWhiteList: '',
 
             },
             filter: {
@@ -178,22 +182,59 @@
             methods: {
                 init: function () {
                     var _this = this
-                    this.$http.get("/CoolQ/Public/api/Robot/get/get_group_list/?id=1246002938&apikey=ea38741f674c4883900df8fe7d809813", {}).then(function (res) {
+                    var flag = 0;
+                    this.$http.get("/CoolQ/Public/api/Robot/get/group_white_list/?id=1246002938&apikey=ea38741f674c4883900df8fe7d809813", {}).then(function (res) {
                         res = res.body
                         if (res.code == 0) {
-                            res = JSON.parse(res.data)
-                            res = res.data
-                            this.RobotGroupList = res
+                            _this.groupWhiteList = res.data
+                            Log('groupWhiteList = ' + _this.groupWhiteList)
                         } else {
                             alert(res.msg)
                         }
                     })
+                    this.$http.get("/CoolQ/Public/api/Robot/get/group_black_list/?id=1246002938&apikey=ea38741f674c4883900df8fe7d809813", {}).then(function (res) {
+                        res = res.body
+                        if (res.code == 0) {
+                            _this.groupBlackList = res.data
+                            Log('groupBlackList  = ' + _this.groupBlackList)
+                        } else {
+                            alert(res.msg)
+                        }
+                    })  
+
+                    this.$http.get("/CoolQ/Public/api/Robot/get/get_group_list/?id=1246002938&apikey=ea38741f674c4883900df8fe7d809813", {}).then(function (res) {
+                        res = res.body
+                        if (res.code == 0) {
+                            Log(res)
+                            res = JSON.parse(res.data)
+                            res = res.data
+                            _this.RobotGroupList = res
+                            _this.RobotGroupList.forEach(function (element) {
+                                if (typeof element.status == 'undefined') {
+                                    if ($.inArray(element.group_id, _this.groupWhiteList) != -1) {
+                                        element.status = '白名单'
+                                    } else if ($.inArray(element.group_id, _this.groupBlackList) != -1) {
+                                        element.status = '黑名单'
+                                    } else {
+                                        element.status = '无'
+                                    }
+                                }
+                            }, this);
+                        } else {
+                            alert(res.msg)
+                        }
+                    })
+
                 },
                 Ban: function (params) {
-                    alert(params)
+                    var _this = this
+
+
                 },
                 White: function (params) {
-                    alert(params)
+                    var _this = this
+
+
                 },
                 List: function (params) {
                     this.$http.get("/CoolQ/Public/api/Robot/get/get_group_member_list/" + params.group_id + "?id=1246002938&apikey=ea38741f674c4883900df8fe7d809813", {}).then(function (res) {

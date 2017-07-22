@@ -45,29 +45,38 @@
                     <li class="list-group-item">创建时间：{{time}}
                     </li>
                     <li class="list-group-item">管理员：{{manager}}
+                        <a @click="setValue('manager')" class="btn btn-info pull-right text-center" style="margin-top: -5px;">修改</a>
                     </li>
                     <li class="list-group-item">好友白名单：{{qq_white_list}}
                         <a @click="setStatus('is_qq_white_list')" class="btn pull-right text-center" :class="{'btn-danger': is_qq_white_list , 'btn-success': !is_qq_white_list}"
                             style="margin-top: -5px;">{{ is_qq_white_list | OnOFF }}</a>
+                        <a @click="setValue('is_qq_white_list')" class="btn btn-info pull-right text-center" style="margin-top: -5px;">修改</a>
                     </li>
                     <li class="list-group-item">好友黑名单：{{qq_black_list}}
                         <a @click="setStatus('is_qq_black_list')" class="btn pull-right text-center" :class="{'btn-danger': is_qq_black_list , 'btn-success': !is_qq_black_list}"
                             style="margin-top: -5px;">{{ is_qq_black_list | OnOFF }}</a>
+                        <a @click="setValue('is_qq_black_list')" class="btn btn-info pull-right text-center" style="margin-top: -5px;">修改</a>
                     </li>
                     <li class="list-group-item">群组白名单：{{group_white_list}}
                         <a @click="setStatus('is_group_white_list')" class="btn pull-right text-center" :class="{'btn-danger': is_group_white_list , 'btn-success': !is_group_white_list}"
                             style="margin-top: -5px;">{{ is_group_white_list | OnOFF }}</a>
+                        <a @click="setValue('is_group_white_list')" class="btn btn-info pull-right text-center" style="margin-top: -5px;">修改</a>
                     </li>
                     <li class="list-group-item">群组黑名单：{{group_black_list}}
                         <a @click="setStatus('is_group_black_list')" class="btn pull-right text-center" :class="{'btn-danger': is_group_black_list , 'btn-success': !is_group_black_list}"
                             style="margin-top: -5px;">{{ is_group_black_list | OnOFF }}</a>
+                        <a @click="setValue('is_group_black_list')" class="btn btn-info pull-right text-center" style="margin-top: -5px;">修改</a>
+
                     </li>
                     <li class="list-group-item">@回复：
-                        <a @click="setStatus('is_at')" class="btn pull-right text-center" :class="{'btn-danger': is_at , 'btn-success': !is_at}" style="margin-top: -5px;">{{ is_at | OnOFF }}</a>
+                        <a @click="setStatus('is_at')" class="btn pull-right text-center" :class="{'btn-danger': is_at , 'btn-success': !is_at}"
+                            style="margin-top: -5px;">{{ is_at | OnOFF }}</a>
                     </li>
                     <li class="list-group-item">关键字回复：{{keyword}}
                         <a @click="setStatus('is_keyword')" class="btn pull-right text-center" :class="{'btn-danger': is_keyword , 'btn-success': !is_keyword}"
                             style="margin-top: -5px;">{{ is_keyword | OnOFF }}</a>
+                        <a @click="setValue('is_keyword')" class="btn btn-info pull-right text-center" style="margin-top: -5px;">修改</a>
+
                     </li>
                     <li class="list-group-item">跟随模式：
                         <a @click="setStatus('is_follow')" class="btn pull-right text-center" :class="{'btn-danger': is_follow , 'btn-success': !is_follow}"
@@ -92,10 +101,13 @@
                     <li class="list-group-item">同意好友请求：{{qq_refuse_reason}}
                         <a @click="setStatus('is_agree_friend')" class="btn pull-right text-center" :class="{'btn-danger': is_agree_friend , 'btn-success': !is_agree_friend}"
                             style="margin-top: -5px;">{{ is_agree_friend | OnOFF }}</a>
+                        <a @click="setValue('is_agree_friend')" class="btn btn-info pull-right text-center" style="margin-top: -5px;">修改</a>
+
                     </li>
                     <li class="list-group-item">同意群组请求：{{group_refuse_reason}}
                         <a @click="setStatus('is_agree_group')" class="btn pull-right text-center" :class="{'btn-danger': is_agree_group , 'btn-success': !is_agree_group}"
                             style="margin-top: -5px;">{{ is_agree_group | OnOFF }}</a>
+                        <a @click="setValue('is_agree_group')" class="btn btn-info pull-right text-center" style="margin-top: -5px;">修改</a>
                     </li>
                     <li class="list-group-item">回复@：
                         <a @click="setStatus('is_reply_at')" class="btn pull-right text-center" :class="{'btn-danger': is_reply_at , 'btn-success': !is_reply_at}"
@@ -103,7 +115,31 @@
                     </li>
 
                 </ul>
-
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    群成员列表
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <textarea :value="motifyValue" :key="motifyKey" class="motify" style="width:100%"></textarea>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info" @click="setV()">修改
+				            </button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				            </button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal -->
+                </div>
             </div>
 
         </div>
@@ -121,7 +157,6 @@
 
 
     <script src="/CoolQ/assets/FlatUI/dist/js/vendor/video.js"></script>
-    <script src="/CoolQ/assets/FlatUI/dist/js/flat-ui.min.js"></script>
     <script src="/CoolQ/assets/FlatUI/docs/assets/js/application.js"></script>
     <script src="/CoolQ/assets/jquery.nicescroll.min.js"></script>
     <script>
@@ -170,6 +205,8 @@
                 qq_refuse_reason: '',
                 group_refuse_reason: '',
                 is_reply_at: '',
+                motifyKey: '',
+                motifyValue: ''
             },
             filter: {
 
@@ -225,6 +262,70 @@
                         if (res.code == 0) {
                             Log(JSON.stringify(res.msg))
                             alert(res.msg)
+                        } else {
+                            alert(res.msg)
+                        }
+                    })
+                },
+                setValue: function (params) {
+                    this.motifyValue = ''
+                    this.motifyKey = ''
+
+                    switch (params) {
+                        case 'is_qq_white_list':
+                            this.motifyValue = JSON.stringify(this.qq_white_list)
+                            this.motifyKey = 'qq_white_list'
+                            break;
+                        case 'is_qq_black_list':
+                            this.motifyValue = JSON.stringify(this.qq_black_list)
+                            this.motifyKey = 'qq_black_list'
+                            break;
+                        case 'is_group_white_list':
+                            this.motifyValue = JSON.stringify(this.group_white_list)
+                            this.motifyKey = 'group_white_list'
+                            break;
+                        case 'is_group_black_list':
+                            this.motifyValue = JSON.stringify(this.group_black_list)
+                            this.motifyKey = 'group_black_list'
+                            break;
+                        case 'is_keyword':
+                            this.motifyValue = JSON.stringify(this.keyword)
+                            this.motifyKey = 'keyword'
+                            break;
+                        case 'is_agree_friend':
+                            this.motifyValue = this.qq_refuse_reason
+                            this.motifyKey = 'qq_refuse_reason'
+                            break;
+                        case 'is_agree_group':
+                            this.motifyValue = this.group_refuse_reason
+                            this.motifyKey = 'group_refuse_reason'
+                            break;
+                        case 'manager':
+                            this.motifyValue = JSON.stringify(this.manager)
+                            this.motifyKey = 'manager'
+                            break;
+                        default:
+                            break;
+                    }
+                    $('#myModal').modal('show')
+                }, setV: function () {
+                    value = $('.motify').val()
+                    Log(this.motifyKey)
+                    Log(value)
+                    this.$http.get("/CoolQ/Public/api/robot/set/" + this.motifyKey + "/" + value + "/?id=1246002938&apikey=ea38741f674c4883900df8fe7d809813", {}).then(function (res) {
+                        res = res.body
+                        if (res.code == 0) {
+                            Log(JSON.stringify(res))
+                            mat = value.match(/\[.*?\]/)
+                            if (mat == null) {
+                                var e = 'this.' + this.motifyKey + '="' + value + '"'
+                            } else {
+                                var e = 'this.' + this.motifyKey + '=' + value
+                            }
+                            this.motifyValue = value
+                            eval(e)
+                            alert(res.msg)
+                            $('#myModal').modal('hide')
                         } else {
                             alert(res.msg)
                         }

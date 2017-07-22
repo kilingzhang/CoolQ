@@ -20,7 +20,7 @@ $keys = array(
     'manager'=> 'RobotManager',
     'group_white_list'=> 'RobotGroupWhiteList',
     'group_black_list'=> 'RobotGroupBlackList',
-    'qq_white_list'=> 'tRobotQqWhiteList',
+    'qq_white_list'=> 'RobotQqWhiteList',
     'qq_black_list'=> 'RobotQqBlackList',
     'keyword'=> 'RobotKeyword',
     'is_group_black_list'=> 'RobotIsGroupBlackList',
@@ -63,7 +63,9 @@ switch ($_Action) {
         $_Value = isset($_Param[4]) ? ucwords($_Param[4]) : "";
         if ($_Key != "") {
             $_Key = strtolower($_Key);
-            eval("@\$reply = \$Robot->set". $keys[$_Key] . "($_Value);");
+            $_Value = htmlspecialchars_decode($_Value);
+            $do = "@\$reply = \$Robot->set". $keys[$_Key] . "($_Value);";
+            eval($do);
             Reply::EchoReply($reply);
         } else {
             Reply::EchoReply($Robot->setRobotInfo($_Value));
