@@ -43,7 +43,7 @@ define("secret","");
  */
 define('dbHost', '127.0.0.1');
 define("dbUser","root");
-define("dbPassword","wxhxa.666Z");
+define("dbPassword","");
 define("dbTable","CoolQ");
 define('dbport', 3306);
 
