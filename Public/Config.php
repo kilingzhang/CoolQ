@@ -29,12 +29,7 @@ define("APIkey","");
 define("secret","");
 
 
-//CoolQ HTTP API
-define("PATH","http://127.0.0.1");
-define("PORT",5700);
-define("TOKEN","");
-define("QQ",);
-define("MANAGERQQ",);
+
 
 
 /**
