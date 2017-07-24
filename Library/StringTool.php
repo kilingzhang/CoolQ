@@ -1,14 +1,16 @@
 <?php
 
+
+namespace Library;
 /**
  * Created by PhpStorm.
- * User: Slight
- * Date: 2017/5/6 0006
- * Time: 00:13
+ * User: Kilingzhang  <slight@kilingzhang.com>
+ * Date: 2017/7/22
+ * Time: 14:23
  */
-class MsgTool
+class StringTool
 {
-    public static function in_Array($str, $array)
+    public static function inArray($str, $array)
     {
         $array = json_encode($array, JSON_UNESCAPED_UNICODE);
         $pro = explode($str, $array);
@@ -18,8 +20,7 @@ class MsgTool
             return false;
         }
     }
-
-    public static function in_String($str, $String)
+    public static function inString($str, $String)
     {
         $pro = explode($str, $String);
         if (count($pro) >= 2) {
@@ -28,8 +29,7 @@ class MsgTool
             return false;
         }
     }
-
-    public static function Array_In_String($str, $array)
+    public static function arrayItemIsInString($str, $array)
     {
         foreach ($array as $item) {
             $pro = explode($item, $str);
@@ -41,5 +41,14 @@ class MsgTool
         }
         return false;
     }
-
+    public static function filterCQAt($string){
+        return preg_replace('/\[CQ:at,qq=\d+\]/','',$string);
+    }
+    public static function deCodeHtml($message)
+    {
+        $message = preg_replace("/&amp;/", "&", $message);
+        $message = preg_replace("/&#91;/", "[", $message);
+        $message = preg_replace("/&#93;/", "]", $message);
+        return $message;
+    }
 }

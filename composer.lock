@@ -1,0 +1,59 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "81d117b2dbda5ba4fbd6da56abd53377",
+    "content-hash": "47e00148149c870e7e83f282b7f26f30",
+    "packages": [
+        {
+            "name": "slight-sky/coolq-sdk-php",
+            "version": "0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/slight-sky/coolq-sdk-php.git",
+                "reference": "1374ae4bc67ccc628a6862a5144d6eeec04a5640"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/slight-sky/coolq-sdk-php/1374ae4bc67ccc628a6862a5144d6eeec04a5640.zip",
+                "reference": "1374ae4bc67ccc628a6862a5144d6eeec04a5640",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "CoolQ": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "kilingzhang",
+                    "email": "slight@kilingzhang.com",
+                    "homepage": "https://slight-sky.github.io/"
+                }
+            ],
+            "description": "sdk",
+            "homepage": "https://slight-sky.github.io/",
+            "keywords": [
+                "coolq",
+                "library",
+                "sdk"
+            ],
+            "time": "2017-07-14 05:58:44"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

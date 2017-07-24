@@ -1,0 +1,19 @@
+{
+    "name": "kilingzhang/cool-q",
+    "authors": [
+        {
+            "name": "slight-sky",
+            "email": "slight@kilingzhang.com"
+        }
+    ],
+    "require": {
+        "slight-sky/coolq-sdk-php": "^0.4.0"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+
+}

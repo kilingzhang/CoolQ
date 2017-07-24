@@ -47,4 +47,5 @@ Temporary Items
 .apdisk
 
 
-Public/Config.php
+Config.php
+/vendor/
