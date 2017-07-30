@@ -19,7 +19,7 @@ header('Content-type:text/html;charset=utf-8');
  *  Hash
  */
 define("Role","YiBao");
-define("Hash","");
+define("Hash","YiBao");
 
 
 /**
@@ -43,7 +43,7 @@ define("secret","");
  */
 define('dbHost', '127.0.0.1');
 define("dbUser","root");
-define("dbPassword","wxhxa.666Z");
+define("dbPassword","");
 define("dbTable","CoolQ_v3");
 define('dbPort', 3306);
 

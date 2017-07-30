@@ -9,7 +9,7 @@ use CoolQSDK\CQ;
  * Date: 2017/5/5
  * Time: 14:43
  */
-class TulingPlugin extends Plugin
+class FilmPlugin extends Plugin
 {
 
     public function Start()
@@ -22,20 +22,26 @@ class TulingPlugin extends Plugin
         $message = $_Request['message'];
         switch ($post_type) {
             case "message":
-                $url = "http://www.kilingzhang.com/Api/YiBao/api.php?role=" . Role . "&hash=" . Hash . "&user_id=$user_id&text=" . urlencode($message) . "&on=true";
-                $json = file_get_contents($url);
-                $data = json_decode($json, true);
-                if (!empty($data) && $data['code'] != 0) {
-                    $msg = addslashes($json);
-                } else {
-                    $msg = $data['data'];
+                $pro = explode('搜',$message);
+                if(count($pro) >= 2){
+                    $keyword = $pro[1];
+                }else{
+                    $keyword = $message;
+                }
+                $res = file_get_contents("http://api.pansou.com/search_new.php?callback=jQuery172042529061511397237_1500990957874&q=$keyword&p=1");
+                $res = json_decode($res,true);
+                $list = $res['list']['data'];
+                $msg = "$keyword 的搜索结果： \n";
+                for ($i = 0 ; $i< count($list)  && $i< 10 ; $i++){
+                    $msg .= $i . ' : ' . $list[$i]['title'] . '  ' . $list[$i]['des'] . "\n\n" . $list[$i]['link'] . "\n\n" ;
+
                 }
                 switch ($message_type) {
                     case "private":
                         $sub_type = $_Request['sub_type'];
                         switch ($sub_type) {
                             case "friend":
-                                $Robot->sendPrivateMsg($user_id, CQ::deCodeHtml(addslashes($msg)));
+                                $Robot->sendPrivateMsg($user_id, CQ::deCodeHtml(($msg)));
                                 break;
                             case "group":
 
@@ -50,8 +56,9 @@ class TulingPlugin extends Plugin
                         break;
                     case "group":
                         $group_id = $_Request['group_id'];
-                        $Robot->sendGroupMsg($group_id, CQ::deCodeHtml($msg), $user_id);
+                        $Robot->sendGroupMsg($group_id, CQ::deCodeHtml($msg),$user_id);
                         break;
+
                     case "discuss":
                         $discuss_id = $_Request['discuss_id'];
                         $Robot->sendDiscussMsg($discuss_id, CQ::deCodeHtml($msg));

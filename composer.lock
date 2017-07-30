@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "81d117b2dbda5ba4fbd6da56abd53377",
-    "content-hash": "47e00148149c870e7e83f282b7f26f30",
+    "hash": "7a0e0c881df9ed26f6d3598103cc5527",
+    "content-hash": "549bd08a9ed76924c0a6b420affb2abf",
     "packages": [
         {
             "name": "slight-sky/coolq-sdk-php",
-            "version": "0.4",
+            "version": "0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/slight-sky/coolq-sdk-php.git",
-                "reference": "1374ae4bc67ccc628a6862a5144d6eeec04a5640"
+                "reference": "cbd924695f85508d2c54e81fe237f3a65b0b00ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/slight-sky/coolq-sdk-php/1374ae4bc67ccc628a6862a5144d6eeec04a5640.zip",
-                "reference": "1374ae4bc67ccc628a6862a5144d6eeec04a5640",
+                "url": "https://api.github.com/repos/slight-sky/coolq-sdk-php/zipball/cbd924695f85508d2c54e81fe237f3a65b0b00ba",
+                "reference": "cbd924695f85508d2c54e81fe237f3a65b0b00ba",
                 "shasum": ""
             },
             "type": "library",
@@ -45,7 +45,7 @@
                 "library",
                 "sdk"
             ],
-            "time": "2017-07-14 05:58:44"
+            "time": "2017-07-25 07:06:28"
         }
     ],
     "packages-dev": [],

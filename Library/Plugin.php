@@ -7,7 +7,7 @@
  */
 
 namespace Library;
-
+use Library\Robot;
 
 class Plugin
 {
@@ -16,7 +16,6 @@ class Plugin
 
     public function __construct(){
         $this->Intercept = false;
-        self::setPluginName();
     }
     /**
      * @param bool $bool
@@ -31,25 +30,34 @@ class Plugin
         return $this->Intercept;
     }
 
-    private static function setPluginName(){
-        self::$PluginName = get_class();
+    public static function setPluginName($PluginName){
+        self::$PluginName = $PluginName;
     }
 
     public static function getPluginName(){
         return self::$PluginName;
     }
 
-    /*
+    public static function initPlugin($dir){
+        $list = \Library\File::dirNodeTree($dir);
+        print_r($list);
+    }
+
+
+    /**
+     * @param $plugin_class_name
+     * @return null
+     */
+
+
+
     public static function runOders($PluginOrders)
     {
-        global $data;
+        global $_Request;
+        global $Robot;
         $PluginController = null;
         foreach ($PluginOrders AS $order) {
-//            global $stime;
-//            global $Robot;
-//            $etime = microtime(true);
-//            $Robot->sendPrivateMsg(1353693508,MsgTool::deCodeHtml($etime - $stime),false);
-            $pro = explode($order['order_name'], $data['message']);
+            $pro = explode($order['order_name'], $_Request['message']);
             if ((count($pro) >= 2 && $order['status']) || $order['order_name'] == '*') {
                 $PluginController = Robot::runPlugin($order['plugin_class']);
                 if ($PluginController != null && $PluginController->isIntercept() == true) {
@@ -60,5 +68,5 @@ class Plugin
         }
         return $PluginController;
     }
-    */
+
 }

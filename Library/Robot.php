@@ -9,6 +9,7 @@
 namespace Library;
 
 use CoolQSDK\CoolQSDK;
+use CoolQSDK\CQ;
 use Library\Config;
 
 class Robot
@@ -222,7 +223,10 @@ class Robot
      */
     public function getGroupWhiteList()
     {
-        $this->group_white_list = $this->_getGroupWhiteList();
+        unset($this->group_white_list);
+        foreach ($this->_getGroupWhiteList() as $value){
+            $this->group_white_list[] = $value['group_id'];
+        }
         return $this->group_white_list;
     }
 
@@ -239,7 +243,10 @@ class Robot
      */
     public function getGroupBlackList()
     {
-        $this->group_black_list = $this->_getGroupBlackList();
+        unset($this->group_black_list);
+        foreach ($this->_getGroupBlackList() as $value){
+            $this->group_black_list[] = $value['group_id'];
+        }
         return $this->group_black_list;
     }
 
@@ -255,7 +262,10 @@ class Robot
      */
     public function getQqWhiteList()
     {
-        $this->qq_white_list = $this->_getQQWhiteList();
+        unset($this->qq_white_list);
+        foreach ($this->_getQQWhiteList() as $value){
+            $this->qq_white_list[] = $value['user_id'];
+        }
         return $this->qq_white_list;
     }
 
@@ -271,7 +281,10 @@ class Robot
      */
     public function getQqBlackList()
     {
-        $this->qq_black_list = $this->_getQQBlackList();
+        unset($this->qq_black_list);
+        foreach ($this->_getQQBlackList() as $value){
+            $this->qq_black_list[] = $value['user_id'];
+        }
         return $this->qq_black_list;
     }
 
@@ -287,7 +300,10 @@ class Robot
      */
     public function getKeyword()
     {
-        $this->keyword = $this->_getKeyWord();
+        unset($this->keyword);
+        foreach ($this->_getKeyWord() as $value){
+            $this->keyword[] = $value['keyword'];
+        }
         return $this->keyword;
     }
 
@@ -584,28 +600,28 @@ class Robot
 
     private function _getGroupWhiteList()
     {
-        $sql = "select * from coolq_robot_manager WHERE qq = $this->QQ";
+        $sql = "select * from coolq_group WHERE qq = $this->QQ AND  status = 1";
         $res = $this->Mysql->query($sql);
         return $this->Mysql->getAll($res);
     }
 
     private function _getGroupBlackList()
     {
-        $sql = "select * from coolq_robot_manager WHERE qq = $this->QQ";
+        $sql = "select * from coolq_group WHERE qq = $this->QQ AND  status = -1";
         $res = $this->Mysql->query($sql);
         return $this->Mysql->getAll($res);
     }
 
     private function _getQQWhiteList()
     {
-        $sql = "select * from coolq_robot_manager WHERE qq = $this->QQ";
+        $sql = "select * from coolq_friend WHERE qq = $this->QQ AND  status = 1";
         $res = $this->Mysql->query($sql);
         return $this->Mysql->getAll($res);
     }
 
     private function _getQQBlackList()
     {
-        $sql = "select * from coolq_robot_manager WHERE qq = $this->QQ";
+        $sql = "select * from coolq_friend WHERE qq = $this->QQ AND  status = -1";
         $res = $this->Mysql->query($sql);
         return $this->Mysql->getAll($res);
     }
@@ -666,20 +682,24 @@ class Robot
      * @param string $is_raw bool    false    消息内容是否作为纯文本发送（即不解析 CQ 码），message 数据类型为 array 时无效
      * @return mixed|string
      */
-    public function sendPrivateMsg($user_id, $message, $is_raw = 'false')
+    public function sendPrivateMsg($user_id, $message, $is_raw = false)
     {
          switch ($this->isSend){
-             case -1:
+             case OFF:
                  break;
-             case 0:
+             case ON:
                  TimeTool::StartTime();
-                 $this->CoolQ->sendPrivateMsg($user_id, $message, $is_raw);
+                 $this->CoolQ->sendPrivateMsg($user_id, $message, true);
                  $dtime = TimeTool::EndTime()['time'];
                  Log::Info("to:$user_id  $message \n 上报耗时:$dtime ",$message,Plugin::getPluginName(),$this->getQQ());
                  break;
-             case 1:
+             case FOLLOW:
+                 TimeTool::StartTime();
+                 $this->CoolQ->sendPrivateMsg($user_id, CQ::deCodeHtml($message), false);
+                 $dtime = TimeTool::EndTime()['time'];
+                 Log::Info("to:$user_id  $message \n 上报耗时:$dtime ",$message,Plugin::getPluginName(),$this->getQQ());
                  break;
-             case 2:
+             case REPLYAT:
                  break;
          }
     }
@@ -693,8 +713,44 @@ class Robot
      * @param string $is_raw bool    false    消息内容是否作为纯文本发送（即不解析 CQ 码），message 数据类型为 array 时无效
      * @return mixed|string
      */
-    public function sendGroupMsg($group_id, $message, $is_raw = 'false')
+    public function sendGroupMsg($group_id, $message, $user_id = '' ,$is_raw = false)
     {
+        switch ($this->isSend) {
+            case OFF:
+                break;
+            case ON:
+                TimeTool::StartTime();
+                $dtime = TimeTool::EndTime()['time'];
+                $this->CoolQ->sendGroupMsg($group_id, CQ::deCodeHtml($message), true);
+                Log::Info("to:$group_id  $message \n 上报耗时:$dtime ", $message, Plugin::getPluginName(), $this->getQQ());
+                break;
+            case FOLLOW:
+                TimeTool::StartTime();
+                $this->CoolQ->sendGroupMsg($group_id, CQ::filterCQAt(CQ::deCodeHtml($message)), $is_raw ,true);
+                $dtime = TimeTool::EndTime()['time'];
+                Log::Info("to:$group_id  $message \n 上报耗时:$dtime ", $message, Plugin::getPluginName(), $this->getQQ());
+                break;
+            case REPLYAT:
+                TimeTool::StartTime();
+                $data[0]['type'] = 'at';
+                $data[0]['data'] = array(
+                    'qq'=>"$user_id"
+                );
+                $data[1]['type'] = 'text';
+                $data[1]['data'] = array(
+                    'text'=>CQ::filterCQAt(CQ::deCodeHtml($message))
+                );
+                $this->CoolQ->sendGroupMsg($group_id, $data, $is_raw,true);
+                $dtime = TimeTool::EndTime()['time'];
+                Log::Info("to:$group_id  $message \n 上报耗时:$dtime ", $message, Plugin::getPluginName(), $this->getQQ());
+                break;
+            case REPLYATFOLLOW:
+                TimeTool::StartTime();
+                $this->CoolQ->sendGroupMsg($group_id, CQ::enAtCode($user_id) . CQ::filterCQAt(CQ::deCodeHtml($message)), false);
+                $dtime = TimeTool::EndTime()['time'];
+                Log::Info("to:$group_id  $message \n 上报耗时:$dtime ", $message, Plugin::getPluginName(), $this->getQQ());
+                break;
+        }
     }
 
     /**
@@ -937,6 +993,37 @@ class Robot
      */
     public function getCsrfToken()
     {
+    }
+
+
+
+    /**
+     * Puglin
+     */
+
+    public function getRobotPluginOrders()
+    {
+        $sql = "SELECT coolq_plugin.name,coolq_plugin_order.plugin_id,coolq_plugin_order.order_name,coolq_plugin.priority,coolq_plugin.status,coolq_plugin.plugin_class FROM coolq_plugin_order,coolq_plugin WHERE  coolq_plugin_order.plugin_id = coolq_plugin.id  AND  coolq_plugin.status = 1 ORDER BY  coolq_plugin.priority DESC ";
+        $rs = $this->Mysql->query($sql);
+        $array = array();
+        while ($r = $this->Mysql->getOne($rs)) {
+            $array[] = $r;
+        }
+        return $array;
+    }
+
+
+    public static function runPlugin($plugin_class_name)
+    {
+        $Plugin = null;
+        global $Robot;
+//        echo $plugin_class_name . "<br>";
+        include_once  "Plugin/$plugin_class_name/" . $plugin_class_name . ".php";
+        Plugin::getPluginName($plugin_class_name);
+        eval("@\$Plugin = new " . $plugin_class_name . "();");
+        if ($Plugin == null)return null;
+        @$Plugin->Start();
+        return @$Plugin;
     }
 
 }

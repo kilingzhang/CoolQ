@@ -7,7 +7,7 @@
         }
     ],
     "require": {
-        "slight-sky/coolq-sdk-php": "^0.4.0"
+        "slight-sky/coolq-sdk-php": "^0.5.0"
     },
     "repositories": {
         "packagist": {

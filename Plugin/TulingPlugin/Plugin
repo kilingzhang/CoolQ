@@ -1,0 +1,12 @@
+INSERT INTO  `coolq_v3`.`coolq_plugin` (
+`priority` ,
+`name` ,
+`author` ,
+`author_url` ,
+`description` ,
+`status` ,
+`plugin_class`
+)
+VALUES (
+ '1000',  '图灵机器人',  'Slight',  'www.kilingzhang.com',  'blog.kilingzhang.com', '1',  'TulingPlugin'
+);

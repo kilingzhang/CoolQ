@@ -9,6 +9,10 @@
 include 'base.php';
 
 use Library\Robot;
+use Library\StringTool;
+use Library\Plugin;
+use Library\TimeTool;
+use Library\Log;
 use CoolQSDK\CQ;
 
 \Library\TimeTool::StartTime();
@@ -17,22 +21,32 @@ use CoolQSDK\CQ;
 \Library\Glo::init();
 if(\Library\Request::put() != null && $_Request = \Library\Request::put()){
     //CoolQ api
+    $QQ = 1246002938;
+//    $_Request['post_type'] = 'message';
+//    $_Request['message_type'] = 'private';
+//    $_Request['user_id'] = 1353693508;
+//    $_Request['message'] = 'message';
+//    $_Request['sub_type'] = 'friend';
+
     $post_type = $_Request['post_type'];
     $message_type = $_Request['message_type'];
     $user_id = isset($_Request['user_id']) && array_key_exists('user_id',$_Request) ? $_Request['user_id'] : null;
     $group_id = isset($_Request['group_id']) && array_key_exists('group_id',$_Request) ? $_Request['group_id'] : null;
     $discuss_id = isset($_Request['discuss_id']) && array_key_exists('discuss_id',$_Request) ? $_Request['discuss_id'] : null;
     $message = $_Request['message'];
-    $Robot = Robot::getInstance(1246002938);
+
+    TimeTool::StartTime();
+    $dtime = TimeTool::EndTime()['time'];
+    Log::Info("事件获取:$post_type  $message \n 上报耗时:$dtime ", json_encode($_Request), Plugin::getPluginName(), $QQ);
 
 
+    $Robot = Robot::getInstance($QQ);
+    print_r($_Request);
     $PluginController = null;
     $post_type = $_Request['post_type'];
     if(!$Robot->getIsOnPlugin()){
         exit('{"block": true}');
     }
-
-
     switch ($post_type) {
         //收到消息
         case 'message':
@@ -47,9 +61,9 @@ if(\Library\Request::put() != null && $_Request = \Library\Request::put()){
                     //"friend"、"group"、"discuss"、"other"
                     $sub_type = $_Request['sub_type'];
                     if($Robot->getIsOnFriend()){
-                        if(($Robot->getIsQqWhiteList() && MsgTool::inArray($user_id,$Robot->getQqWhiteList())) || (!$Robot->getIsQqWhiteList())){
-                            if(($Robot->getIsQqBlackList() && !MsgTool::inArray($user_id,$Robot->getQqBlackList())) || (!$Robot->getIsQqBlackList())){
-                                if(($Robot->getIsKeyword() && MsgTool::arrayItemIsInString($message,$Robot->getKeyword())) || (!$Robot->getIsKeyword())){
+                        if(($Robot->getIsQqWhiteList() && StringTool::inArray($user_id,$Robot->getQqWhiteList())) || (!$Robot->getIsQqWhiteList())){
+                            if(($Robot->getIsQqBlackList() && !StringTool::inArray($user_id,$Robot->getQqBlackList())) || (!$Robot->getIsQqBlackList())){
+                                if(($Robot->getIsKeyword() && StringTool::arrayItemIsInString($message,$Robot->getKeyword())) || (!$Robot->getIsKeyword())){
                                     if($Robot->getIsFollow()){
                                         $Robot->setIsSend(FOLLOW);
                                     }else{
@@ -73,13 +87,17 @@ if(\Library\Request::put() != null && $_Request = \Library\Request::put()){
                     $anonymous_flag = $_Request['anonymous_flag'];
                     // {"reply":"message","block": true,"at_sender":true,"kick":false,"ban":false}
                     if($Robot->getIsOnGroup()){
-                        if(($Robot->getIsGroupWhiteList() && MsgTool::inArray($group_id,$Robot->getGroupWhiteList())) || (!$Robot->getIsGroupWhiteList())){
-                            if(($Robot->getIsGroupBlackList() && !MsgTool::inArray($group_id,$Robot->getGroupBlackList())) || (!$Robot->getIsGroupBlackList())){
-                                if(($Robot->getIsQqBlackList() && !MsgTool::inArray($user_id,$Robot->getQqBlackList())) || (!$Robot->getIsQqBlackList())){
-                                    if(($Robot->getIsAt() && MsgTool::inString(CQ::enAtCode($Robot->getQQ()),$message)) || (!$Robot->getIsAt())){
-                                        if(($Robot->getIsKeyword() && MsgTool::arrayItemIsInString($message,$Robot->getKeyword())) || (!$Robot->getIsKeyword())){
+                        if(($Robot->getIsGroupWhiteList() && StringTool::inArray($group_id,$Robot->getGroupWhiteList())) || (!$Robot->getIsGroupWhiteList())){
+                            if(($Robot->getIsGroupBlackList() && !StringTool::inArray($group_id,$Robot->getGroupBlackList())) || (!$Robot->getIsGroupBlackList())){
+                                if(($Robot->getIsQqBlackList() && !StringTool::inArray($user_id,$Robot->getQqBlackList())) || (!$Robot->getIsQqBlackList())){
+                                    if(($Robot->getIsAt() && StringTool::inString(CQ::enAtCode($Robot->getQQ()),$message)) || (!$Robot->getIsAt())){
+                                        if(($Robot->getIsKeyword() && StringTool::arrayItemIsInString($message,$Robot->getKeyword())) || (!$Robot->getIsKeyword())){
                                             if($Robot->getIsReplyAt()){
-                                                $Robot->setIsSend(REPLYAT);
+                                                if($Robot->getIsFollow()){
+                                                    $Robot->setIsSend(REPLYATFOLLOW);
+                                                }else{
+                                                    $Robot->setIsSend(REPLYAT);
+                                                }
                                             }else{
                                                 if($Robot->getIsFollow()){
                                                     $Robot->setIsSend(FOLLOW);
@@ -98,7 +116,7 @@ if(\Library\Request::put() != null && $_Request = \Library\Request::put()){
                 case "discuss":
                     $discuss_id = $_Request['discuss_id'];
                     // {"reply":"message","block": true,"at_sender":true}
-                    $Robot->sendDiscussMsg($discuss_id, MsgTool::deCodeHtml($message));
+                    $Robot->sendDiscussMsg($discuss_id, CQ::deCodeHtml($message));
                     //todo
                     //以后再说吧
 
@@ -174,7 +192,11 @@ if(\Library\Request::put() != null && $_Request = \Library\Request::put()){
             # code...
             break;
     }
-    $Robot->sendPrivateMsg($user_id,\Library\TimeTool::EndTime()['time']);
+
+
+    //runPlugin
+    $PluginOrderList = $Robot->getRobotPluginOrders();
+    $PluginController = Plugin::runOders($PluginOrderList);
 
 
 
@@ -183,9 +205,6 @@ if(\Library\Request::put() != null && $_Request = \Library\Request::put()){
     //Admin api
 
 }
-
-
-
 
 
 

@@ -9,6 +9,8 @@
 include 'Config.php';
 
 date_default_timezone_set("Asia/Shanghai");
+header("Content-type: charset=utf-8");
+
 define('COOLQ_VERSION', '0.1.0');
 define('COOLQ_START_TIME', microtime(true));
 define('COOLQ_START_MEM', memory_get_usage());
@@ -31,6 +33,7 @@ defined('ON') or define('ON',0); // 开启
 defined('OFF') or define('OFF',-1); // 关闭
 defined('FOLLOW') or define('FOLLOW',1); // 跟随
 defined('REPLYAT') or define('REPLYAT',2); // 跟随
+defined('REPLYATFOLLOW') or define('REPLYATFOLLOW',3); // 跟随AT
 
 
 // 环境常量

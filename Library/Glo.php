@@ -14,6 +14,7 @@ class Glo
     public static function init(){
         global $_Request;
         global $PluginController;
+        global $Robot;
     }
 
 }

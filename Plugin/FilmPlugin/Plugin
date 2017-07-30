@@ -1,0 +1,12 @@
+INSERT INTO  `coolq_v3`.`coolq_plugin` (
+`priority` ,
+`name` ,
+`author` ,
+`author_url` ,
+`description` ,
+`status` ,
+`plugin_class`
+)
+VALUES (
+ '4000',  '电影资源',  'Slight',  'www.kilingzhang.com',  'blog.kilingzhang.com', '1',  'FilmPlugin'
+);
